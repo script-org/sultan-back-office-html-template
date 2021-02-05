@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+
+<body class="layout-column">
+
+  <header id="header" class="page-header bg-white box-shadow">
+    <div class="navbar navbar-expand-lg">
+      <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+        <i class="i-con i-con-menu text-muted"></i>
+      </a>
+      <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+      <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+        <form class="input-group m-2 my-lg-0 " style="padding-left: 40px">
+          <span class="input-group-prepend">
+            <button type="button" class="btn no-shadow no-bg px-0">
+              <i class="la la-search"></i>
+            </button>
+          </span>
+          <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+            placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+            data-plugin="typeahead">
+        </form>
+      </div>
+
+      <ul class="nav navbar-menu order-1 order-lg-2">
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip"
+            data-title="Fullscreen">
+            <i class="i-con i-con-fullscreen"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+            <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Good evening,</small>
+              <span>Justin Timber</span>
+            </span>
+            <span class="avatar w-36 bg-primary-lt">
+              JT
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+              <div>
+                <img src="../assets/img/animated-icons/settings/settings.svg" >
+              </div>
+              <span class="ml-2">My account</span>
+            </a>
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+              <div>
+                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+              </div>
+              <span class="ml-2">Sign out</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+            data-target="#navbarToggler">
+            <i class="i-con i-con-nav text-muted"><i></i></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div id="main" class="layout-row flex">
+    <div id="aside" class="page-sidenav no-shrink  nav-expand" aria-hidden="true">
+      <div class="sidenav h-100 modal-dialog bg-white box-shadow">
+        <div class="flex scroll-container">
+          <div class="nav-border b-primary mt-3" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="dashboard.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/home/home.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DASHBOARD</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/tags/tags.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li class="active">
+                    <a href="products.all.html">
+                      <span class="nav-text">All Products</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.category.html" class="">
+                      <span class="nav-text">Categories</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.modifier.html" class="">
+                      <span class="nav-text">Modifiers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/list/list.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">INVENTORY</span>
+                  <span class="nav-badge">
+                    <b class="badge badge-sm badge-pill ">12</b>
+                  </span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="inventory.purchase.html">
+                      <span class="nav-text">Purchase Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.transfer.html" class="">
+                      <span class="nav-text">Transfer Orders</span>
+                      <span class="nav-badge">
+                        <b class="badge badge-sm badge-pill bg-danger">12</b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.stock.html" class="">
+                      <span class="nav-text">Stock Adjustment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.counts.html" class="">
+                      <span class="nav-text">Inventory Counts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.history.html" class="">
+                      <span class="nav-text">Inventory History</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.valuation.html" class="">
+                      <span class="nav-text">Inventory Valuation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.planner.html" class="">
+                      <span class="nav-text">Inventory Planner</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="productions.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gears/gears.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTIONS</span>
+                  <span class="nav-badge">
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/discount/discount.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DISCOUNTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="discount.code.html">
+                      <span class="nav-text">Discount Code</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="discount.auto.html" class="">
+                      <span class="nav-text">Automatic Discounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="suppliers.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/business-network/business-network.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SUPPLIERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-user'><i></i></i>
+                  </span>
+                  <span class="nav-text">CUSTOMERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-users'><i></i></i>
+                  </span>
+                  <span class="nav-text">EMPLOYEES</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="employee.all.html">
+                      <span class="nav-text">All Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.roll.html" class="">
+                      <span class="nav-text">Rolls/Access Rights</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.schedule.html" class="">
+                      <span class="nav-text">Schedule Timesheet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.payroll.html" class="">
+                      <span class="nav-text">Payroll</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/calculator/calculator.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">BOOKEEPING</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="bookeeping.sales.html">
+                      <span class="nav-text">Sales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.expense.html" class="">
+                      <span class="nav-text">Expenses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.vat.html" class="">
+                      <span class="nav-text">VAT Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.account.html" class="">
+                      <span class="nav-text">Accounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="reports.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">REPORTS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="no-shrink ">
+          <div class="nav-border b-primary" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="setting.general.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm p-3 mt-5">
+            <div class="hidden-folded text-sm">
+              <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############ Aside END-->
+
+    <!-- ############ Content START-->
+    <div id="content" class="flex animate fadeInLeft">
+      <!-- ############ Main START-->
+
+      <div class="flex" id="content">
+        <div class="padding">
+
+          <div class="mb-4 d-flex justify-content-between">
+            <div>
+              <a class="i-con-h-a text-dark" href="./products.all.html">
+                <i class="i-con i-con-left"></i>
+                Products
+              </a>
+              <h2 id="title">Dairy Khoury Ayran 250g</h2>
+            </div>
+            <div class="d-flex align-items-end">
+              <a href="" class="text-primary">
+                <i class="i-con i-con-plus">
+                  <i class="i-con i-con-border"></i>
+                </i>
+                Duplicate
+              </a>
+              <a class="text-primary i-con-h-a" data-toggle-class="">
+                <i class="ml-2 i-con i-con-nav"><i><i></i></i></i>
+                Nav altnative
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-7">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Product title</h4>
+                  <span class="text-muted ">Name your product in English and Arabic</span>
+                  <div class="row mt-3">
+                    <div class="col-6 form-group">
+                      <label>Product name(English)</label>
+                      <input type="text" class="form-control" placeholder="e.g. Dairy Khoury Ayran 250g">
+                    </div>
+                    <div class="col-6 form-group">
+                      <label class="float-right">ا جتنلما ) يبرع (</label>
+                      <input type="text" class="form-control text-right" placeholder="250g م . يريد يروخ ناريع ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="pb-3">Product details</h4>
+                  <span class="text-muted ">Select category and units of the product</span>
+                  <div class="row">
+                    <div class="col-6 form-group">
+                      <label>Category</label>
+                      <select class="custom-select" id="product-category">
+                        <option value=""></option>
+                        <option value="new">Add category</option>
+                      </select>
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Sort by</label>
+                      <div class="d-flex">
+                        <div class="form-group">
+                          <label class="md-check mr-5">
+                            <input type="radio" name="point-round" checked>
+                            <i class="blue"></i>
+                            Each
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label class="md-check mr-2">
+                            <input type="radio" name="point-round">
+                            <i class="blue"></i>
+                            Weight / Volume
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Price</label>
+                      <input type="text" class="form-control" placeholder="L£">
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Cost</label>
+                      <input type="text" class="form-control" placeholder="L£ 0">
+                      <small>Value updates automaNcally when you receive inventory</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="pb-3">Inventory</h4>
+                  <span class="text-muted">Enter inventory details</span>
+                  <div class="row mt-3">
+                    <div class="col-6 form-group">
+                      <label class="d-flex justify-content-between">
+                        <span>Barcode</span>
+                        <a class="text-primary">
+                          <i class="i-con i-con-plus">
+                            <i class="i-con i-con-border"></i>
+                          </i>
+                          Add another barcode
+                        </a>
+                      </label>
+                      <div class="input-group">
+                        <input type="text" class="form-control px-0">
+                        <div class="input-group-append">
+                          <span class="input-group-text p-0 no-bg border-right-0" id="basic-addon2">
+                            <button class="btn btn-primary">Generate</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <label for="">SKU</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 d-flex justify-content-between">
+                      <p>
+                        <b>Composite product</b><br>
+                        <span class="text-muted">Contains specified quantity of other items</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox" id="composite-switch">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-between">
+                      <p>
+                        <b>Use production</b><br>
+                        <span class="text-muted">Track stock of produced item</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox" id="production-switch">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="col-12">
+                      <table class="table d-none" id="composite-table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th class="text-right">Quantity</th>
+                            <th class="text-right">Cost</th>
+                            <th class="text-right"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <b>Taanayel Laban 500g</b><br>
+                              <span class="text-muted">SKU 10008 | 5948182837 | VAT 11%</span>
+                            </td>
+                            <td class="text-right"><input type="text" class="form-control" value="2000"></td>
+                            <td class="text-right">1,500</td>
+                            <td class="text-right">
+                              <a class="text-danger">
+                                <i class="i-con i-con-trash"><i></i></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="4">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-group mb-0">
+                                    <select class="custom-select" style="width: 100%;" data-plugin="select2"
+                                      data-option="{}" data-placeholder="Select an option">
+                                      <option></option>
+                                      <optgroup label="Alaskan/Hawaiian Time Zone">
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI" disabled="disabled">Hawaii</option>
+                                      </optgroup>
+                                      <optgroup label="Pacific Time Zone">
+                                        <option value="CA">California</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="WA">Washington</option>
+                                      </optgroup>
+                                      <optgroup label="Mountain Time Zone">
+                                        <option value="AZ">Arizona</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="WY">Wyoming</option>
+                                      </optgroup>
+                                      <optgroup label="Central Time Zone">
+                                        <option value="AL">Alabama</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="WI">Wisconsin</option>
+                                      </optgroup>
+                                      <optgroup label="Eastern Time Zone">
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WV">West Virginia</option>
+                                      </optgroup>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td class="text-right">Total cost</td>
+                            <td class="text-right">1,500</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-between">
+                      <div>
+                        <h4 class="pb-3">Variants</h4>
+                        <span class="text-muted">Use variants if an item has different sizes, colors or other
+                          options</span>
+                      </div>
+                      <div class="d-flex align-items-end">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#add-variant-modal"
+                          id="add-variant">
+                          <i class="i-con i-con-plus">
+                            <i class="i-con i-con-border"></i>
+                          </i>
+                          Add variants
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-3 d-none" id="variant-table">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <span>Options: </span>
+                          <span><b>Size / Color / Flavor</b></span>
+                        </div>
+                        <div>
+                          <a class="text-primary h5">
+                            <i class="i-con i-con-edit"><i></i></i>
+                            Edit options
+                          </a>
+                        </div>
+                      </div>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Variant</th>
+                            <th>
+                              Cost
+                              <a data-toggle="tooltip"
+                                data-title="Value updates automatically when you receive inventory."
+                                data-placement="right">
+                                <i class="i-con i-con-info"><i class="i-con i-con-border"></i></i>
+                              </a>
+                            </th>
+                            <th>Price</th>
+                            <th>SKU</th>
+                            <th>Barcode</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>small / blue / apple</td>
+                            <td><span class="text-muted">L£ 0</span></td>
+                            <td><input type="text" class="form-control" value="L£ 1,500"></td>
+                            <th><input type="text" class="form-control" value="10022"></th>
+                            <th><input type="text" class="form-control"></th>
+                            <th>
+                              <a class="text-danger">
+                                <i class="i-con i-con-trash"><i></i></i>
+                              </a>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td>small / blue / apple</td>
+                            <td><span class="text-muted">L£ 0</span></td>
+                            <td><input type="text" class="form-control" value="L£ 1,500"></td>
+                            <th><input type="text" class="form-control" value="10022"></th>
+                            <th><input type="text" class="form-control"></th>
+                            <th>
+                              <a class="text-danger">
+                                <i class="i-con i-con-trash"><i></i></i>
+                              </a>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td>small / blue / apple</td>
+                            <td><span class="text-muted">L£ 0</span></td>
+                            <td><input type="text" class="form-control" value="L£ 1,500"></td>
+                            <th><input type="text" class="form-control" value="10022"></th>
+                            <th><input type="text" class="form-control"></th>
+                            <th>
+                              <a class="text-danger">
+                                <i class="i-con i-con-trash"><i></i></i>
+                              </a>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="pb-3">Product availablity</h4>
+                  <span class="text-muted">
+                    Enter inventory details. If item is used for producNon and isn’t for sale, then deactivate opNon
+                    below.
+                  </span>
+                  <div class="row mt-3">
+                    <div class="col-12 d-flex align-items-center">
+                      <div class="mr-3">
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </div>
+                      <div>
+                        <b>Product not for sale</b><br>
+                        <span>The product is available in all sales outlouts, but not for sale.</span>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-2">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Available</th>
+                            <th>Location</th>
+                            <th>Stock</th>
+                            <th>Low stock</th>
+                            <th>Optimal stock</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="ui-switch ui-switch-md">
+                                <input type="checkbox" checked>
+                                <i></i>
+                              </label>
+                            </td>
+                            <td>West Side Location</td>
+                            <td>0</td>
+                            <td><input type="number" class="form-control" /></td>
+                            <td><input type="number" class="form-control" /></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="ui-switch ui-switch-md">
+                                <input type="checkbox" checked>
+                                <i></i>
+                              </label>
+                            </td>
+                            <td>East Side Location</td>
+                            <td>0</td>
+                            <td><input type="number" class="form-control" /></td>
+                            <td><input type="number" class="form-control" /></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Storage room A</td>
+                            <td>0</td>
+                            <td><input type="number" class="form-control" /></td>
+                            <td><input type="number" class="form-control" /></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Sales Floor</td>
+                            <td>0</td>
+                            <td><input type="number" class="form-control" /></td>
+                            <td><input type="number" class="form-control" /></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="ui-switch ui-switch-md">
+                                <input type="checkbox" checked>
+                                <i></i>
+                              </label>
+                            </td>
+                            <td>South Side Location</td>
+                            <td>0</td>
+                            <td><input type="number" class="form-control" /></td>
+                            <td><input type="number" class="form-control" /></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Supplier info</h4>
+                  <span class="text-muted">Enter supplier name and defult purchase price</span>
+                  <div class="row mt-3">
+                    <div class="col-12 form-group">
+                      <label>Supplier name</label>
+                      <select class="custom-select" id="product-supplier">
+                        <option value=""></option>
+                        <option value="new">Add supplier</option>
+                      </select>
+                    </div>
+                    <div class="col-12 form-group">
+                      <label>Default purchase cost</label>
+                      <input type="text" class="form-control" placeholder="L£ 1,500">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h4>Product image</h4>
+                  <span class="text-muted">
+                    Add product image to help identify products more easily
+                  </span>
+                  <div class="row mt-3">
+                    <div class="col-12">
+                      <form action="api/dropzone" class="dropzone white b-a b-2x b-dashed p-a rounded p-5 text-center"
+                        data-plugin="dropzone" data-option="{url: '../assets/api/dropzone'}">
+                        <div class="dz-message">
+                          <h4 class="my-4"><i class="i-con i-con-upload"></i>UPLOAD IMAGE</h4>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h4>Taxes</h4>
+                  <span class="text-muted">Select tax group if applicable</span>
+                  <div class="row">
+                    <div class="col-12 d-flex mt-3 justify-content-between">
+                      <p>
+                        <span><b>Tax Name(11%)</b></span><br>
+                        <span class="text-muted"><b>11% </b> VAT is inclusive of total cost</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox" checked>
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                      <p>
+                        <span><b>Tax Name 2 (10%)</b></span><br>
+                        <span class="text-muted"><b>10% </b> VAT added to total</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h4>Modifiers</h4>
+                  <div class="row mt-4">
+                    <div class="col-12 d-flex justify-content-between">
+                      <p>
+                        <span><b>Modifier Name</b></span><br>
+                        <span class="text-muted">item 1 / item 2 / item 3 / item 4</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                      <p>
+                        <span><b>User Production</b></span><br>
+                        <span class="text-muted">item 1 / item 2 / item 3 / item 4</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                      <p>
+                        <span><b>User Production</b></span><br>
+                        <span class="text-muted">item 1 / item 2 / item 3 / item 4</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h4>Loyality Program</h4>
+                  <div class="row mt-4">
+                    <div class="col-12 d-flex justify-content-between">
+                      <p>
+                        <span><b>Golden points</b></span><br>
+                        <span class="text-muted">Earn 50 point for every L£ 1,000 spent</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                      <p>
+                        <span><b>Bronze points</b></span><br>
+                        <span class="text-muted">Earn 10 point for every L£ 1,000 spent</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                      <p>
+                        <span><b>Sliver points</b></span><br>
+                        <span class="text-muted">Earn 1 point for every L£ 1,000 spent</span>
+                      </p>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="leave-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">You have unsaved changes</h5>
+          </div>
+          <div class="modal-body p-lg">
+            <p>
+              If you leave this page, all unsaved changes will be lost
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <a href="./products.all.html" class="btn btn-danger">Leave page</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <div id="delete-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Delete product</h5>
+          </div>
+          <div class="modal-body p-lg">
+            Are you sure you want to delete the product <b>Dair KhouryAyran 250g</b>?<br>
+            <b>This can’t be undone. All past data will remain</b>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <a href="./products.all.html" class="btn btn-danger">Delete product</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <div id="existed-product" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Product already exists</h5>
+          </div>
+          <div class="modal-body">
+            <p>The following product already exists in your inventory:</p>
+            <b>Dairy Khoury Ayran 250g</b><br>
+            <span class="text-muted">SKU 123-3221-22 | 2580003107815</span>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">View original</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Fix product details</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <div id="add-category-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Add category</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 form-group">
+                <label for="">Name </label>
+                <input type="text" value="Beverages" class="form-control" />
+              </div>
+              <div class="col-12">
+                <label class="md-check">
+                  <input type="checkbox" value="">
+                  <i class="blue"></i>
+                  is a sub-category
+                </label>
+              </div>
+              <div class="col-12">
+                <label for="">Category name</label>
+                <select class="custom-select">
+                  <option value="">Sodas</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <div id="add-supplier-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Add supplier</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 form-group">
+                <label for="">Company legal name</label>
+                <input type="text" placeholder="e.g. Starbucks SARL" class="form-control" />
+              </div>
+              <div class="col-6 form-group">
+                <label for="">Contact's first name</label>
+                <input type="text" placeholder="James" class="form-control">
+              </div>
+              <div class="col-6 form-group">
+                <label for="">Contact's last name</label>
+                <input type="text" class="form-control" placeholder="Nakhleh">
+              </div>
+              <div class="col-6 form-group">
+                <label for="">Select currency</label>
+                <div>
+                  <label class="md-check">
+                    <input type="radio" value="" checked>
+                    <i class="blue"></i>
+                    USD
+                  </label>
+                  <label class="md-check ml-3">
+                    <input type="radio" value="">
+                    <i class="blue"></i>
+                    LBP
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 form-group">
+                <label for="">Registered to VAT?</label>
+                <div>
+                  <label class="md-check">
+                    <input type="radio" value="" checked>
+                    <i class="blue"></i>
+                    Yes
+                  </label>
+                  <label class="md-check ml-3">
+                    <input type="radio" value="">
+                    <i class="blue"></i>
+                    No
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 form-group">
+                <label for="" >Exchange rate</label>
+                <input type="text" class="form-control" placeholder="1,520">
+              </div>
+              <div class="col-6 form-group">
+                <label for="" >VAT ID number</label>
+                <input type="text" class="form-control" placeholder="123 / 1234 / 123">
+              </div>
+              <div class="col-12 form-group">
+                <label for="">VAT type</label>
+                <select class="custom-select">
+                  <option value="">VAT included in the price</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <div id="add-variant-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Add variants</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-0 form-group">
+                <label for="">Variant 1</label>
+              </div>
+              <div class="col-1">
+                <a class="i-con-h-a" data-toggle-class="">
+                  <i class="mr-2 i-con i-con-nav"><i><i></i></i></i>
+                </a>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" placeholder="e.g. Flavor">
+              </div>
+              <div class="col-6 form-group">
+                <select id="select2-multiple" class="form-control" style="width: 100%" multiple>
+                  <option value="0">Strawberry</option>
+                  <option value="1">Vanilla</option>
+                </select>
+              </div>
+              <div class="col-1">
+                <a href="" class="text-danger">
+                  <i class="i-con i-con-trash"><i></i></i>
+                </a>
+              </div>
+              <div class="col-12 mb-0 form-group">
+                <label for="">Variant 2</label>
+              </div>
+              <div class="col-1">
+                <a class="i-con-h-a" data-toggle-class="">
+                  <i class="mr-2 i-con i-con-nav"><i><i></i></i></i>
+                </a>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" placeholder="e.g. Size">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Separate opGons with a comma or press enter">
+              </div>
+              <div class="col-1">
+                <a href="" class="text-danger">
+                  <i class="i-con i-con-trash"><i></i></i>
+                </a>
+              </div>
+              <div class="col-12 mt-3">
+                <a href="" class="text-primary">
+                  <i class="i-con i-con-plus">
+                    <i class="i-con i-con-border"></i>
+                  </i>
+                  Add another variant
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="row">
+        <div class="col-12 text-right">
+          <button class="btn btn-secondary" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+          <button class="btn btn-danger delete" data-toggle="modal" data-target="#delete-modal">Delete</button>
+          <button class="btn btn-success" data-toggle="modal" data-target="#existed-product">Save</button>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- build:js ../assets/js/site.min.js -->
+    <!-- jQuery -->
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- ajax page -->
+    <script src="../libs/pace-progress/pace.min.js"></script>
+    <script src="../libs/pjax/pjax.js"></script>
+    <script src="../assets/js/ajax.js"></script>
+    <!-- lazyload plugin -->
+    <script src="../assets/js/lazyload.config.js"></script>
+    <script src="../assets/js/lazyload.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <!-- theme -->
+    <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+<script src="../assets/js/theme.js"></script>
+    <!-- endbuild -->
+    <script src="../assets/js/office/products.js"></script>
+</body>
+
+</html>

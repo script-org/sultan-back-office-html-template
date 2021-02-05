@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+
+<body class="layout-column">
+
+  <header id="header" class="page-header bg-white box-shadow">
+    <div class="navbar navbar-expand-lg">
+      <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+        <i class="i-con i-con-menu text-muted"></i>
+      </a>
+      <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+      <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+        <form class="input-group m-2 my-lg-0 " style="padding-left: 40px">
+          <span class="input-group-prepend">
+            <button type="button" class="btn no-shadow no-bg px-0">
+              <i class="la la-search"></i>
+            </button>
+          </span>
+          <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+            placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+            data-plugin="typeahead">
+        </form>
+      </div>
+
+      <ul class="nav navbar-menu order-1 order-lg-2">
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip"
+            data-title="Fullscreen">
+            <i class="i-con i-con-fullscreen"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+            <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Good evening,</small>
+              <span>Justin Timber</span>
+            </span>
+            <span class="avatar w-36 bg-primary-lt">
+              JT
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+              <div>
+                <img src="../assets/img/animated-icons/settings/settings.svg" >
+              </div>
+              <span class="ml-2">My account</span>
+            </a>
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+              <div>
+                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+              </div>
+              <span class="ml-2">Sign out</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+            data-target="#navbarToggler">
+            <i class="i-con i-con-nav text-muted"><i></i></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div id="main" class="layout-row flex">
+    <div id="aside" class="page-sidenav no-shrink  nav-expand" aria-hidden="true">
+      <div class="sidenav h-100 modal-dialog bg-white box-shadow">
+        <div class="flex scroll-container">
+          <div class="nav-border b-primary mt-3" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="dashboard.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/home/home.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DASHBOARD</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/tags/tags.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="products.all.html">
+                      <span class="nav-text">All Products</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.category.html" class="">
+                      <span class="nav-text">Categories</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.modifier.html" class="">
+                      <span class="nav-text">Modifiers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/list/list.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">INVENTORY</span>
+                  <span class="nav-badge">
+                    <b class="badge badge-sm badge-pill ">12</b>
+                  </span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="inventory.purchase.html">
+                      <span class="nav-text">Purchase Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.transfer.html" class="">
+                      <span class="nav-text">Transfer Orders</span>
+                      <span class="nav-badge">
+                        <b class="badge badge-sm badge-pill bg-danger">12</b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.stock.html" class="">
+                      <span class="nav-text">Stock Adjustment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.counts.html" class="">
+                      <span class="nav-text">Inventory Counts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.history.html" class="">
+                      <span class="nav-text">Inventory History</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.valuation.html" class="">
+                      <span class="nav-text">Inventory Valuation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.planner.html" class="">
+                      <span class="nav-text">Inventory Planner</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="productions.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gears/gears.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTIONS</span>
+                  <span class="nav-badge">
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/discount/discount.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DISCOUNTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="discount.code.html">
+                      <span class="nav-text">Discount Code</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="discount.auto.html" class="">
+                      <span class="nav-text">Automatic Discounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="suppliers.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/business-network/business-network.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SUPPLIERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-user'><i></i></i>
+                  </span>
+                  <span class="nav-text">CUSTOMERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-users'><i></i></i>
+                  </span>
+                  <span class="nav-text">EMPLOYEES</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="employee.all.html">
+                      <span class="nav-text">All Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.roll.html" class="">
+                      <span class="nav-text">Rolls/Access Rights</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.schedule.html" class="">
+                      <span class="nav-text">Schedule Timesheet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.payroll.html" class="">
+                      <span class="nav-text">Payroll</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/calculator/calculator.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">BOOKEEPING</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="bookeeping.sales.html">
+                      <span class="nav-text">Sales</span>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="bookeeping.expense.html" class="">
+                      <span class="nav-text">Expenses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.vat.html" class="">
+                      <span class="nav-text">VAT Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.account.html" class="">
+                      <span class="nav-text">Accounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="reports.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">REPORTS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="no-shrink ">
+          <div class="nav-border b-primary" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="setting.general.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm p-3 mt-5">
+            <div class="hidden-folded text-sm">
+              <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############ Aside END-->
+
+    <!-- ############ Content START-->
+    <div id="content" class="flex animate fadeInLeft">
+      <!-- ############ Main START-->
+
+      <div class="flex" id="content">
+        <div class="padding">
+          <div class="create-page page">
+            <div class="mb-4">
+              <a class="i-con-h-a back">
+                <i class="i-con i-con-left"></i>
+                Expenses
+              </a>
+              <h2 id="title">Supplier credit</h2>
+            </div>
+            <div class="row">
+              <div class="col-5 pr-0">
+                <div class="card mb-3 supplier">
+                  <div class="card-body supplier-list">
+                    <h4 class="pb-3 title">Find supplier</h4>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Supplier name</label><br>
+                        <select id="supplier-select" data-plugin="select2" class="custom-select" style="width: 100%"
+                          data-placeholder="Search suppliers" data-option="{}">
+                          <option></option>
+                          <option value="new">Add new supplier</option>
+                          <option value="L">Lebanese Food Company SARL</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body supplier-info">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="pb-3 title">Supplier info</h4>
+                      <span class="h5">
+                        <a href="" class="text-primary">
+                          <i class="la la-file"></i>
+                          10 orders
+                        </a>
+                        <a class="close"><i class="la la-close"></i></a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <div class="ml-3 rounded w-64 bg-danger-lt d-flex justify-content-center align-items-center">
+                        <span class="h3 mb-0 text-danger">L</span>
+                      </div>
+                      <div class="col">
+                        <div class="row">
+                          <div class="col-12 h4 text-primary">Lebanese Food Company SARL</div>
+                          <div class="col-8">Lebanese Food Company SARL<br>VAT# 649801-601</div>
+                          <div class="col-4 text-right">+96171539655<br>Amount <b>USD</b></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Excharge rate</label><br>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Location</h4>
+                    <div class="row">
+                      <div class="col-12">
+                        <label>Store name</label>
+                        <select name="" id="" class="custom-select">
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Credit details</h4>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Credit issued date</label>
+                        <input type="text" data-plugin="datepicker" data-option="{autoclose: true}"
+                          class="form-control">
+                      </div>
+                      <div class="col-12 form-group">
+                        <label>Select reason</label>
+                        <select name="" id="" class="custom-select">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Attachments</h4>
+                    <span>Add image of return products or any other detail</span>
+                    <div class="row mt-2">
+                      <div class="col-12 form-group">
+                        <form action="api/dropzone"
+                          class="dropzone white b-a b-x b-dashed b-muted p-a rounded p-5 text-center"
+                          data-plugin="dropzone" data-option="{url: '../assets/api/dropzone'}">
+                          <div class="dz-message">
+                            <h6 class="my-4">
+                              <i class="la la-cloud-upload-alt"></i>
+                              DRAG/DROP FILES HERE OR CLICK ICON
+                            </h6>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Notes</h4>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Reference number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-12">
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                        <p class="text-right"><span class="length">0</span>/500</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-1">Products</h4>
+                    <p class="text-muted">Select the products you would like to return for supplier credits.</p>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Products</th>
+                          <th class="text-right">Cost</th>
+                          <th class="text-right">Quantity</th>
+                          <th class="text-right">Amount</th>
+                          <th class="text-right"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="supplier-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="supplier-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="supplier-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" class=" border-bottom">
+                            <input type="text" class="form-control" placeholder="Search Products">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th class="text-right" style="width: 20%">Subtotal</th>
+                          <th class="text-right" style="width: 20%">L£ 0</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="2" class="text-right"><b>AddiConal credits</b></td>
+                          <td class="text-right">
+                            <input type="text" class="form-control">
+                          </td>
+                        </tr>
+                        <tr class="supplier-list">
+                          <td colspan="3" class="bg-success-lt text-right">
+                            <span>TOTAL AMOUNT</span>
+                            <p claSs="h5 text-success">L£ 0</p>
+                          </td>
+                        </tr>
+                        <tr class="supplier-info">
+                          <td class="bg-light" width="34%">
+                            <span class="d-flex align-items-center justify-content-end h5 mt-2">
+                              Total credit
+                            </span>
+                          </td>
+                          <td class="bg-warning-lt text-right" width="33%">
+                            <span>LBP</span>
+                            <p claSs="h5 text-success">L£ 150,000</p>
+                          </td>
+                          <td class="bg-success-lt text-right" width="33%">
+                            <span>USD</span>
+                            <p claSs="h5 text-success">$100.00</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-page page">
+            <div class="mb-4">
+              <a class="i-con-h-a back">
+                <i class="i-con i-con-left"></i>
+                Expenses
+              </a>
+              <div class="row">
+                <div class="col-5 pr-0 d-flex justify-content-between">
+                  <div>
+                    <span class="h2 mb-0">#BI1008</span>
+                    <small class="ml-2">Created on Apr 15, 2020 at 9:32 pm</small>
+                  </div>
+                  <div>
+                    <span class="pending-status badge badge-lg bg-warning-lt">Pending</span>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="alert bg-success w-100 my-0 d-none" role="alert">
+                    changes have been saved.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5 pr-0">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="pb-3 title">Supplier info</h4>
+                      <span class="h5">
+                        <a href="" class="text-primary">
+                          <i class="la la-file"></i>
+                          10 orders
+                        </a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <div class="ml-3 rounded w-64 bg-danger-lt d-flex justify-content-center align-items-center">
+                        <span class="h3 mb-0 text-danger">L</span>
+                      </div>
+                      <div class="col">
+                        <div class="row">
+                          <div class="col-12 h4 text-primary">Lebanese Food Company SARL</div>
+                          <div class="col-8">Lebanese Food Company SARL<br>VAT# 649801-601</div>
+                          <div class="col-4">+96171539655<br>Amount <b>USD</b></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Location</h4>
+                        <h5>West Side Branch</h5>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Payment method</h4>
+                        <h5>Cashier payout</h5>
+                        <small>Jasmine Khalil — April 11, 2020 at 12:45am</small>
+                        <h6>Dairy Khoury - Supplier payout</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Bill details</h4>
+                    <div class="row">
+                      <div class="col-6">
+                        <label>Bill date</label><br>
+                        <span class="text-dark">Apr 10, 2020</span>
+                        </select>
+                      </div>
+                      <div class="col-6 text-right">
+                        <label>Bill due date</label><br>
+                        <span class="text-dark">Apr 12, 2020</span>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <label>Purchased by</label><br>
+                        <span class="text-dark">James Brown</span>
+                        </select>
+                      </div>
+                      <div class="col-6 text-right">
+                        <label>Ref. number</label><br>
+                        <span class="text-dark">1203-105775-90</span>
+                        </select>
+                      </div>
+                      <hr class="w-100">
+                      <div class="col-12">
+                        <h4>Notes</h4>
+                        <p>
+                          Nam por_tor blandit accumsan. Ut vel dictum sem, a preTum dui. In
+                          malesuada enim in dolor euismod, id commodo mi consectetur.
+                          Curabitur at vesTbulum nisi. Nullam vehicula nisi velit. Mauris turpis
+                          nisl, molesTe ut ipsum et, suscipit vehicula odio. VesTbulum
+                          interdum vesTbulum felis ac molesTe. Praesent aliquet quam et
+                          libero dictum, vitae dignissim leo eleifend. In in turpis turpis.
+                          Quisque justo turpis, vesTbulum non enim nec, tempor mollis mi.
+                          Sed vel trisTque quam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-1">Products</h4>
+                    <p class="text-muted">Below are the list of products purchased</p>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Products</th>
+                          <th class="text-right">Cost</th>
+                          <th class="text-right">Quantity</th>
+                          <th class="text-right">Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td class="text-right" width="100">L£4,000</td>
+                          <td class="text-right" width="100">10</td>
+                          <td class="text-right" width="100">L£300,000</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td class="text-right" width="100">L£4,000</td>
+                          <td class="text-right" width="100">10</td>
+                          <td class="text-right" width="100">L£300,000</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td class="text-right" width="100">L£4,000</td>
+                          <td class="text-right" width="100">10</td>
+                          <td class="text-right" width="100">L£300,000</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td class="text-right" width="100">L£4,000</td>
+                          <td class="text-right" width="100">10</td>
+                          <td class="text-right" width="100">L£300,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th class="text-right" style="width: 20%">Subtotal</th>
+                          <th class="text-right" style="width: 20%">$ 100,000,000</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="2" class="text-right"><b>AddiConal credits</b></td>
+                          <td class="text-right">$ 100,000,000</td>
+                        </tr>
+                        <tr class="supplier-list">
+                          <td colspan="3" class="bg-success-lt text-right">
+                            <span>TOTAL AMOUNT</span>
+                            <p claSs="h5 text-success">L£ 0</p>
+                          </td>
+                        </tr>
+                        <tr class="supplier-info">
+                          <td class="bg-light" width="34%">
+                            <span class="d-flex align-items-center justify-content-end h5 mt-2">
+                              Total credit
+                            </span>
+                          </td>
+                          <td class="bg-warning-lt text-right" width="33%">
+                            <span>LBP</span>
+                            <p claSs="h5 text-success">L£ 150,000</p>
+                          </td>
+                          <td class="bg-success-lt text-right" width="33%">
+                            <span>USD</span>
+                            <p claSs="h5 text-success">$100.00</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Timeline</h4>
+                  <hr class="w-100">
+                  <h5>Today</h5>
+                  <div class="timeline animates animates-fadeInUp mb-4">
+                    <div class="tl-item  active">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">just now</div>
+                      <div class="tl-content">
+                        <div class="">
+                          Jack changed this customer's phone from +96171809091 to +961718090
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">James processed order #1003 for this customer on POS ↓</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">5 hour ago</div>
+                      <div class="tl-content">
+                        <div class="">
+                          You changed this customer's email from email@mail.com to email@mail2.com.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">
+                          You added a note to this customer. ↓
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">2:00 pm</div>
+                      <div class="tl-content">
+                        <div class="">You accepted, canceled, and rejected items in a transfer from Zouk Mikael. →</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">You created order <span class="text-primary">#1001</span> for this customer.</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">2:00 pm</div>
+                      <div class="tl-content">
+                        <div class="">
+                          <b>Mike</b> created this customer.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="leave-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">You have unsaved changes</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <p>
+            If you leave this page, all unsaved changes will be lost
+          </p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger back" data-dismiss="modal">Leave page</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="delete-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Delete expense</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <p>
+            Are you sure you want to delete the expense <b>#PO1001</b>? By deleting, the purchase order will not be
+            accounted in reports.<br>
+          </p>
+          <b class="pt-3">This can’t be undone.</b>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger" id="delete-expense">Delete expense</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="delete-credit-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Delete supplier credit</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <p>
+            Are you sure you want to delete <b>#BI1001</b>? By deleting, the bill will not be accounted in reports.<br>
+          </p>
+          <b class="pt-3">This can’t be undone.</b>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <a href="./bookeeping.expense.html" class="btn btn-danger">Delete supplier credit</a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="send-email-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Send supplier credit by email</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <div class="row">
+            <div class="col-12 form-group">
+              <label for="">From</label>
+              <input type="email" class="form-control" placeholder="main@email.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">To</label>
+              <input type="email" class="form-control" placeholder="default.email@mail.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">CC</label>
+              <input type="email" class="form-control" placeholder="default.email@mail.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Subject</label>
+              <input type="text" class="form-control" placeholder="(#BI1001) Bill - {Status} by Store Name">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Attachment</label>
+              <p>
+                <i class="la la-file"></i>
+                #BI1001
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success send">Send</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="share-whatsapp-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Share with WhatsApp</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <div class="row">
+            <div class="col-12 form-group">
+              <label for="">Contact's mobile</label>
+              <input type="number" class="form-control" placeholder="main@email.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Manage to supplier</label>
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Attachment</label>
+              <p>
+                <i class="la la-file"></i>
+                #BI1001
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success send">Send</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="supplier-add-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Supplier quick add</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <div class="row">
+            <div class="col-12 form-group">
+              <label for="">Company legal name</label>
+              <input type="text" class="form-control" placeholder="e.g. Starbucks SARL">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Contact's first name</label>
+              <input type="text" class="form-control" placeholder="James">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Contact's last name</label>
+              <input type="text" class="form-control" placeholder="Nakhleh">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Select currency</label>
+              <div>
+                <label class="md-check">
+                  <input type="radio" value="" checked>
+                  <i class="blue"></i>
+                  USD
+                </label>
+                <label class="md-check ml-3">
+                  <input type="radio" value="">
+                  <i class="blue"></i>
+                  LBP
+                </label>
+              </div>
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Registered to VAT?</label>
+              <div>
+                <label class="md-check">
+                  <input type="radio" value="" checked>
+                  <i class="blue"></i>
+                  Yes
+                </label>
+                <label class="md-check ml-3">
+                  <input type="radio" value="">
+                  <i class="blue"></i>
+                  No
+                </label>
+              </div>
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Excharge rate</label>
+              <input type="text" class="form-control" placeholder="James">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">VAT ID number</label>
+              <input type="text" class="form-control" placeholder="Nakhleh">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">VAT type</label>
+              <select name="" id="" class="custom-select">
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="row create-footer">
+      <div class="col-12 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <span class="text-secondary saved-status">Unsaved Expense</span>
+        </div>
+        <div>
+          <button class="btn btn-secondary mr-1" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+          <button class="btn btn-danger mr-1 delete d-none" data-toggle="modal"
+            data-target="#delete-pos-modal">Delete</button>
+          <button class="btn btn-success" id="save">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="row detail-footer">
+      <div class="col-12 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <div class="item-action dropdown mr-2">
+            <button data-toggle="dropdown" class="btn btn-secondary">
+              Send
+              <i class="la la-angle-up"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+              <a class="dropdown-item" data-toggle="modal" data-target="#send-email-modal">Send by email</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#share-whatsapp-modal">Share with WhatsApp</a>
+            </div>
+          </div>
+          <div class="item-action dropdown mr-2">
+            <button data-toggle="dropdown" class="btn btn-secondary">
+              More
+              <i class="la la-angle-up"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+              <a class="dropdown-item edit">Save as PDF</a>
+              <a class="dropdown-item edit">Save as CSV</a>
+              <a class="dropdown-item edit">Print</a>
+            </div>
+          </div>
+          <button class="btn btn-danger" data-toggle="modal" data-target="#delete-expense-modal">Delete supplier
+            credit</button>
+        </div>
+        <div>
+          <button class="btn btn-secondary mr-1 back" id="cancel">Cancel</button>
+          <button class="btn btn-primary" id="edit">Edit</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <!-- endbuild -->
+  <script src="../assets/js/office/bookeeping.expense.credit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Signin | Agile - Bootstrap 4 Web Application</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- style -->
+    <!-- build:css ../assets/css/site.min.css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/i-con.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <!-- endbuild -->
+</head>
+
+<body class="layout-column">
+    <div id="main-for-signin">
+        <header id="header"></header>
+        <div id="main">
+            <div class="d-flex flex-column flex">
+                <a id="sign-in" class="d-none" href="./html/dashboard.html"></a>
+                <div class="p-3 p-md-5">
+                    <div class="card p-0 col-lg-8 offset-lg-2">
+                        <div class="row no-gutters">
+                            <div class="col-md-6 bg-primary r-l">
+                                <div class="p-4 d-flex flex-column h-100">
+                                    <h4 class="mb-2 text-white">Sultan Bakery</h4>
+                                    <div class="text-fade">Back office</div>
+                                    <div class="d-flex flex align-items-center justify-content-center pb-5">
+                                        <div class="animate fadeIn">
+                                            <img src="./assets/img/logo/Sultan logo-auth.svg"
+                                                style="max-width: 100%; max-height: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" id="content-body" style="height: 400px;">
+                                <div class="p-4">
+                                    <h5>Welcome back</h5>
+                                    <p>
+                                        <small class="text-muted">Login to back office</small>
+                                    </p>
+                                    <div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                            <div class="my-3 text-right"><a href="./html/authentication.recover.html"
+                                                    class="text-muted">Forgot
+                                                    password?</a>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <label class="ui-check">
+                                                <input type="checkbox"><i></i> Remember me
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block"
+                                            onclick="$('#sign-in')[0].click()">Sign
+                                            in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- build:js ./assets/js/site.min.js -->
+    <!-- jQuery -->
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- ajax page -->
+    <script src="./libs/pace-progress/pace.min.js"></script>
+    <script src="./libs/pjax/pjax.js"></script>
+    <script src="./assets/js/ajax.js"></script>
+    <!-- lazyload plugin -->
+    <script src="./assets/js/lazyload.config.js"></script>
+    <script src="./assets/js/lazyload.js"></script>
+    <script src="./assets/js/plugin.js"></script>
+    <!-- theme -->
+    <script src="./assets/js/theme.js"></script>
+    <!-- endbuild -->
+    <footer></footer>
+</body>
+
+</html>

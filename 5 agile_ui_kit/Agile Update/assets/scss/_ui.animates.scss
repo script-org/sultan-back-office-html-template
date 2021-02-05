@@ -1,0 +1,43 @@
+/*
+animate delay
+*/
+
+$interval: 0.075s;
+
+.animates{
+  li,
+  > div{
+    animation-duration: 0.5s;
+  }
+  @for $i from 1 through 30{
+    li:nth-of-type( #{$i} ),
+    > div:nth-of-type( #{$i} ){
+      animation-delay: $interval * $i;
+    }
+  }
+}
+
+.animates-fadeInDown{
+  li,
+  > div{
+    animation-name: fadeInDown;
+  }
+}
+.animates-fadeInUp{
+  li,
+  > div{
+    animation-name: fadeInUp;
+  }
+}
+.animates-fadeInLeft{
+  li,
+  > div{
+    animation-name: fadeInLeft;
+  }
+}
+.animates-fadeInRight{
+  li,
+  > div{
+    animation-name: fadeInRight;
+  }
+}

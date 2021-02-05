@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/flaticon/flaticon.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/flaticon2/flaticon.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <style>
+    table tr:hover {
+      cursor: default;
+    }
+  </style>
+</head>
+
+<body class="layout-column">
+
+  <header id="header" class="page-header bg-white box-shadow">
+    <div class="navbar navbar-expand-lg">
+      <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+        <i class="i-con i-con-menu text-muted"></i>
+      </a>
+      <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+      <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+        <form class="input-group m-2 my-lg-0 " style="padding-left: 40px">
+          <span class="input-group-prepend">
+            <button type="button" class="btn no-shadow no-bg px-0">
+              <i class="la la-search"></i>
+            </button>
+          </span>
+          <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+            placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+            data-plugin="typeahead">
+        </form>
+      </div>
+
+      <ul class="nav navbar-menu order-1 order-lg-2">
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip"
+            data-title="Fullscreen">
+            <i class="i-con i-con-fullscreen"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+            <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Good evening,</small>
+              <span>Justin Timber</span>
+            </span>
+            <span class="avatar w-36 bg-primary-lt">
+              JT
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+              <div>
+                <img src="../assets/img/animated-icons/settings/settings.svg" >
+              </div>
+              <span class="ml-2">My account</span>
+            </a>
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+              <div>
+                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+              </div>
+              <span class="ml-2">Sign out</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+            data-target="#navbarToggler">
+            <i class="i-con i-con-nav text-muted"><i></i></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div id="main" class="layout-row flex">
+    <div id="aside" class="page-sidenav no-shrink  nav-expand" aria-hidden="true">
+      <div class="sidenav h-100 modal-dialog bg-white box-shadow">
+        <div class="flex scroll-container">
+          <div class="nav-border b-primary mt-3" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="dashboard.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/home/home.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DASHBOARD</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/tags/tags.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="products.all.html">
+                      <span class="nav-text">All Products</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.category.html" class="">
+                      <span class="nav-text">Categories</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.modifier.html" class="">
+                      <span class="nav-text">Modifiers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/list/list.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">INVENTORY</span>
+                  <span class="nav-badge">
+                    <b class="badge badge-sm badge-pill ">12</b>
+                  </span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="inventory.purchase.html">
+                      <span class="nav-text">Purchase Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.transfer.html" class="">
+                      <span class="nav-text">Transfer Orders</span>
+                      <span class="nav-badge">
+                        <b class="badge badge-sm badge-pill bg-danger">12</b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.stock.html" class="">
+                      <span class="nav-text">Stock Adjustment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.counts.html" class="">
+                      <span class="nav-text">Inventory Counts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.history.html" class="">
+                      <span class="nav-text">Inventory History</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.valuation.html" class="">
+                      <span class="nav-text">Inventory Valuation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.planner.html" class="">
+                      <span class="nav-text">Inventory Planner</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="productions.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gears/gears.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTIONS</span>
+                  <span class="nav-badge">
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/discount/discount.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DISCOUNTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="discount.code.html">
+                      <span class="nav-text">Discount Code</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="discount.auto.html" class="">
+                      <span class="nav-text">Automatic Discounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="suppliers.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/business-network/business-network.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SUPPLIERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-user'><i></i></i>
+                  </span>
+                  <span class="nav-text">CUSTOMERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-users'><i></i></i>
+                  </span>
+                  <span class="nav-text">EMPLOYEES</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="employee.all.html">
+                      <span class="nav-text">All Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.roll.html" class="">
+                      <span class="nav-text">Rolls/Access Rights</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.schedule.html" class="">
+                      <span class="nav-text">Schedule Timesheet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.payroll.html" class="">
+                      <span class="nav-text">Payroll</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/calculator/calculator.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">BOOKEEPING</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="bookeeping.sales.html">
+                      <span class="nav-text">Sales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.expense.html" class="">
+                      <span class="nav-text">Expenses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.vat.html" class="">
+                      <span class="nav-text">VAT Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.account.html" class="">
+                      <span class="nav-text">Accounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="reports.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">REPORTS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="no-shrink ">
+          <div class="nav-border b-primary" data-nav>
+            <ul class="nav bg">
+              <li class="active">
+                <a href="setting.general.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm p-3 mt-5">
+            <div class="hidden-folded text-sm">
+              <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="flex">
+      <div class="flex" id="content">
+        <div class="padding">
+          <div class="row">
+            <div style="width: 275px" class="pl-3">
+              <h2 class="mb-4">Settings</h2>
+            </div>
+            <div class="col alert-container">
+              <div class="alert bg-success d-none" role="alert"></div>
+              <button data-toggle="modal" data-target="#content-aside" data-modal
+                class="btn btn-sm btn-white d-md-none i-con-h-a ml-2">
+                <i class="i-con i-con-nav text-muted"><i></i></i>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="aside aside-sm pl-3" id="content-aside" style="width: 275px; max-height: calc(100vh - 150px);">
+              <div class="card modal-dialog setting-menu scroll-container" style="max-height: 100%;">
+                <div class="list list-row">
+                  <a href="setting.general.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <div>
+                        <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="h5">
+                      General<br>
+                      <small>View and update yout store details</small>
+                    </span>
+                  </a>
+                  <a href="setting.location.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/address/address.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/address/address.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Locations<br>
+                      <small>Manage places you stock and sell products</small>
+                    </span>
+                  </a>
+                  <a href="setting.payment.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/money/money.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/money/money.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Payment types<br>
+                      <small>Enable and manage your payment options</small>
+                    </span>
+                  </a>
+                  <a href="setting.notification.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/bell/bell.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/bell/bell.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Notifications<br>
+                      <small>Manage all system notifications</small>
+                    </span>
+                  </a>
+                  <a href="setting.cash.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/coins/coins.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/coins/coins.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Cash rounding<br>
+                      <small>Set total amount to round to nearest interval</small>
+                    </span>
+                  </a>
+                  <a href="setting.period.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/alarm-clock/alarm-clock.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/alarm-clock/alarm-clock.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Period of service<br>
+                      <small>Set your store’s hours of operation</small>
+                    </span>
+                  </a>
+                  <a href="setting.tax.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/hand-scissors/hand-scissors.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/hand-scissors/hand-scissors.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Taxes<br>
+                      <small>Manage how your store charges taxes</small>
+                    </span>
+                  </a>
+                  <a href="setting.receipt.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/receipt/receipt.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/receipt/receipt.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Receipts<br>
+                      <small>Manage printed receipts design</small>
+                    </span>
+                  </a>
+                  <a href="setting.loyalty.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/prize/prize.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/prize/prize.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Loyalty<br>
+                      <small>Enable loyalty points and percent credited</small>
+                    </span>
+                  </a>
+                  <a href="setting.pos.html" class="list-item border-top-0 animation-icon">
+                    <span>
+                      <img src="../assets/img/animated-icons/computer-display/computer-display.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/computer-display/computer-display.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      POS devices<br>
+                      <small>Manage your POS devices</small>
+                    </span>
+                  </a>
+                  <a href="setting.backup.html" class="list-item border-top-0 animation-icon active">
+                    <span>
+                      <img src="../assets/img/animated-icons/restore-window/restore-window.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/restore-window/restore-window.gif" class="play" alt="">
+                    </span>
+                    <span class="h5">
+                      Backup and restore<br>
+                      <small>Setup store data backup or restore past data</small>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col scroll-container" style="max-height: calc(100vh - 150px); overflow-x: hidden;">
+              <div class="restore-page d-none animate fadeInRight">
+                <div class="mb-4">
+                  <a class="i-con-h-a back">
+                    <i class="i-con i-con-left"></i>
+                    Backup and restore
+                  </a>
+                  <h2>Restore</h2>
+                </div>
+                <div class="card">
+                  <div class="card-body" style="padding-left:1rem;">
+                    <div class="row">
+                      <div class="col-12 pb-4">
+                        <span class="h5">Restore options</span>
+                        <a>
+                          <i class="i-con i-con-info" data-toggle="tooltip" data-placement="right"
+                            data-title="You can restore from one of the previous backups or upload it from your computer.">
+                            <i class="i-con-border"></i>
+                          </i>
+                        </a>
+                      </div>
+                      <div class="col-12 form-group">
+                        <label>Restore from previous backup online</label>
+                        <select id="restore-online-time" class="custom-select">
+                          <option>Mar 12, 2020 at 12:55 pm</option>
+                        </select>
+                      </div>
+                      <div class="col-12 d-flex">
+                        <hr class="w-100">
+                        <span class="h4 px-3 text-secondary">OR</span>
+                        <hr class="w-100">
+                      </div>
+                      <div class="col-12 animation-icon">
+                        <form action="api/dropzone"
+                          class="dropzone white b-a b-dashed b-light p-a rounded p-5 text-center" data-plugin="dropzone"
+                          data-option="{url: '../assets/api/dropzone'}">
+                          <div class="dz-message text-center">
+                            <h4 class="my-4 text-secondary d-flex justify-content-center">
+                              <div class="d-flex align-items-center mr-2">
+                                <img src="../assets/img/animated-icons/upload-to-cloud/upload-to-cloud.svg"
+                                  class="stop icon-lg" alt="">
+                                <img src="../assets/img/animated-icons/upload-to-cloud/upload-to-cloud.gif"
+                                  class="play icon-lg" alt="">
+                              </div>
+                              UPLOAD BACKUP FROM YOUR COMPUTER
+                            </h4>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reset-page d-none animate fadeInRight">
+                <div class="mb-4">
+                  <a class="i-con-h-a back">
+                    <i class="i-con i-con-left"></i>
+                    Backup and restore
+                  </a>
+                  <h2>Reset</h2>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 pb-4">
+                        <span class="h5">Reset options</span>
+                        <a>
+                          <i class="i-con i-con-info" data-toggle="tooltip" data-placement="right"
+                            data-title="You can reset an individual store or reset the entire system back to default settings. Resetting will delete all data and information saved and cannot be undone.">
+                            <i class="i-con-border"></i>
+                          </i>
+                        </a>
+                      </div>
+                      <div class="col-12 form-group">
+                        <label>Select store</label>
+                        <select id="store" class="custom-select">
+                          <option>All store</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="index-page animate fadeInRight">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <span class="h2 mb-0">Backup and restore</span>
+                  <div>
+                    <button class="btn btn-md btn-warning text-white" id="reset">
+                      <i class="flaticon flaticon2-refresh-button"></i>
+                      Reset
+                    </button>
+                    <button class="btn btn-md btn-info" id="restore">
+                      <img src="https://image.flaticon.com/icons/svg/3222/3222013.svg" class="icon" alt="">
+                      Restore
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-7" style="padding-right: 0px;">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12 pb-4">
+                            <span class="h5">Backup settings</span>
+                            <a>
+                              <i class="i-con i-con-info" data-toggle="tooltip" data-placement="right"
+                                data-title="Set up how frequently you want to backup your store’s data. It is recommended you backup at least once a day.">
+                                <i class="i-con-border"></i>
+                              </i>
+                            </a>
+                          </div>
+                          <div class="col-12 form-group">
+                            <label>SELECT BACKUP FREQUENCY</label>
+                          </div>
+                          <div class="col-4 form-group">
+                            <label class="md-check mr-2">
+                              <input type="radio" name="frequency" checked>
+                              <i class="blue"></i>
+                              Never
+                            </label>
+                          </div>
+                          <div class="col-4 form-group">
+                            <label class="md-check mr-2">
+                              <input type="radio" name="frequency">
+                              <i class="blue"></i>
+                              One a day
+                            </label>
+                          </div>
+                          <div class="col-4 form-group">
+                            <label class="md-check mr-2">
+                              <input type="radio" name="frequency">
+                              <i class="blue"></i>
+                              Twice a day
+                            </label>
+                          </div>
+                          <div class="col-12 form-group d-none back-time-parent">
+                            <label>Back time</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control time-format" id="back-time">
+                              <div class="input-group-append">
+                                <select name="" class="custom-select flag-time" id="">
+                                  <option value="AM">AM</option>
+                                  <option value="PM">PM</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6 form-group d-none first-backup-parent">
+                            <label>First backup</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control time-format" id="first-backup">
+                              <div class="input-group-append">
+                                <select name="" class="custom-select flag-time" id="">
+                                  <option value="AM">AM</option>
+                                  <option value="PM">PM</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6 form-group d-none second-backup-parent">
+                            <label>Second backup</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control time-format" id="second-backup">
+                              <div class="input-group-append">
+                                <select name="" class="custom-select flag-time" id="">
+                                  <option value="AM">AM</option>
+                                  <option value="PM">PM</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12 pb-4">
+                            <span class="h5">Backup history</span>
+                            <a>
+                              <i class="i-con i-con-info" data-toggle="tooltip" data-placement="right"
+                                data-title="View which backups are saved online and which ones have been downloaded to your computer.">
+                                <i class="i-con-border"></i>
+                              </i>
+                            </a>
+                          </div>
+                          <div class="col-12 form-group">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  <th>Status</th>
+                                  <th class="text-right">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Mar 12, 2020 at 12:45 am</td>
+                                  <td><span class="badge badge-lg bg-success-lt">Downloaded</span></td>
+                                  <td class="text-right"><a class="text-primary download">Download</a></td>
+                                </tr>
+                                <tr>
+                                  <td>Mar 12, 2020 at 12:45 am</td>
+                                  <td><span class="badge badge-lg bg-secondary-lt">Saved online</span></td>
+                                  <td class="text-right"><a class="text-primary download">Download</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="card" style="background:rgba(249, 250, 251);">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12 pb-4">
+                            <span class="h5">Summary</span>
+                          </div>
+                          <div class="col-12">
+                            <ul>
+                              <li>Back up <span class="backup-clone"></b></li>
+                            </ul>
+                          </div>
+                          <hr class="w-100 p-0">
+                          <div class="col-12">
+                            <p class="h5 mb-4">LAST BACKUP</p>
+                            <p class="my-2">Last backup downloaded: May 7, 2020 at 7:45 am</p>
+                            <button class="btn btn-success btn-block btn-md download">Backup and download now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="reset-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">
+            <span class="step-1">Reset system</span>
+            <span class="step-2 d-none">Resetting West Side Location</span>
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="step-1">
+            Are you sure you want to reset <b>All stores</b>?<br>
+            All settngs, inventory, suppliers, customers, and all other data will be deleted.<br><br>
+            <b>This can’t be undone</b>
+          </div>
+          <div class="step-2 d-none">
+            This could take some time to complete. If you'd like, you can close this dialog box and continue
+            working.
+            <div class="progress mt-4">
+              <div class="progress-bar bg-warning" style="width: 0%"></div>
+            </div>
+            <span class="progress-percent"></span>
+            <span>complete</span>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modal-reset-cancel">Cancel</button>
+          <button type="button" class="btn btn-warning text-white" id="modal-reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="restore-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">
+            <span class="step-1">Restore system</span>
+            <span class="step-2 d-none">Restoring to Mar 20, 2020 backup</span>
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="step-1">
+            Are you sure you want to restore your system to backup from <b>May 12, 2020</b>?
+          </div>
+          <div class="step-2 d-none">
+            This could take some time to complete. If you'd like, you can close this dialog box and continue working
+            <div class="progress mt-4">
+              <div class="progress-bar bg-success" style="width: 0%"></div>
+            </div>
+            <span class="progress-percent"></span>
+            <span>complete</span>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" id="modal-restore">Restore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="d-none">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <span class="text-secondary saved-status index-page">Unsaved changes</span>
+        </div>
+        <div>
+          <button class="btn btn-secondary back cancel">Cancel</button>
+          <button class="btn btn-success save index-page" title="Backup settings saved successfully.">Save</button>
+          <button class="btn btn-success restore-page" data-toggle="modal" data-target="#restore-modal">Restore</button>
+          <button class="btn btn-warning text-white reset-page" data-toggle="modal"
+            data-target="#reset-modal">Reset</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <script src="../assets/js/input-mask.js"></script>
+  <script src="../assets/js/office/setting.backup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<g id="frame">
+	<g>
+		<path d="M46,46H4V4h42V46z M6,44h38V6H6V44z"/>
+	</g>
+	<g>
+		<path d="M10,5h2v40h-2V5z M38,5h2v40h-2V5z"/>
+	</g>
+</g>
+<g id="perforation">
+	<g>
+		<path d="M45,10h-6 M45,15h-6 M45,20h-6 M45,25h-6 M45,30h-6 M45,35h-6 M45,40h-6 M11,10H5 M11,15H5 M11,20H5 M11,25H5 M11,30H5
+			 M11,35H5 M11,40H5 M45,45h-6 M11,45H5"/>
+		<path d="M45,46h-6v-2h6V46z M11,46H5v-2h6V46z M45,41h-6v-2h6V41z M11,41H5v-2h6V41z M45,36h-6v-2h6V36z M11,36H5v-2h6V36z M45,31
+			h-6v-2h6V31z M11,31H5v-2h6V31z M45,26h-6v-2h6V26z M11,26H5v-2h6V26z M45,21h-6v-2h6V21z M11,21H5v-2h6V21z M45,16h-6v-2h6V16z
+			 M11,16H5v-2h6V16z M45,11h-6V9h6V11z M11,11H5V9h6V11z"/>
+	</g>
+</g>
+<g id="arrow">
+	<g>
+		<path d="M32,25l-12,6.9V18.1L32,25z"/>
+		<path d="M20,32.9c-0.173,0-0.346-0.045-0.501-0.135C19.19,32.587,19,32.258,19,31.9V18.1c0-0.357,0.19-0.687,0.499-0.866
+			c0.31-0.178,0.689-0.18,1-0.001l12,6.9C32.809,24.312,33,24.642,33,25s-0.191,0.688-0.502,0.867l-12,6.901
+			C20.344,32.856,20.172,32.9,20,32.9z M21,19.829v10.343L29.994,25L21,19.829z"/>
+	</g>
+</g>
+</svg>

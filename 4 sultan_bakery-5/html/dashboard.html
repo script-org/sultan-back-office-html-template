@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+
+<body class="layout-column">
+
+  <header id="header" class="page-header bg-white box-shadow">
+    <div class="navbar navbar-expand-lg">
+      <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+        <i class="i-con i-con-menu text-muted"></i>
+      </a>
+      <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+      <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+        <form class="input-group m-2 my-lg-0 " style="padding-left: 40px">
+          <span class="input-group-prepend">
+            <button type="button" class="btn no-shadow no-bg px-0">
+              <i class="la la-search"></i>
+            </button>
+          </span>
+          <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+            placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+            data-plugin="typeahead">
+        </form>
+      </div>
+
+      <ul class="nav navbar-menu order-1 order-lg-2">
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip"
+            data-title="Fullscreen">
+            <i class="i-con i-con-fullscreen"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+            <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Good evening,</small>
+              <span>Justin Timber</span>
+            </span>
+            <span class="avatar w-36 bg-primary-lt">
+              JT
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+              <div>
+                <img src="../assets/img/animated-icons/settings/settings.svg" >
+              </div>
+              <span class="ml-2">My account</span>
+            </a>
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+              <div>
+                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+              </div>
+              <span class="ml-2">Sign out</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+            data-target="#navbarToggler">
+            <i class="i-con i-con-nav text-muted"><i></i></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div id="main" class="layout-row flex">
+    <div id="aside" class="page-sidenav no-shrink  nav-expand" aria-hidden="true">
+      <div class="sidenav h-100 modal-dialog bg-white box-shadow">
+        <div class="flex scroll-container">
+          <div class="nav-border b-primary mt-3" data-nav>
+            <ul class="nav bg">
+              <li class="active">
+                <a href="dashboard.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/home/home.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DASHBOARD</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/tags/tags.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="products.all.html">
+                      <span class="nav-text">All Products</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.category.html" class="">
+                      <span class="nav-text">Categories</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.modifier.html" class="">
+                      <span class="nav-text">Modifiers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/list/list.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">INVENTORY</span>
+                  <span class="nav-badge">
+                    <b class="badge badge-sm badge-pill ">12</b>
+                  </span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="inventory.purchase.html">
+                      <span class="nav-text">Purchase Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.transfer.html" class="">
+                      <span class="nav-text">Transfer Orders</span>
+                      <span class="nav-badge">
+                        <b class="badge badge-sm badge-pill bg-danger">12</b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.stock.html" class="">
+                      <span class="nav-text">Stock Adjustment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.counts.html" class="">
+                      <span class="nav-text">Inventory Counts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.history.html" class="">
+                      <span class="nav-text">Inventory History</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.valuation.html" class="">
+                      <span class="nav-text">Inventory Valuation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.planner.html" class="">
+                      <span class="nav-text">Inventory Planner</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="productions.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gears/gears.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTIONS</span>
+                  <span class="nav-badge">
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/discount/discount.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DISCOUNTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="discount.code.html">
+                      <span class="nav-text">Discount Code</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="discount.auto.html" class="">
+                      <span class="nav-text">Automatic Discounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="suppliers.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/business-network/business-network.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SUPPLIERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-user'><i></i></i>
+                  </span>
+                  <span class="nav-text">CUSTOMERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-users'><i></i></i>
+                  </span>
+                  <span class="nav-text">EMPLOYEES</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="employee.all.html">
+                      <span class="nav-text">All Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.roll.html" class="">
+                      <span class="nav-text">Rolls/Access Rights</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.schedule.html" class="">
+                      <span class="nav-text">Schedule Timesheet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.payroll.html" class="">
+                      <span class="nav-text">Payroll</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/calculator/calculator.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">BOOKEEPING</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="bookeeping.sales.html">
+                      <span class="nav-text">Sales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.expense.html" class="">
+                      <span class="nav-text">Expenses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.vat.html" class="">
+                      <span class="nav-text">VAT Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.account.html" class="">
+                      <span class="nav-text">Accounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="reports.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">REPORTS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="no-shrink ">
+          <div class="nav-border b-primary" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="setting.general.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm p-3 mt-5">
+            <div class="hidden-folded text-sm">
+              <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="flex animate fadeInLeft slideOutLeft">
+      <div class="page-container" id="page-container">
+        <div class="page-title padding pb-0 ">
+          <h2 class="text-md mb-0">Dashboard</h2>
+        </div>
+        <div class="padding">
+          <div class="row row-sm">
+            <div class="col-md-12 col-lg-4 col-xl-3">
+              <div class="row row-sm">
+                <div class="col-lg-12 col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <sup class="text-muted">$</sup>
+                        <span class="h3" data-plugin="countTo" data-option="{
+								from: 50,
+							    to: 2350,
+							    refreshInterval: 10,
+							    formatter: function (value, options) {
+							      return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+							    }
+							    }"></span>
+                        <div class="text-muted mt-2 text-sm">Your current balance</div>
+                        <div>
+                          <span class="text-success">+ 20%</span>
+                          <span class="text-muted">($520)</span>
+                        </div>
+                      </div>
+                      <button class="btn btn-sm w-100 btn-rounded btn-danger text-align-auto i-con-h-a mb-2">
+                        <i class="i-con i-con-arrow-right float-right"><i></i></i>
+                        Add Credit
+                      </button>
+                    </div>
+                    <div class="card-body b-t">
+                      <div class="row no-gutters">
+                        <div class="col">
+                          <small class="text-muted">Sales: 75%</small>
+                          <div class="progress my-2" style="height:3px;">
+                            <div class="progress-bar bg-primary" style="width: 45%"></div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <small class="text-muted">Referral: 25%</small>
+                          <div class="progress my-2" style="height:3px;">
+                            <div class="progress-bar bg-warning" style="width: 35%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex i-con-h-a">
+                        <span class="text-md">
+                          <span data-plugin="countTo" data-option="{
+									from: 5,
+								    to: 85,
+								    refreshInterval: 1,
+								    speed: 1000,
+								    formatter: function (value, options) {
+								      return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+								    }
+								    }"></span>
+                          %</span>
+                        <span class="mx-2 mt-1">
+                          <i class="i-con i-con-trending-up text-success"><i></i></i>
+                          <small class="mx-1 text-muted">5% up</small>
+                        </span>
+                      </div>
+                      <div class="text-muted text-sm">From the last month</div>
+                    </div>
+                    <div style="height: 168px">
+                      <canvas data-plugin="chartjs" id="chart-line-4"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-8 col-xl-9">
+              <div class="block px-4 py-3">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <div class="d-flex align-items-center i-con-h-a my-1">
+                      <div>
+                        <span class="avatar w-40 b-a b-2x">
+                          <i class="i-con i-con-comment b-2x text-primary"><i></i></i>
+                        </span>
+                      </div>
+                      <div class="mx-3">
+                        <a href="app.message.html" class="d-block ajax"><strong>60</strong></a>
+                        <small class="text-muted">Messages</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="d-flex align-items-center i-con-h-a my-1">
+                      <div>
+                        <span class="avatar w-40 b-a b-2x">
+                          <i class="i-con i-con-history b-2x text-success"><i></i></i>
+                        </span>
+                      </div>
+                      <div class="mx-3">
+                        <a href="app.calendar.html" class="d-block ajax"><strong>12:20</strong></a>
+                        <small class="text-muted">Task</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="d-flex align-items-center i-con-h-a my-1">
+                      <div>
+                        <span class="avatar w-40 b-a b-2x">
+                          <i class="i-con i-con-users b-2x text-warning"><i></i></i>
+                        </span>
+                      </div>
+                      <div class="mx-3">
+                        <a href="app.user.html" class="d-block ajax"><strong>5,050</strong></a>
+                        <small class="text-muted">Users</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="d-flex align-items-center i-con-h-a my-1">
+                      <div>
+                        <span class="avatar w-40 b-a b-2x">
+                          <i class="i-con i-con-mail b-2x text-danger"><i></i></i>
+                        </span>
+                      </div>
+                      <div class="mx-3">
+                        <a href="app.mail.html" class="d-block ajax"><strong>302</strong></a>
+                        <small class="text-muted">Mails</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-sm">
+                <div class="col-md-8">
+                  <div class="card p-4">
+                    <div class="pb-4">
+                      <div class="d-flex mb-3">
+                        <span class="text-md">Marketing</span>
+                        <span class="flex"></span>
+                        <label class="ui-switch mt-1">
+                          <input type="checkbox" checked>
+                          <i></i>
+                        </label>
+                      </div>
+                      <div class="d-flex">
+                        <div class="i-con-h-a">
+                          <small class="text-muted">This Week</small>
+                          <div class="mt-1">
+                            <span class="text-primary text-md">$32,000</span>
+                            <i class="i-con i-con-trending-up text-success"><i></i></i>
+                            <small class="mx-1 text-muted">+5%</small>
+                          </div>
+                        </div>
+                        <div class="i-con-h-a mx-3">
+                          <small class="text-muted">Last Week</small>
+                          <div class="mt-1">
+                            <span class="text-muted text-md">$25,000</span>
+                            <i class="i-con i-con-trending-down text-danger"><i></i></i>
+                            <small class="mx-1 text-muted">-10%</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="height: 266px">
+                      <canvas data-plugin="chartjs" id="chart-line-5"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-success--lt p-4">
+                    <div>
+                      <span class="text-fade">Online sells</span>
+                      <div class="_300">$5,000</div>
+                    </div>
+                    <div style="height: 60px">
+                      <canvas data-plugin="chartjs" id="chart-line-6"></canvas>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="p-4">
+                      <p><strong>Trending</strong></p>
+                      <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.primary}"
+                        data-percent="75" data-line-width="3" data-size="110" data-scale-length="0"
+                        data-line-cap="square">
+                        <div>
+                          <span class="text-primary text-md">75%</span>
+                          <small class="text-muted">Trending up</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-center">
+                      <div class="row">
+                        <div class="col">
+                          <div>$6,000</div>
+                          <small class="text-muted">Target</small>
+                        </div>
+                        <div class="col">
+                          <div>$2,500</div>
+                          <small class="text-muted">Last Month</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="p-4 b-b d-flex">
+                  <strong>World sells</strong>
+                  <span class="flex"></span>
+                  <div><span class="badge badge-pill bg-success mx-2">48</span></div>
+                  <span class="text-muted">countries</span>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col-sm-6">
+                    <div class="p-4">
+                      <div id="jqvmap-world" data-plugin="vectorMap" style="height: 240px">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 p-4">
+                    <div class="">
+                      <div class="d-flex my-4">
+                        <div class="peity" data-plugin="peity" data-tooltip="true" data-title="Profile" data-option="
+		                'donut',
+		                {
+		                  height: 40,
+		                  width: 40,
+		                  padding: 0.2,
+		                  fill: [theme.color.primary, 'rgba(120, 130, 140, 0.1)']
+		                }">20,80
+                        </div>
+                        <div class="mx-3">
+                          <small class="text-muted d-block mb-1">
+                            North America
+                          </small>
+                          <small class="text-primary">35%</small>
+                        </div>
+                      </div>
+                      <div class="d-flex my-4">
+                        <div class="peity" data-plugin="peity" data-tooltip="true" data-title="Profile" data-option="
+		                'donut',
+		                {
+		                  height: 40,
+		                  width: 40,
+		                  padding: 0.2,
+		                  fill: [theme.color.success, 'rgba(120, 130, 140, 0.1)']
+		                }">10,90
+                        </div>
+                        <div class="mx-3">
+                          <small class="text-muted d-block mb-1">
+                            Europe
+                          </small>
+                          <small class="text-success">10%</small>
+                        </div>
+                      </div>
+                      <div class="d-flex my-4">
+                        <div class="peity" data-plugin="peity" data-tooltip="true" data-title="Profile" data-option="
+		                'donut',
+		                {
+		                  height: 40,
+		                  width: 40,
+		                  padding: 0.2,
+		                  fill: [theme.color.warning, 'rgba(120, 130, 140, 0.1)']
+		                }">30,70
+                        </div>
+                        <div class="mx-3">
+                          <small class="text-muted d-block mb-1">
+                            Asia
+                          </small>
+                          <small class="text-waring">30%</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 b-l p-0">
+                    <div class="p-4 text-center b-b">
+                      <h3 class="m-0">Europe</h3>
+                    </div>
+                    <div class="p-4 row text-center">
+                      <div class="col b-r">
+                        530
+                        <div class="text-muted text-sm">Cities</div>
+                      </div>
+                      <div class="col">
+                        54,040
+                        <div class="text-muted text-sm">Population</div>
+                      </div>
+                    </div>
+                    <div class="p-4 text-center text-center">
+                      <span class="text-md text-primary">45%</span>
+                      <div class="text-muted text-sm">Profit</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="p-4">
+                  <strong>Activity feed</strong>
+                  <span class="badge bg-primary badge-pill ml-2">6</span>
+                </div>
+                <div class="b-t" id="feed-1">
+                  <div class="card-header d-flex">
+                    <a href="#"><img src="../assets/img/a4.jpg" class="avatar w-40"></a>
+                    <div class="mx-3">
+                      <a href="#">Garrett Winters</a>
+                      <div class="text-muted text-sm">9 days ago</div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-text mb-3">
+                      <p>Magna ultrices nibh augue mauris sed enim neque nisl massa magnis praesent viverra faucibus
+                        tristique posuere purus hac</p>
+                    </div>
+
+
+                    <div class="row row-xs">
+                      <div class="col-6">
+                        <div class="media media-16x9 r">
+                          <a class="media-content media-16x9" style="background-image: url(../assets/img/b1.jpg);"></a>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="media media-16x9 r">
+                          <a class="media-content media-16x9" style="background-image: url(../assets/img/b10.jpg);"></a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                  </div>
+                  <div class="card-body d-flex b-t">
+                    <a href="#"><img src="../assets/img/a4.jpg" class="avatar w-40"></a>
+                    <div class="mx-3 flex">
+                      <div class="mb-3">
+                        <a href="#">Garrett Winters</a>
+                        <div class="text-muted text-sm">12:00 pm</div>
+                      </div>
+                      <div class="card-text">
+                        <p>A odio fringilla ut fermentum odio vel gravida nunc, dui fringilla</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex b-t">
+                    <a href="#"><img src="../assets/img/a1.jpg" class="avatar w-40"></a>
+                    <div class="mx-3 flex">
+                      <div class="mb-3">
+                        <a href="#">Garrett Winters</a>
+                        <div class="text-muted text-sm">7:00 pm</div>
+                      </div>
+
+                      <div class="row row-xs">
+                        <div class="col-12">
+                          <div class="media media-2x1 r">
+                            <a class="media-content" style="background-image: url(../assets/img/b1.jpg);"></a>
+                            <div class="media-action active">
+                              <a href="#" class="d-inline-block p-3 i-con-h-a text-white">
+                                <i class="i-con i-con-play">
+                                  <i class="w-40 i-con-circle-animate">
+                                    <span></span>
+                                  </i>
+                                </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                  <div class="p-3 b-t">
+                    <div class="toolbar toolbar-mx">
+                      <a href="#" class="text-muted">
+                        321 Likes
+                      </a>
+                      <a href="#feed-form-1" class="text-muted" data-toggle="collapse">
+                        56 Comments
+                      </a>
+                      <a href="#" class="text-muted i-con-h-a">
+                        <i class="i-con i-con-share"><i></i></i>
+                        Share
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-3 b-t collapse " id="feed-form-1">
+                    <form>
+                      <textarea class="form-control" rows="3"></textarea>
+                      <div class="d-flex pt-2">
+                        <div class="toolbar mt-1">
+                          <a href="#" class="text-muted mx-1 i-con-h-a"><i class="i-con i-con-photo"><i></i></i></a>
+                          <a href="#" class="text-muted mx-1 i-con-h-a"><i class="i-con i-con-video"><i></i></i></a>
+                          <a href="#" class="text-muted mx-1 i-con-h-a"><i class="i-con i-con-pin"><i></i></i></a>
+                          <a href="#" class="text-muted mx-1 i-con-h-a"><i
+                              class="i-con i-con-attachment"><i></i></i></a>
+                          <a href="#" class="text-muted mx-1 i-con-h-a"><i class="i-con i-con-smile"><i></i></i></a>
+                        </div>
+                        <span class="flex"></span>
+                        <button class="btn btn-sm btn-primary">Post</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="list list-grouped text-center">
+                <div class="list-item list-hover-overlay i-con-h-a block">
+                  <div class="media">
+                    <div class="media-content" style="background-image: url(../assets/img/b10.jpg);"></div>
+                  </div>
+                  <div class="list-content p-0">
+                    <div class="list-body">
+                      <div class="p-3 b-b">
+                        Monday
+                      </div>
+                      <div class="py-4">
+                        <div class="i-con-h-a mb-4">
+                          <i class="i-con i-con-rain w-40 b-2x"><i></i></i>
+                        </div>
+                        <div class="mb-4">+9 <sup>&deg;</sup></div>
+                        <div class="text-muted">Rainy day</div>
+                      </div>
+                      <div class="p-3 b-t">21 May</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item list-overlay block">
+                  <div class="media">
+                    <div class="media-content" style="background-image: url(../assets/img/b11.jpg);"></div>
+                  </div>
+                  <div class="list-content p-0">
+                    <div class="list-body">
+                      <div class="p-3 b-b">
+                        Tuesday
+                      </div>
+                      <div class="py-4">
+                        <div class="i-con-h-a active mb-4">
+                          <i class="i-con i-con-clear-day w-40 b-2x text-warning"><i></i></i>
+                        </div>
+                        <div class="mb-4">+10 <sup>&deg;</sup></div>
+                        <div class="text-muted">Sunny day</div>
+                      </div>
+                      <div class="p-3 b-t">22 May</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item list-hover-overlay i-con-h-a block">
+                  <div class="media">
+                    <div class="media-content" style="background-image: url(../assets/img/b12.jpg);"></div>
+                  </div>
+                  <div class="list-content p-0">
+                    <div class="list-body">
+                      <div class="p-3 b-b">
+                        Wednesday
+                      </div>
+                      <div class="py-4">
+                        <div class="i-con-h-a mb-4">
+                          <i class="i-con i-con-snow w-40 b-2x"><i></i></i>
+                        </div>
+                        <div class="mb-4">-6 <sup>&deg;</sup></div>
+                        <div class="text-muted">Snow day</div>
+                      </div>
+                      <div class="p-3 b-t">
+                        23 May
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="p-4 b-b">
+                  <strong>Projects</strong>
+                  <span class="badge text-info badge-outline ml-2">5</span>
+                </div>
+                <table class="table table-theme v-middle m-0">
+                  <thead class="text-muted">
+                    <tr>
+                      <th>#</th>
+                      <th>Owner</th>
+                      <th>Project</th>
+                      <th>Tasks</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class=" v-middle" data-id="10">
+
+
+
+
+
+
+
+                      <td>
+                        <a href="#" data-toggle-class>
+                          <i class="i-con i-con-bookmark active-solid text-muted active-primary"><i><i></i></i></i>
+                        </a>
+                      </td>
+
+
+
+
+                      <td>
+                        <a href="#">
+                          <span class="w-28 avatar circle bg-warning-lt">
+                            <img src="../assets/img/a10.jpg" alt=".">
+                          </span>
+                        </a>
+                      </td>
+
+                      <td class="flex">
+                        <a href="#" class="item-title text-color h-1x">Upgrade your Cloudy today</a>
+
+                        <div class="item-except text-muted h-1x">
+                          If you’re on the other side of a review, you can request reviews from your peers to get the
+                          exact exceptback you need.
+                        </div>
+
+
+
+                      </td>
+
+                      <td>
+                        <span class="item-amount text-sm ">
+                          240
+                        </span>
+                      </td>
+
+
+
+
+
+
+
+                    </tr>
+                    <tr class=" v-middle" data-id="15">
+
+
+
+
+
+
+
+                      <td>
+                        <a href="#" data-toggle-class>
+                          <i class="i-con i-con-bookmark active-solid text-muted active-primary"><i><i></i></i></i>
+                        </a>
+                      </td>
+
+
+
+
+                      <td>
+                        <a href="#">
+                          <span class="w-28 avatar circle bg-success-lt">
+                            G
+                          </span>
+                        </a>
+                      </td>
+
+                      <td class="flex">
+                        <a href="#" class="item-title text-color h-1x">There is a problem with your payment</a>
+
+                        <div class="item-except text-muted h-1x">
+                          You don’t have to switch tools to review code, share input on projects, or open up the
+                          conversation to the rest of your team.
+                        </div>
+
+
+
+                      </td>
+
+                      <td>
+                        <span class="item-amount text-sm ">
+                          240
+                        </span>
+                      </td>
+
+
+
+
+
+
+
+                    </tr>
+                    <tr class=" v-middle" data-id="6">
+
+
+
+
+
+
+
+                      <td>
+                        <a href="#" data-toggle-class>
+                          <i class="i-con i-con-bookmark active-solid text-muted active-primary"><i><i></i></i></i>
+                        </a>
+                      </td>
+
+
+
+
+                      <td>
+                        <a href="#">
+                          <span class="w-28 avatar circle bg-danger-lt">
+                            <img src="../assets/img/a6.jpg" alt=".">
+                          </span>
+                        </a>
+                      </td>
+
+                      <td class="flex">
+                        <a href="#" class="item-title text-color h-1x">Ecommerce website Paypal integration</a>
+
+                        <div class="item-except text-muted h-1x">
+                          This Friday, invest a few hours contributing to the software you use and love.
+                        </div>
+
+
+
+                      </td>
+
+                      <td>
+                        <span class="item-amount text-sm ">
+                          220
+                        </span>
+                      </td>
+
+
+
+
+
+
+
+                    </tr>
+                    <tr class=" v-middle" data-id="9">
+
+
+
+
+
+
+
+                      <td>
+                        <a href="#" data-toggle-class>
+                          <i class="i-con i-con-bookmark active-solid text-muted active-primary"><i><i></i></i></i>
+                        </a>
+                      </td>
+
+
+
+
+                      <td>
+                        <a href="#">
+                          <span class="w-28 avatar circle bg-info-lt">
+                            <img src="../assets/img/a9.jpg" alt=".">
+                          </span>
+                        </a>
+                      </td>
+
+                      <td class="flex">
+                        <a href="#" class="item-title text-color h-1x">Youtube ads protype design</a>
+
+                        <div class="item-except text-muted h-1x">
+                          What are you doing today? <a href='#'>@FashionDesign</a> Oh here, check out the new trailer
+                          for <a href='#'>Man of Steel</a>
+                        </div>
+
+
+
+                      </td>
+
+                      <td>
+                        <span class="item-amount text-sm ">
+                          2310
+                        </span>
+                      </td>
+                    </tr>
+                    <tr class=" v-middle" data-id="5">
+                      <td>
+                        <a href="#" data-toggle-class>
+                          <i class="i-con i-con-bookmark active-solid text-muted active-primary"><i><i></i></i></i>
+                        </a>
+                      </td>
+
+
+
+
+                      <td>
+                        <a href="#">
+                          <span class="w-28 avatar circle bg-warning-lt">
+                            <img src="../assets/img/a5.jpg" alt=".">
+                          </span>
+                        </a>
+                      </td>
+
+                      <td class="flex">
+                        <a href="#" class="item-title text-color h-1x">Wordpress theme api design</a>
+
+                        <div class="item-except text-muted h-1x">
+                          A light-weight, no-dependency, vanilla JavaScript engine to drive the user's focus across the
+                          page
+                        </div>
+
+
+
+                      </td>
+
+                      <td>
+                        <span class="item-amount text-sm ">
+                          100
+                        </span>
+                      </td>
+
+
+
+
+
+
+
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ############ Main END-->
+    </div>
+    <!-- ############ Content END-->
+
+    <!-- ############ LAYOUT END-->
+
+  </div>
+
+
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

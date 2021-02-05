@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Signin | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- style -->
+  <!-- build:css ./assets/css/site.min.css -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+
+<body class="bg-white">
+  <div class="d-flex" style="height: 100vh;">
+    <div class="col-md-6 h-100 d-flex justify-content-center align-items-center" id="content-body">
+      <div class="col-6">
+        <h1>
+          Sultan Bakery.<br>
+          Back Office Login.
+        </h1>
+        <p class="mb-5">
+          <span class="text-muted">Enter your details to proceed further</span>
+        </p>
+        <form class="pt-3" role="form" action="./html/dashboard.html">
+          <div class="form-group">
+            <label>Email/Username</label>
+            <div class="input-group">
+              <input type="text" class="form-control pl-3 border-right-0 px-0">
+              <div class="input-group-append">
+                <span class="input-group-text p-2 border-left-0 no-bg" id="basic-addon2">
+                  <a class="i-con-h-a">
+                    <i class="mr-2 i-con i-con-mail"><i></i></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <div class="input-group">
+              <input type="text" class="form-control pl-3 border-right-0 px-0">
+              <div class="input-group-append">
+                <span class="input-group-text p-2 no-bg border-left-0" id="basic-addon2">
+                  <a class="i-con-h-a">
+                    <i class="mr-2 i-con i-con-lock"><i></i></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group py-4 d-flex justify-content-between">
+            <label class="md-check mr-2">
+              <input type="checkbox">
+              <i class="blue"></i>
+              Remember me
+            </label>
+            <a href="./html/forgot.password.html" class="text-primary">
+              <b>Forgot password</b>
+            </a>
+          </div>
+          <button type="submit" class="btn btn-info btn-md btn-block mb-4">Sign In</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-6 bg-info">
+    </div>
+  </div>
+
+
+  <!-- build:js ./assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="./libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="./libs/pace-progress/pace.min.js"></script>
+  <script src="./libs/pjax/pjax.js"></script>
+  <script src="./assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="./assets/js/lazyload.config.js"></script>
+  <script src="./assets/js/lazyload.js"></script>
+  <script src="./assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="./assets/js/theme.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

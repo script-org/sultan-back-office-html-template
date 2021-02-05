@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Button | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <!-- style -->
+  <!-- build:css ../assets/css/site.min.css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+<body class="layout-column">
+
+
+<header id="header" class="page-header bg-white box-shadow animate fadeInDown">
+  <div class="navbar navbar-expand-lg" >
+    <!-- btn to toggle sidenav on small screen -->
+    <a class="d-lg-none i-con-h-a px-1" data-toggle="modal" data-target="#aside">
+      <i class="i-con i-con-menu text-muted"></i>
+    </a>
+    <!-- brand -->
+    <a href="index.html" class="navbar-brand">
+    	<svg fill="#a9a9a9" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    	    <path class="fill" d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/>
+    	    <path d="M0 0h24v24H0z" fill="none"/>
+    	</svg>
+    	<!-- <img src="../assets/img/logo.png" alt="..."> -->
+    	<span class="hidden-folded d-inline l-s-n-1x ">Agile</span>
+    </a>
+    <!-- / brand -->
+  
+    <!-- Navbar collapse -->
+    <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+  	  <ul class="navbar-nav mx-auto" data-nav>
+  	    <li class="nav-item">
+  	      <a href="../html/card.admin.html" class="nav-link">
+  	        <span class="nav-text">Admin</span>
+  	      </a>
+  	    </li>
+  	    <li class="nav-item">
+  	      <a href="../html/card.news.html" class="nav-link">
+  	        <span class="nav-text">News</span>
+  	      </a>
+  	    </li>
+  	    <li class="nav-item">
+  	      <a href="../html/card.music.html" class="nav-link">
+  	        <span class="nav-text">Music &amp; Video</span>
+  	      </a>
+  	    </li>
+  	    <li class="nav-item">
+  	      <a href="../html/card.social.html" class="nav-link">
+  	        <span class="nav-text">Social</span>
+  	      </a>
+  	    </li>
+  	  </ul>
+  	  <form class="input-group m-2 my-lg-0 i-con-h-a ">
+  	      <span class="input-group-prepend">
+  	        <button type="button" class="btn no-shadow no-bg px-0"><i class="i-con i-con-search text-fade w-16"></i></button>
+  	      </span>
+  	      <input type="text" class="form-control no-border no-shadow no-bg typeahead" placeholder="Search..." data-plugin="typeahead">
+  	  </form>
+    </div>
+  
+    <ul class="nav navbar-menu order-1 order-lg-2">
+  
+      <li class="nav-item d-none d-sm-block">
+        <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip" data-title="Fullscreen">
+          <i class="i-con i-con-fullscreen"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link px-2 i-con-h-a" data-toggle="dropdown">
+          <i class="i-con i-con-droplet solid text-success"></i>
+        </a>
+        <!-- ############ Setting START-->
+        <div class="dropdown-menu dropdown-menu-center mt-3 w animate fadeIn">
+          <div class="setting px-3">
+              <div class="mb-2">
+                <strong>Setting:</strong>
+              </div>
+              <div class="mb-3" id="settingLayout">
+                <label class="ui-check my-1 d-block">
+                  <input type="checkbox" name="stickyHeader">
+                  <i></i>
+                  <small>Sticky header</small>
+                </label>
+                <label class="ui-check my-1 d-block">
+                  <input type="checkbox" name="stickyAside">
+                  <i></i>
+                  <small>Sticky aside</small>
+                </label>
+                <label class="ui-check my-1 d-block">
+                  <input type="checkbox" name="foldedAside">
+                  <i></i>
+                  <small>Folded Aside</small>
+                </label>
+                <label class="ui-check my-1 d-block">
+                  <input type="checkbox" name="hideAside">
+                  <i></i>
+                  <small>Hide Aside</small>
+                </label>
+              </div>
+              <div class="mb-2">
+                <strong>Color:</strong>
+              </div>
+              <div>
+                <label class="radio radio-inline ui-check ui-check-md">
+                  <input type="radio" name="bg" value="">
+                  <i></i>
+                </label>
+                <label class="radio radio-inline ui-check ui-check-color ui-check-md">
+                  <input type="radio" name="bg" value="bg-dark">
+                  <i class="bg-dark"></i>
+                </label>
+              </div>
+          </div>
+        </div>
+        <!-- ############ Setting END-->
+      </li>
+      <!-- Notification -->
+      <li class="nav-item dropdown">
+        <a class="nav-link px-2 i-con-h-a mr-lg-2" data-toggle="dropdown">
+          <i class="i-con i-con-bell"><i></i></i>
+          <span class="badge badge-pill badge-up bg-primary">8</span>
+        </a>
+        <!-- dropdown -->
+        <div class="dropdown-menu dropdown-menu-right mt-3 w-md animate fadeIn p-0">
+            <div class="scrollable hover" style="max-height: 250px">
+              <div class="list list-row animates animates-fadeInUp">
+                  <div class="list-item " data-id="10">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                    <div>
+                    <a href="#">
+                      <span class="w-32 avatar circle bg-warning-lt" >
+                            <img src="../assets/img/a10.jpg" alt=".">
+                      </span>
+                    </a>
+                    </div>
+              
+                    <div class="flex">
+                      
+              
+                        <div class="item-feed h-2x">
+                          New cloudy version updated, click to <a href='#'>upgrade</a>
+                        </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+              
+              
+              
+                  </div>
+                  <div class="list-item " data-id="12">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                    <div>
+                    <a href="#">
+                      <span class="w-32 avatar circle bg-info-lt" >
+                            D
+                      </span>
+                    </a>
+                    </div>
+              
+                    <div class="flex">
+                      
+              
+                        <div class="item-feed h-2x">
+                          <a href='#'>Mike</a> upload last week lessons summary
+                        </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+              
+              
+              
+                  </div>
+                  <div class="list-item " data-id="13">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                    <div>
+                    <a href="#">
+                      <span class="w-32 avatar circle bg-primary-lt" >
+                            J
+                      </span>
+                    </a>
+                    </div>
+              
+                    <div class="flex">
+                      
+              
+                        <div class="item-feed h-2x">
+                          New web html5 application in process
+                        </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+              
+              
+              
+                  </div>
+                  <div class="list-item " data-id="3">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                    <div>
+                    <a href="#">
+                      <span class="w-32 avatar circle bg-info-lt" >
+                            <img src="../assets/img/a3.jpg" alt=".">
+                      </span>
+                    </a>
+                    </div>
+              
+                    <div class="flex">
+                      
+              
+                        <div class="item-feed h-2x">
+                          <a href='#'>@James</a> submit a support ticket
+                        </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+              
+              
+              
+                  </div>
+                  <div class="list-item " data-id="7">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                    <div>
+                    <a href="#">
+                      <span class="w-32 avatar circle bg-primary-lt" >
+                            <img src="../assets/img/a7.jpg" alt=".">
+                      </span>
+                    </a>
+                    </div>
+              
+                    <div class="flex">
+                      
+              
+                        <div class="item-feed h-2x">
+                          <a href='#'>Grantt</a> Send you a invitation to SWO
+                        </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+              
+              
+              
+                  </div>
+                  <div class="list-item " data-id="2">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                    <div>
+                    <a href="#">
+                      <span class="w-32 avatar circle bg-primary-lt" >
+                            <img src="../assets/img/a2.jpg" alt=".">
+                      </span>
+                    </a>
+                    </div>
+              
+                    <div class="flex">
+                      
+              
+                        <div class="item-feed h-2x">
+                          What's the project progress now
+                        </div>
+              
+              
+                    </div>
+              
+              
+              
+              
+              
+              
+              
+              
+                  </div>
+              </div>
+            </div>
+            <div class="d-flex px-3 py-2 b-t">
+              <div class="flex">
+                <span>6 Notifications</span>
+              </div>
+              <a href="setting.html">See all <i class="fa fa-angle-right text-muted"></i></a>
+            </div>
+        </div>
+        <!-- / dropdown -->
+      </li>
+  
+      <!-- User dropdown menu -->
+      <li class="nav-item dropdown">
+        <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+          <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Hello, Welcome</small>
+            <span>Garrett Winters</span>
+          </span>
+          <span class="avatar w-36">
+            <img src="../assets/img/a1.jpg" alt="...">
+          </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right w pt-0 mt-3 animate fadeIn">
+          <div class="row no-gutters mb-2 text-center r-t b-b">
+            <div class="col-4 b-r">
+              <a href="app.user.html" class="py-3 d-block i-con-h-a">
+                <i class="i-con i-con-users"><i></i></i>
+              </a>
+            </div>
+            <div class="col-4 b-r">
+              <a href="app.mail.html" class="py-3 d-block i-con-h-a">
+                <i class="i-con i-con-mail"><i></i></i>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="app.message.html" class="py-3 d-block i-con-h-a">
+                <i class="i-con i-con-comment"><i></i></i>
+              </a>
+            </div>
+          </div>
+          <a class="dropdown-item" href="page.profile.html">
+            <span>Profile</span>
+          </a>
+          <a class="dropdown-item" href="page.setting.html">
+            <span>Account Settings</span>
+          </a>
+          <a class="dropdown-item" href="page.price.html">
+            <span class="badge bg-success text-uppercase">Upgrade</span>
+            <span>to Pro</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="page.faq.html">
+            Need help?
+          </a>
+          <a class="dropdown-item" href="signin.html">Sign out</a>
+        </div>
+      </li>
+      <!-- Navarbar toggle btn -->
+      <li class="nav-item d-lg-none">
+        <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class data-target="#navbarToggler">
+          <i class="i-con i-con-nav text-muted"><i></i></i>
+        </a>
+      </li>
+    </ul>
+  
+  </div>
+</header>
+<div id="main" class="layout-row flex">
+
+<!-- ############ LAYOUT START-->
+
+	<!-- ############ Aside START-->
+	<div id="aside" class="page-sidenav no-shrink  nav-expand  animate fadeInLeft fade" aria-hidden="true">
+		<div class="sidenav h-100 modal-dialog bg-white box-shadow">
+		  <!-- sidenav top -->
+		  <!-- Flex nav content -->
+		  <div class="flex scrollable hover">
+		        <div class="nav-border b-primary" data-nav>
+		          <ul class="nav bg">
+		              <li class="nav-header hidden-folded">
+		                <span>Main</span>
+		              </li>
+		              <li>
+		                <a href="dashboard.html" class="i-con-h-a">
+		                  <span class="nav-icon">
+		                    <i class="i-con i-con-home"><i></i></i>
+		                  </span>
+		                  <span class="nav-text">Dashboard</span>
+		                </a>
+		              </li>
+		              <li class="nav-header hidden-folded">
+		                <span>Apps</span>
+		              </li>
+		              <li>
+		                <a href="app.calendar.html" class="i-con-h-a">
+		                  <span class="nav-icon">
+		                    <i class="i-con i-con-calendar"><i></i></i>
+		                  </span>
+		                  <span class="nav-text">Calendar</span>
+		                </a>
+		              </li>
+		              <li>
+		                <a href="app.mail.html" class="i-con-h-a">
+		                  <span class="nav-icon">
+		                    <i class="i-con i-con-mail"><i></i></i>
+		                  </span>
+		                  <span class="nav-text">Email</span>
+		                  <span class="nav-badge">
+		                    <b class="badge badge-sm badge-pill bg-primary">5</b>
+		                  </span>
+		                </a>
+		              </li>
+		              <li>
+		                <a href="app.message.html" class="i-con-h-a">
+		                  <span class="nav-icon">
+		                    <i class="i-con i-con-comment"><i></i></i>
+		                  </span>
+		                  <span class="nav-text">Messages</span>
+		                  <span class="nav-badge">
+		                    <b class="badge badge-sm badge-pill bg-danger">10</b>
+		                  </span>
+		                </a>
+		              </li>
+		              <li>
+		                <a href="app.user.html" class="i-con-h-a">
+		                  <span class="nav-icon">
+		                    <i class="i-con i-con-users"><i></i></i>
+		                  </span>
+		                  <span class="nav-text">Users</span>
+		                </a>
+		              </li>
+		          </ul>
+		          <ul class="nav ">
+		                <li class="nav-header hidden-folded">
+		                  <span>UI elements</span>
+		                </li>
+		                    <li>
+		                  <a href="#" class="i-con-h-a">
+		                      <span class="nav-icon">
+		                        <i class='i-con i-con-layer'><i></i></i>
+		                      </span>
+		                    <span class="nav-text">Components</span>
+		                    <span class="nav-caret"></span>
+		                  </a>
+		            
+		                  <ul class="nav-sub">
+		                    <li>
+		                      <a href="ui.alert.html" class="">
+		                        <span class="nav-text">Alert</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.badge.html" class="">
+		                        <span class="nav-text">Badge</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.button.html" class="">
+		                        <span class="nav-text">Button</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.card.html" class="">
+		                        <span class="nav-text">Card</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.carousel.html" class="">
+		                        <span class="nav-text">Carousel</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.color.html" class="">
+		                        <span class="nav-text">Color</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.dropdown.html" class="">
+		                        <span class="nav-text">Dropdown</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.grid.html" class="">
+		                        <span class="nav-text">Grid</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.icon.html" class="">
+		                        <span class="nav-text">Icon</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.list.html" class="">
+		                        <span class="nav-text">List</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.modal.html" class="">
+		                        <span class="nav-text">Modal</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.navbar.html" class="">
+		                        <span class="nav-text">Navbar</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.sidenav.html" class="">
+		                        <span class="nav-text">Sidenav</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.timeline.html" class="">
+		                        <span class="nav-text">Timeline</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.tab.html" class="">
+		                        <span class="nav-text">Tab &amp; Collpase</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.tooltip.html" class="">
+		                        <span class="nav-text">Tooltip &amp; Popover</span>
+		                      </a>
+		                    </li>
+		                  </ul>
+		                </li>
+		                <li>
+		                  <a href="#" class="i-con-h-a">
+		                      <span class="nav-icon">
+		                        <i class='i-con i-con-grid'><i></i></i>
+		                      </span>
+		                    <span class="nav-text">Plugins</span>
+		                      <span class="nav-badge">
+		                        <b class="badge badge-sm badge-pill ">5</b>
+		                      </span>
+		                    <span class="nav-caret"></span>
+		                  </a>
+		            
+		                  <ul class="nav-sub">
+		                    <li>
+		                      <a href="ui.scroll.html" class="">
+		                        <span class="nav-text">Infinite Scroll</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.sortable.html" class="">
+		                        <span class="nav-text">Sortable</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.scrollreveal.html" class="">
+		                        <span class="nav-text">Scroll Reveal</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="ui.map.html" class="">
+		                        <span class="nav-text">Vector Map</span>
+		                      </a>
+		                    </li>
+		                  </ul>
+		                </li>
+		                <li>
+		                  <a href="#" class="i-con-h-a">
+		                      <span class="nav-icon">
+		                        <i class='i-con i-con-circle'><i></i></i>
+		                      </span>
+		                    <span class="nav-text">Form</span>
+		                    <span class="nav-caret"></span>
+		                  </a>
+		            
+		                  <ul class="nav-sub">
+		                    <li>
+		                      <a href="form.element.html" class="">
+		                        <span class="nav-text">Form Element</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="form.layout.html" class="">
+		                        <span class="nav-text">Form Layout</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="form.validation.html" class="">
+		                        <span class="nav-text">Form Validation</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="form.editor.html" class="">
+		                        <span class="nav-text">Editor</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="form.datepicker.html" class="">
+		                        <span class="nav-text">Datepicker</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="form.select.html" class="">
+		                        <span class="nav-text">Select</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="form.wizard.html" class="">
+		                        <span class="nav-text">Wizard</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="form.dropzone.html" class="">
+		                        <span class="nav-text">File Upload</span>
+		                      </a>
+		                    </li>
+		                  </ul>
+		                </li>
+		                <li>
+		                  <a href="#" class="i-con-h-a">
+		                      <span class="nav-icon">
+		                        <i class='i-con i-con-table'><i></i></i>
+		                      </span>
+		                    <span class="nav-text">Tables</span>
+		                    <span class="nav-caret"></span>
+		                  </a>
+		            
+		                  <ul class="nav-sub">
+		                    <li>
+		                      <a href="table.style.html" class="">
+		                        <span class="nav-text">Style</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="table.bootstrap.html" class="">
+		                        <span class="nav-text">Bootstrap Table</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="table.datatables.html" class="">
+		                        <span class="nav-text">Datatables</span>
+		                      </a>
+		                    </li>
+		                  </ul>
+		                </li>
+		                <li>
+		                  <a href="#" class="i-con-h-a">
+		                      <span class="nav-icon">
+		                        <i class='i-con i-con-pie-chart'><i></i></i>
+		                      </span>
+		                    <span class="nav-text">Charts</span>
+		                    <span class="nav-caret"></span>
+		                  </a>
+		            
+		                  <ul class="nav-sub">
+		                    <li>
+		                      <a href="chart.simple.html" class="">
+		                        <span class="nav-text">Simple</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="chart.chartjs.html" class="">
+		                        <span class="nav-text">Chartjs</span>
+		                      </a>
+		                    </li>
+		                  </ul>
+		                </li>
+		                <li class="nav-header hidden-folded">
+		                  <span>Extra</span>
+		                </li>
+		                    <li>
+		                  <a href="#" class="i-con-h-a">
+		                      <span class="nav-icon">
+		                        <i class='i-con i-con-page'><i></i></i>
+		                      </span>
+		                    <span class="nav-text">Pages</span>
+		                    <span class="nav-caret"></span>
+		                  </a>
+		            
+		                  <ul class="nav-sub">
+		                    <li>
+		                      <a href="page.profile.html" class="">
+		                        <span class="nav-text">Profile</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="page.search.html" class="">
+		                        <span class="nav-text">Search</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="page.invoice.html" class="">
+		                        <span class="nav-text">Invoice</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="page.faq.html" class="">
+		                        <span class="nav-text">FAQ</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="page.price.html" class="">
+		                        <span class="nav-text">Price</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="page.setting.html" class="">
+		                        <span class="nav-text">Setting</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="page.blank.html" class="">
+		                        <span class="nav-text">Blank</span>
+		                      </a>
+		                    </li>
+		                  </ul>
+		                </li>
+		                <li>
+		                  <a href="#" class="i-con-h-a">
+		                      <span class="nav-icon">
+		                        <i class='i-con i-con-lock'><i></i></i>
+		                      </span>
+		                    <span class="nav-text">Auth</span>
+		                    <span class="nav-caret"></span>
+		                  </a>
+		            
+		                  <ul class="nav-sub">
+		                    <li>
+		                      <a href="signin.html" class="">
+		                        <span class="nav-text">Signin</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="signup.html" class="">
+		                        <span class="nav-text">Signup</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="forgot-password.html" class="">
+		                        <span class="nav-text">Forgot Password</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="lockme.html" class="">
+		                        <span class="nav-text">Lockme Screen</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="404.html" class="">
+		                        <span class="nav-text">Error 404</span>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="505.html" class="">
+		                        <span class="nav-text">Error 505</span>
+		                      </a>
+		                    </li>
+		                  </ul>
+		                </li>
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		            
+		          </ul>
+		        </div>
+		  </div>
+		  
+		  <!-- sidenav bottom -->
+		  <div class="no-shrink ">
+		    <div class="text-sm p-3 b-t">
+		    	<div class="hidden-folded text-sm">
+		    		<div class="mt-1">
+		    			<a href="index.html" class="text-muted">About</a>
+		    			<a href="../docs/" class="text-muted mx-2 no-ajax" target="_blank">Documentation</a>
+		    		</div>
+		    		<div class="text-muted"><small class="text-muted">&copy; Copyright 2018, Agile</small></div>
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<!-- ############ Aside END-->
+
+	<!-- ############ Content START-->
+	<div id="content" class="flex ">
+<!-- ############ Main START-->
+
+<div class="page-container" id="page-container">
+	<div class="page-title padding pb-0 ">
+		<h2 class="text-md mb-0">Button</h2>
+	</div>
+	<div class="padding">
+  <div class="row">
+    <div class="col-sm-6">
+          <p><strong>Colors</strong></p>
+          <div class="mb-3">
+            <button class="btn w-sm mb-1 btn-primary">Primary</button>
+            <button class="btn w-sm mb-1 btn-secondary">Secondary</button>
+            <button class="btn w-sm mb-1 btn-success">Success</button>
+            <button class="btn w-sm mb-1 btn-info">Info</button>
+            <button class="btn w-sm mb-1 btn-warning">Warning</button>
+            <button class="btn w-sm mb-1 btn-danger">Danger</button>
+            <button class="btn w-sm mb-1 btn-white">White</button>
+            <button class="btn w-sm mb-1 btn-light">Light</button>
+            <button class="btn w-sm mb-1 btn-dark">Dark</button>
+          </div>
+          <p><strong>Light color</strong></p>
+          <div class="mb-3">
+            <button class="btn w-sm mb-1 bg-primary-lt">Primary</button>
+            <button class="btn w-sm mb-1 bg-secondary-lt">Secondary</button>
+            <button class="btn w-sm mb-1 bg-success-lt">Success</button>
+            <button class="btn w-sm mb-1 bg-info-lt">Info</button>
+            <button class="btn w-sm mb-1 bg-warning-lt">Warning</button>
+            <button class="btn w-sm mb-1 bg-danger-lt">Danger</button>
+            <button class="btn w-sm mb-1 bg-light-lt">Light</button>
+            <button class="btn w-sm mb-1 bg-dark-lt">Dark</button>
+          </div>
+          <p><strong>Size</strong></p>
+          <div class="mb-3">
+            <button class="btn w-sm mb-1 btn-sm btn-primary">Small</button>
+            <button class="btn w-sm mb-1 btn-secondary">Normal</button>
+            <button class="btn w-sm mb-1 btn-md btn-white">Medium</button>
+          </div>
+          <p><strong>Outline</strong></p>
+          <div class="mb-3">
+            <button class="btn w-sm mb-1 btn-outline-primary">Primary</button>
+            <button class="btn w-sm mb-1 btn-outline-info">Info</button>
+            <button class="btn w-sm mb-1 btn-outline-success">Success</button>
+            <button class="btn w-sm mb-1 btn-outline-warning">Warning</button>
+            <button class="btn w-sm mb-1 btn-outline-danger">Danger</button>
+            <button class="btn w-sm mb-1 btn-outline-light">Light</button>
+            <button class="btn w-sm mb-1 btn-outline-dark">Dark</button>
+          </div>
+          <p><strong>Rounded</strong></p>
+          <div class="mb-3">
+            <button class="btn w-sm mb-1 btn-rounded btn-primary">Primary</button>
+            <button class="btn w-sm mb-1 btn-rounded btn-secondary">Secondary</button>
+            <button class="btn w-sm mb-1 btn-rounded btn-success">Success</button>
+            <button class="btn w-sm mb-1 btn-rounded btn-outline-info">Info</button>
+            <button class="btn w-sm mb-1 btn-rounded btn-outline-warning">Warning</button>
+            <button class="btn w-sm mb-1 btn-rounded btn-outline-danger">Danger</button>
+          </div>
+          <p><strong>Block button</strong></p>
+          <div class="mb-3">
+            <button class="btn btn-white btn-md btn-block">
+              Block level button
+            </button>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-dark btn-block">
+              <i class="i-con i-con-nav w-16 float-left"></i> Block level button
+            </button>
+          </div>
+          <p><strong>Icon</strong></p>
+          <div class="mb-3">
+            <button class="btn btn-icon btn-white">
+              <span class="i-con-h-a"><i class="i-con i-con-menu"></i></span>
+            </button>
+
+            <a href="#" class="btn btn-icon btn-rounded btn-primary" title="Facebook" >
+                <span class="i-con-h-a"><i class="i-con i-con-plus"></i></span>
+            </a>
+          </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="mb-2">
+        <p>Raised button</p>
+        <button class="btn btn-raised btn-wave mb-2 w-xs bg-white">White</button>
+        <button class="btn btn-raised btn-wave mb-2 w-xs red">Red</button>
+        <button class="btn btn-raised btn-wave mb-2 w-xs indigo">Indigo</button>
+        <button class="btn btn-raised btn-wave mb-2 w-xs purple">Purple</button>
+        <button class="btn btn-raised btn-wave mb-2 w-xs blue">Blue</button><br>
+        <button class="btn btn-raised btn-wave mb-2 w-xs green">Green</button>
+        <button class="btn btn-raised btn-wave mb-2 w-xs cyan">Cyan</button>
+        <button class="btn btn-raised btn-wave mb-2 w-xs danger" disabled>Disabled</button>
+      </div>
+      <div class="mb-2">
+        <p>Icon</p>
+        <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 i-con-h-a blue"><span><i class="i-con i-con-plus b-2x"></i></span></button>
+        <button class="btn btn-md btn-raised btn-wave btn-icon btn-rounded mb-2 i-con-h-a cyan"><i class="i-con i-con-search b-2x"></i></button>
+        <button class="btn btn-raised btn-wave btn-icon btn-rounded mb-2 i-con-h-a green"><i class="i-con i-con-trash b-2x"><i></i></i></button>
+        <button class="btn btn-raised btn-wave btn-icon btn-rounded mb-2 i-con-h-a purple"><i class="i-con i-con-upload b-2x"><i></i></i></button>
+        <button class="btn btn-raised btn-wave btn-icon btn-rounded mb-2 i-con-h-a" disabled><i class="i-con i-con-download b-2x"><i></i></i></button>
+      </div>
+      <p><strong>Checkbox and radio buttons</strong></p>
+      <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="checkbox" checked autocomplete="off"> Active
+        </label>
+        <label class="btn btn-secondary">
+          <input type="checkbox" autocomplete="off"> Check
+        </label>
+        <label class="btn btn-secondary">
+          <input type="checkbox" autocomplete="off"> Check
+        </label>
+      </div>
+      <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+        </label>
+      </div>
+      <p><strong>Group</strong></p>
+      <div class="mb-3">
+        <div class="btn-group">
+          <button type="button" class="btn btn-outline-primary">Left</button>
+          <button type="button" class="btn btn-outline-primary">Middle</button>
+          <button type="button" class="btn btn-outline-primary">Right</button>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary active">Left</button>
+          <button type="button" class="btn btn-primary">Middle</button>
+          <button type="button" class="btn btn-primary">Right</button>
+        </div>
+      </div>
+      <p>Nested</p>
+      <div class="btn-group mb-3">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+        <div class="btn-group dropdown">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">Action</a></li>
+            <li class="dropdown-item"><a href="#">Another action</a></li>
+            <li class="dropdown-item"><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-item"><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>Vertical</p>
+      <div class="btn-group-vertical mb-3">
+        <button type="button" class="btn btn-secondary">Button</button>
+        <button type="button" class="btn btn-secondary">Button</button>
+        <div class="btn-group dropdown">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">Action</a></li>
+            <li class="dropdown-item"><a href="#">Another action</a></li>
+            <li class="dropdown-item"><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-item"><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>Multiple</p>
+      <div class="btn-toolbar mb-3">
+        <div class="btn-group mr-2">
+          <button type="button" class="btn btn-white">1</button>
+          <button type="button" class="btn btn-white">2</button>
+          <button type="button" class="btn btn-white active">3</button>
+          <button type="button" class="btn btn-white">4</button>
+        </div>
+        <div class="btn-group mr-2">
+          <button type="button" class="btn btn-white">5</button>
+          <button type="button" class="btn btn-white">6</button>
+          <button type="button" class="btn btn-white">7</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-white">8</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ############ Main END-->
+	</div>
+	<!-- ############ Content END-->
+
+<!-- ############ LAYOUT END-->
+
+</div>
+
+
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/theme.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

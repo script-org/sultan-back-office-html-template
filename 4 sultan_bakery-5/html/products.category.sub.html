@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <style>
+    .list-item {
+      cursor: pointer;
+      border-right: 3px solid white !important;
+    }
+
+    .list-item:hover a {
+      color: #137eff;
+    }
+
+    a:hover {
+      color: #137eff;
+    }
+
+    .list-item.active {
+      border-right: 3px solid #137eff !important;
+      color: #137eff !important;
+    }
+
+    a.dropdown-item {
+      color: white !important;
+    }
+
+    /*custom style*/
+    .list-row .list-item, .list-bordered .list-item {
+      border-top: 1px solid rgba(135, 150, 165, 0.075);
+      margin-top: 0;
+    }
+
+    a.item-author{
+      font-weight: 500;
+      font-size: 17px;
+    }
+
+    a.item-author:hover{
+      color: #137eff!important;
+    }
+
+    div.item-except{
+      font-weight: 200;
+    }
+
+    a.back-category{
+      font-weight: 500;
+      font-size: 17px;
+    }
+  </style>
+</head>
+
+<body class="layout-column">
+
+  <header id="header" class="page-header bg-white box-shadow">
+    <div class="navbar navbar-expand-lg">
+      <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+        <i class="i-con i-con-menu text-muted"></i>
+      </a>
+      <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+      <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+        <form class="input-group m-2 my-lg-0 " style="padding-left: 40px">
+          <span class="input-group-prepend">
+            <button type="button" class="btn no-shadow no-bg px-0">
+              <i class="la la-search"></i>
+            </button>
+          </span>
+          <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+            placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+            data-plugin="typeahead">
+        </form>
+      </div>
+
+      <ul class="nav navbar-menu order-1 order-lg-2">
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip"
+            data-title="Fullscreen">
+            <i class="i-con i-con-fullscreen"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+            <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Good evening,</small>
+              <span>Justin Timber</span>
+            </span>
+            <span class="avatar w-36 bg-primary-lt">
+              JT
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+              <div>
+                <img src="../assets/img/animated-icons/settings/settings.svg" >
+              </div>
+              <span class="ml-2">My account</span>
+            </a>
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+              <div>
+                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+              </div>
+              <span class="ml-2">Sign out</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+            data-target="#navbarToggler">
+            <i class="i-con i-con-nav text-muted"><i></i></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div id="main" class="layout-row flex">
+    <div id="aside" class="page-sidenav no-shrink  nav-expand" aria-hidden="true">
+      <div class="sidenav h-100 modal-dialog bg-white box-shadow">
+        <div class="flex scroll-container">
+          <div class="nav-border b-primary mt-3" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="dashboard.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/home/home.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DASHBOARD</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/tags/tags.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="products.all.html">
+                      <span class="nav-text">All Products</span>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="products.category.html" class="">
+                      <span class="nav-text">Categories</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.modifier.html" class="">
+                      <span class="nav-text">Modifiers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/list/list.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">INVENTORY</span>
+                  <span class="nav-badge">
+                    <b class="badge badge-sm badge-pill ">12</b>
+                  </span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="inventory.purchase.html">
+                      <span class="nav-text">Purchase Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.transfer.html" class="">
+                      <span class="nav-text">Transfer Orders</span>
+                      <span class="nav-badge">
+                        <b class="badge badge-sm badge-pill bg-danger">12</b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.stock.html" class="">
+                      <span class="nav-text">Stock Adjustment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.counts.html" class="">
+                      <span class="nav-text">Inventory Counts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.history.html" class="">
+                      <span class="nav-text">Inventory History</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.valuation.html" class="">
+                      <span class="nav-text">Inventory Valuation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.planner.html" class="">
+                      <span class="nav-text">Inventory Planner</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="productions.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gears/gears.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTIONS</span>
+                  <span class="nav-badge">
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/discount/discount.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DISCOUNTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="discount.code.html">
+                      <span class="nav-text">Discount Code</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="discount.auto.html" class="">
+                      <span class="nav-text">Automatic Discounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="suppliers.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/business-network/business-network.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SUPPLIERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-user'><i></i></i>
+                  </span>
+                  <span class="nav-text">CUSTOMERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-users'><i></i></i>
+                  </span>
+                  <span class="nav-text">EMPLOYEES</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="employee.all.html">
+                      <span class="nav-text">All Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.roll.html" class="">
+                      <span class="nav-text">Rolls/Access Rights</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.schedule.html" class="">
+                      <span class="nav-text">Schedule Timesheet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.payroll.html" class="">
+                      <span class="nav-text">Payroll</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/calculator/calculator.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">BOOKEEPING</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="bookeeping.sales.html">
+                      <span class="nav-text">Sales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.expense.html" class="">
+                      <span class="nav-text">Expenses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.vat.html" class="">
+                      <span class="nav-text">VAT Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.account.html" class="">
+                      <span class="nav-text">Accounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="reports.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">REPORTS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="no-shrink ">
+          <div class="nav-border b-primary" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="setting.general.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm p-3 mt-5">
+            <div class="hidden-folded text-sm">
+              <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############ Aside END-->
+
+    <!-- ############ Content START-->
+    <div id="content" class="flex animate fadeInRight">
+      <!-- ############ Main START-->
+      <div class="flex">
+        <div class="padding" id="content">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-between">
+              <h2 class="mb-4">Categories</h2>
+              <div class="alert-container">
+                <div class="alert bg-success d-none"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-8 pr-md-0">
+              <div class="d-flex">
+                <a class="i-con-h-a text-dark mr-auto p-2 back-category" href="./products.category.html">
+                  <i class="i-con i-con-left"></i>
+                  Back to main category
+                </a>
+                <label class="d-flex align-items-center mr-2 mb-1">
+                  <img src="https://image.flaticon.com/icons/svg/2922/2922830.svg" class="icon" alt="">
+                  Store:
+                </label>
+                <select id="store-name" class="custom-select border-0" style="width: 200px">
+                  <option>WEST SIDE LOCATION</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-8 col-12 pr-md-0">
+              <div class="card">
+                <div class="row">
+                  <div class="col-6 pr-0">
+                    <div class="list list-row border-right">
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author parent-cat">Bakery</a>
+                          <div class="item-except text-muted h-1x">
+                            10 Sub / 30 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author parent-cat">Catering</a>
+                          <div class="item-except text-muted h-1x">
+                            5 Sub / 20 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author parent-cat">Pastry</a>
+                          <div class="item-except text-muted h-1x">
+                            2 Sub / 10 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author parent-cat">Arabic Sweets</a>
+                          <div class="item-except text-muted h-1x">
+                            5 Sub / 12 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author parent-cat">Charcuterie</a>
+                          <div class="item-except text-muted h-1x">
+                            3 Sub / 8 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author parent-cat">Dr. Bread</a>
+                          <div class="item-except text-muted h-1x">
+                            8 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 pl-0">
+                    <div class="list list-row">
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author sub-cat">Pita Bread</a>
+                          <div class="item-except text-muted h-1x">
+                            1 Sub / 9 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author sub-cat">Submarine</a>
+                          <div class="item-except text-muted h-1x">
+                            10 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author sub-cat">Kaak</a>
+                          <div class="item-except text-muted h-1x">
+                            0 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author sub-cat">Pain au Lait</a>
+                          <div class="item-except text-muted h-1x">
+                            1 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author sub-cat">French Toast</a>
+                          <div class="item-except text-muted h-1x">
+                            7 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item border-bottom">
+                        <div class="flex">
+                          <a class="item-author sub-cat">Shalfe</a>
+                          <div class="item-except text-muted h-1x">
+                            3 Items
+                          </div>
+                        </div>
+                        <div>
+                          <div class="item-action dropdown">
+                            <a data-toggle="dropdown">
+                              <i class="i-con i-con-more"><i></i></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                              <a class="dropdown-item edit">
+                                <i class="la la-pen h5"></i>
+                                Edit
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                <i class="i-con i-con-trash"><i></i></i>
+                                Delete
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 category-edit">
+              <div class="card">
+                <div class="card-body">
+                  <h4 id="category-edit-title" class="mb-4">Create category</h4>
+                  <div class="row">
+                    <div class="col-12 form-group">
+                      <label for="">Name </label>
+                      <input type="text" id="name" placeholder="Beverages" class="form-control" />
+                    </div>
+                    <div class="col-12 mb-4">
+                      <label class="md-check">
+                        <input type="checkbox" id="checkbox" checked>
+                        <i class="blue"></i>
+                        is a sub-category
+                      </label>
+                    </div>
+                    <div class="col-12" id="category-name-container">
+                      <label for="">Category name</label>
+                      <select class="custom-select" id="sub-category" style="width: 100%" data-plugin="select2" data-option="{}"
+                        data-placeholder="Select a category">
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end mt-3">
+                      <div>
+                        <button class="btn btn-secondary cancel" data-toggle="modal"
+                          data-target="#leave-modal" disabled>Cancel</button>
+                        <button class="btn btn-danger d-none delete-btn" data-toggle="modal"
+                          data-target="#delete-modal">Delete</button>
+                        <button class="btn btn-success save" disabled>Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="leave-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">You have unsaved changes</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <p>
+            If you leave this page, all unsaved changes will be lost
+          </p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary category-edit-cancel" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger leave" data-dismiss="modal">Leave page</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="delete-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Delete category</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <p>
+            Are you sure you want to delete the category
+            <b>Bakery</b>?
+          </p>
+          <p class="mb-0">Any products, services, or categories in it will be moved to:</p>
+          <p>"Charcuterie"</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger delete" data-dismiss="modal">Delete category</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/office/products.category.sub.js"></script>
+</body>
+
+</html>

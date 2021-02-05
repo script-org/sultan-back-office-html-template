@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{display:none;}
+	.st2{display:inline;}
+	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Button_2_">
+	<g id="Button_1_">
+		<path id="Button" d="M42,20c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S43.1,20,42,20z"/>
+	</g>
+</g>
+<g id="Printer_2_">
+	<g id="Printer_1_">
+		<path id="Printer" class="st0" d="M12,38H5c-1.1,0-2-0.9-2-2V18c0-1.1,0.9-2,2-2h40c1.1,0,2,0.9,2,2v18c0,1.1-0.9,2-2,2h-7H12z"/>
+	</g>
+</g>
+<g id="Outlet_2_">
+	<g id="Outlet_1_">
+		<line id="Outlet" class="st0" x1="10" y1="29" x2="40" y2="29"/>
+	</g>
+</g>
+<g id="Paper_with_Text_1_" class="st1">
+	<g id="Paper_with_Text" class="st2">
+		<g id="Paper_1_">
+			<rect id="Paper" x="13" y="3" class="st3" width="24" height="28"/>
+		</g>
+		<g id="Text_1">
+			<line id="Text_1_1_" class="st0" x1="32" y1="26" x2="18" y2="26"/>
+		</g>
+		<g id="Text_2">
+			<line id="Text_2_1_" class="st0" x1="28" y1="22" x2="18" y2="22"/>
+		</g>
+		<g id="Text_3_1_">
+			<line id="Text_3_3_" class="st0" x1="32" y1="18" x2="18" y2="18"/>
+		</g>
+		<g id="Text_4_1_">
+			<line id="Text_4" class="st0" x1="28" y1="14" x2="18" y2="14"/>
+		</g>
+		<g id="Text_5_1_">
+			<line id="Text_5_3_" class="st0" x1="28" y1="8" x2="22" y2="8"/>
+		</g>
+	</g>
+</g>
+<g id="Paper_2_">
+	<g id="Paper_4_">
+		<rect id="Paper_5_" x="12" y="1" class="st3" width="26" height="15"/>
+	</g>
+</g>
+</svg>

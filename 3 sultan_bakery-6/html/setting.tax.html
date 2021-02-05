@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/flaticon/flaticon.css">
+    <link rel="stylesheet" href="../assets/flaticon2/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+
+<body class="layout-column">
+    <header id="header" class="page-header bg-white box-shadow">
+        <div class="navbar navbar-expand-lg">
+            <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+                <i class="i-con i-con-menu text-muted"></i>
+            </a>
+            <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+            <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+                <form class="input-group m-2 my-lg-0 i-con-h-a" style="padding-left: 40px">
+                    <span class="input-group-prepend">
+                        <button type="button" class="btn no-shadow no-bg px-0">
+                            <i class="i-con i-con-search text-fade w-16"></i>
+                        </button>
+                    </span>
+                    <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+                        placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+                        data-plugin="typeahead">
+                </form>
+            </div>
+            <ul class="nav navbar-menu order-1 order-lg-2">
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link px-2 i-con-h-a" data-plugin="screenfull" data-toggle="tooltip"
+                        data-title="Fullscreen">
+                        <i class="i-con i-con-fullscreen"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown"
+                        class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+                        <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+                            <small class='text-fade d-block mb-1'>Good evening,</small>
+                            <span>Justin Timber</span>
+                        </span>
+                        <span class="avatar w-36 bg-primary-lt">
+                            JT
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+                        <a class="py-3 dropdown-item animation-icon d-flex align-items-center"
+                            href="account.general.html">
+                            <div>
+                                <img src="../assets/img/animated-icons/settings/settings.svg">
+                            </div>
+                            <span class="ml-2">My account</span>
+                        </a>
+                        <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+                            <div>
+                                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+                            </div>
+                            <span class="ml-2">Sign out</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+                        data-target="#navbarToggler">
+                        <i class="i-con i-con-nav text-muted"><i></i></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="main" class="layout-row flex">
+        <div id="aside" class="page-sidenav no-shrink  nav-expand animate fadeInRight fade" aria-hidden="true">
+            <div class="sidenav h-100 modal-dialog bg-white box-shadow" data-nav>
+                <div class="flex scroll-container">
+                    <div class="nav-border b-primary mt-3">
+                        <ul class="nav bg">
+                            <li>
+                                <a href="dashboard.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/home/home.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">DASHBOARD</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/tags/tags.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">PRODUCTS</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="products.all.empty.html">
+                                            <span class="nav-text">All Products</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="products.category.empty.html" class="">
+                                            <span class="nav-text">Categories</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="products.modifier.empty.html" class="">
+                                            <span class="nav-text">Modifiers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/list/list.svg"
+                                                class="stop import-icon-check" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">INVENTORY</span>
+                                    <span class="nav-badge">
+                                        <b class="badge badge-sm badge-pill ">12</b>
+                                    </span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="inventory.purchase.html">
+                                            <span class="nav-text">Purchase Orders</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.transfer.html" class="">
+                                            <span class="nav-text">Transfer Orders</span>
+                                            <span class="nav-badge">
+                                                <b class="badge badge-sm badge-pill bg-danger">12</b>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.stock.html" class="">
+                                            <span class="nav-text">Stock Adjustment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.counts.html" class="">
+                                            <span class="nav-text">Inventory Counts</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.history.html" class="">
+                                            <span class="nav-text">Inventory History</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.valuation.html" class="">
+                                            <span class="nav-text">Inventory Valuation</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.planner.html" class="">
+                                            <span class="nav-text">Inventory Planner</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="productions.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/gears/gears.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">PRODUCTIONS</span>
+                                    <span class="nav-badge">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/discount/discount.svg"
+                                                class="stop import-icon-check" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">DISCOUNTS</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="discount.code.html">
+                                            <span class="nav-text">Discount Code</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="discount.auto.html" class="">
+                                            <span class="nav-text">Automatic Discounts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="supplier.empty.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/business-network/business-network.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/business-network/business-network.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">SUPPLIERS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./customers.html" class="i-con-h-a">
+                                    <span class="nav-icon">
+                                        <i class='i-con i-con-user'><i></i></i>
+                                    </span>
+                                    <span class="nav-text">CUSTOMERS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="i-con-h-a">
+                                    <span class="nav-icon">
+                                        <i class='i-con i-con-users'><i></i></i>
+                                    </span>
+                                    <span class="nav-text">EMPLOYEES</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="employee.all.html">
+                                            <span class="nav-text">All Employees</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.roll.html" class="">
+                                            <span class="nav-text">Rolls/Access Rights</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.schedule.html" class="">
+                                            <span class="nav-text">Schedule Timesheet</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.payroll.html" class="">
+                                            <span class="nav-text">Payroll</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/calculator/calculator.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/calculator/calculator.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">BOOKEEPING</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="bookeeping.sales.html">
+                                            <span class="nav-text">Sales</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.expense.html" class="">
+                                            <span class="nav-text">Expenses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.vat.html" class="">
+                                            <span class="nav-text">VAT Overview</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.account.html" class="">
+                                            <span class="nav-text">Accounts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="reports.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">REPORTS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="no-shrink ">
+                    <div class="nav-border b-primary">
+                        <ul class="nav bg">
+                            <li class="active">
+                                <a href="setting.general.html">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/gear/gear.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/gear/gear.gif" class="play d-none"
+                                                alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">SETTINGS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-sm p-3 mt-5">
+                        <div class="hidden-folded text-sm">
+                            <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="flex">
+            <div class="flex">
+                <div class="padding" style="padding-bottom: 80px;">
+                    <div class="row sticky" style="height: initial; top: 100px;">
+                        <div style="width: 275px" class="pl-3">
+                            <h2 class="mb-4 d-flex justify-content-between">
+                                Settings
+                            </h2>
+                        </div>
+                        <div class="col d-flex justify-content-end align-items-center mb-5">
+                            <button data-toggle="modal" data-target="#content-aside" data-modal
+                                class="btn btn-sm btn-white d-md-none i-con-h-a ml-2">
+                                <i class="i-con i-con-nav text-muted"><i></i></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="aside aside-sm pl-3 sticky" id="content-aside"
+                            style="width: 275px; max-height: calc(100vh - 230px); height: 100vh; top: 150px;">
+                            <div class="card modal-dialog setting-menu scroll-container" style="max-height: 100%;">
+                                <div class="list list-row" data-sub-nav>
+                                    <a href="setting.general.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <div>
+                                                <img src="../assets/img/animated-icons/gear/gear.svg"
+                                                    class="stop import-icon-check" alt="">
+                                                <img src="../assets/img/animated-icons/gear/gear.gif" class="play"
+                                                    alt="">
+                                            </div>
+                                        </span>
+                                        <span class="h5">
+                                            General<br>
+                                            <small>View and update yout store details</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.location.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/address/address.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/address/address.gif" class="play"
+                                                alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Locations<br>
+                                            <small>Manage places you stock and sell products</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.payment.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/money/money.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/money/money.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Payment types<br>
+                                            <small>Enable and manage your payment options</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.notification.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/bell/bell.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/bell/bell.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Notifications<br>
+                                            <small>Manage all system notifications</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.cash.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/coins/coins.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/coins/coins.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Cash rounding<br>
+                                            <small>Set total amount to round to nearest interval</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.period.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/alarm-clock/alarm-clock.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/alarm-clock/alarm-clock.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Period of service<br>
+                                            <small>Set your store’s hours of operation</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.tax.empty.html" class="list-item border-top-0 active">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/hand-scissors/hand-scissors.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/hand-scissors/hand-scissors.gif"
+                                                class="play d-none" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Taxes<br>
+                                            <small>Manage how your store charges taxes</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.receipt.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/receipt/receipt.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/receipt/receipt.gif" class="play"
+                                                alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Receipts<br>
+                                            <small>Manage printed receipts design</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.loyalty.empty.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/prize/prize.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/prize/prize.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Loyalty<br>
+                                            <small>Enable loyalty points and percent credited</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.pos.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/computer-display/computer-display.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/computer-display/computer-display.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            POS devices<br>
+                                            <small>Manage your POS devices</small>
+                                        </span>
+                                    </a>
+                                    <a href="settings.posEditor.empty.html"
+                                        class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/product/product.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/product/product.gif" class="play"
+                                                alt="">
+                                        </span>
+                                        <span class="h5">
+                                            POS editor<br>
+                                            <small>Edit featured list</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.backup.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/restore-window/restore-window.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/restore-window/restore-window.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Backup and restore<br>
+                                            <small>Setup store data backup or restore past data</small>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" style="overflow-x: hidden;" id="content-body">
+                            <div data-plugin="notie">
+                                <div class="d-none" id="ghost">
+                                    <a class="edit-link" href="setting.tax.edit.html"></a>
+                                    <span class="title-item-name"></span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4"
+                                    style="margin-bottom: 10px !important;">
+                                    <span class="h2 mb-0">Taxes</span>
+                                    <a class="btn btn-md btn-primary" href="setting.tax.new.html" style="color: white;">
+                                        <i class="la la-plus-circle"></i>
+                                        Add tax
+                                    </a>
+                                </div>
+                                <div class="card mb-0">
+                                    <div class="card-body table-card">
+                                        <div class="row">
+                                            <div class="col-md-12 pb-4 d-flex justify-content-end">
+                                                <label class="d-flex align-items-center mr-2 mb-0">
+                                                    <img class="icon"
+                                                        src="https://image.flaticon.com/icons/svg/2922/2922830.svg"
+                                                        alt="">
+                                                    Store:
+                                                </label>
+                                                <select class="custom-select border-0" style="width: 150px">
+                                                    <option>ALL STORES</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <table class="table table-theme v-middle table-hover bootstrap-tables"
+                                                    data-plugin="bootstrapTable" data-mobile-responsive="true"
+                                                    id="table-taxes">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Tax name</th>
+                                                            <th>Store</th>
+                                                            <th
+                                                                data-title-tooltip="Tax will be applied to new items automatically and can be removed when creating or ediGng a product.">
+                                                                Apply to new items
+                                                                <!-- <a data-toggle="tooltip" data-placement="right"
+                                                                    data-title-tooltip="Tax will be applied to new items automatically and can be removed when creating or ediGng a product."> -->
+                                                                <i class="i-con i-con-info">
+                                                                    <i class="i-con i-con-border"></i>
+                                                                </i>
+                                                                <!-- </a> -->
+                                                            </th>
+                                                            <th
+                                                                data-title-tooltip="Manage how your store calculates and shows tax on your store and reciept.">
+                                                                Tax calculation
+                                                                <!-- <a data-toggle="tooltip" data-placement="right"
+                                                                    data-title="Manage how your store calculates and shows tax on your store and reciept."> -->
+                                                                <i class="i-con i-con-info">
+                                                                    <i class="i-con i-con-border"></i>
+                                                                </i>
+                                                                <!-- </a> -->
+                                                            </th>
+                                                            <th class="text-right">Tax rate</th>
+                                                            <th class="text-right"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>VAT 11%</td>
+                                                            <td>West Side Location</td>
+                                                            <td>Yes</td>
+                                                            <td>Included in the price</td>
+                                                            <td class="text-right">11.4%</td>
+                                                            <td class="text-right">
+                                                                <a class="text-danger i-con-h-a delete"
+                                                                    data-toggle="modal"
+                                                                    data-target="#taxes-delete-modal">
+                                                                    <i class="i-con i-con-trash"><i></i></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>VAT 12%</td>
+                                                            <td>West Side Location</td>
+                                                            <td>Yes</td>
+                                                            <td>Included in the price</td>
+                                                            <td class="text-right">11.4%</td>
+                                                            <td class="text-right">
+                                                                <a class="text-danger i-con-h-a delete"
+                                                                    data-toggle="modal"
+                                                                    data-target="#taxes-delete-modal">
+                                                                    <i class="i-con i-con-trash"><i></i></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="taxes-delete-modal" class="modal fade" data-backdrop="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-0">
+                                                <h5 class="modal-title">Delete tax</h5>
+                                            </div>
+                                            <div class="modal-body p-lg">
+                                                <p>
+                                                    Are you sure you want to delete the tax <span
+                                                        class="tax-name"><b>VAT 11%</b></span>?<br> Upon deleting, it
+                                                    will be removed from the items to which it has been applied.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer border-0">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-danger continue"
+                                                    data-dismiss="modal">Delete tax</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/pace-progress/pace.min.js"></script>
+    <script src="../libs/pjax/pjax.js"></script>
+    <script src="../assets/js/ajax.js"></script>
+    <script src="../assets/js/lazyload.config.js"></script>
+    <script src="../assets/js/lazyload.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+    <script src="../assets/js/theme.js"></script>
+
+    <footer class="d-none">
+        <script src="../assets/js/common.js"></script>
+        <script src="../assets/js/office/setting.tax.js"></script>
+    </footer>
+</body>
+
+</html>

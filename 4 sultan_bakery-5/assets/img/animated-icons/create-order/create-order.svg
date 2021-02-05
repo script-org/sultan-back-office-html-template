@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>Artboard 1</title>
+<g id="Add_Button">
+	<circle id="Group_3" class="st0" cx="38.7" cy="36.2" r="8.2"/>
+	<line id="Group_2" class="st1" x1="38.7" y1="31.6" x2="38.7" y2="40.7"/>
+	<line id="Group_1" class="st1" x1="34.2" y1="36.2" x2="43.3" y2="36.2"/>
+</g>
+<line id="Group_8" class="st0" x1="35.8" y1="12.9" x2="14.2" y2="12.9"/>
+<line id="Group_7" class="st0" x1="17.8" y1="25.5" x2="14.2" y2="25.5"/>
+<path d="M35.8,25.7v-1.1H20.5v2h13.1C34.3,26.2,35,25.9,35.8,25.7z"/>
+<path d="M29.8,29.9h-9.3v2h8.2C29,31.2,29.3,30.5,29.8,29.9z"/>
+<path d="M27.8,36.2c0-0.3,0-0.6,0-0.9h-7.3v2h7.3C27.8,36.9,27.8,36.6,27.8,36.2z"/>
+<line id="Group_3_1_" class="st0" x1="17.8" y1="30.9" x2="14.2" y2="30.9"/>
+<line id="Group_2_1_" class="st0" x1="17.8" y1="36.3" x2="14.2" y2="36.3"/>
+<path d="M31.4,44.3H9.9V6h30.4v19.4c0.7,0.1,1.4,0.3,2,0.5V4H7.9v42.3h26.7C33.4,45.8,32.3,45.1,31.4,44.3z"/>
+</svg>

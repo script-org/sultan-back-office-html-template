@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Frame">
+</g>
+<g id="perforation">
+</g>
+<g id="mask">
+	<g>
+		<rect x="33" y="26" width="2" height="3"/>
+		<rect x="21" y="5" width="2" height="3"/>
+		<polygon points="27,26.4 29,28.4 29,26 27,26 		"/>
+		<rect x="27" y="5" width="2" height="3"/>
+		<path d="M0,2v30h15.4l-2-2c0,0,0,0,0,0H2V4h46v26H30.6l2,2H50V2H0z"/>
+		<rect x="9" y="26" width="2" height="3"/>
+		<rect x="9" y="5" width="2" height="3"/>
+		<rect x="15" y="5" width="2" height="3"/>
+		<rect x="3" y="5" width="2" height="3"/>
+		<rect x="45" y="5" width="2" height="3"/>
+		<rect x="3" y="26" width="2" height="3"/>
+		<rect x="39" y="5" width="2" height="3"/>
+		<rect x="45" y="26" width="2" height="3"/>
+		<rect x="39" y="26" width="2" height="3"/>
+		<rect x="33" y="5" width="2" height="3"/>
+	</g>
+</g>
+<g id="pencil_1_">
+	<g id="Layer_7">
+		<path class="st0" d="M34.3,46.7L15.6,27.9l-1.7-6l6,1.7l18.8,18.7"/>
+	</g>
+	<g id="Layer_6">
+		<path d="M33.3,47.1l0.7,0.7c1.6,1.6,4.2,1.6,5.8,0s1.6-4.2,0-5.8l-0.7-0.7L33.3,47.1z"/>
+	</g>
+	<g id="Layer_5">
+		<polygon points="20.1,23.7 15.7,28.1 14.3,22.3 		"/>
+	</g>
+</g>
+</svg>

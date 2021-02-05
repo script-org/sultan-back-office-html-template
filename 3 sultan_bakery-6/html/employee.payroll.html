@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <style>
+    #export-modal table td {
+      border-top: none;
+    }
+  </style>
+</head>
+
+<body class="layout-column">
+  <div id="main-page">
+    <header id="header" class="page-header bg-white box-shadow">
+      <div class="navbar navbar-expand-lg">
+        <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+          <i class="i-con i-con-menu text-muted"></i>
+        </a>
+        <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+        <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+          <form class="input-group m-2 my-lg-0 i-con-h-a" style="padding-left: 40px">
+            <span class="input-group-prepend">
+              <button type="button" class="btn no-shadow no-bg px-0">
+                <i class="i-con i-con-search text-fade w-16"></i>
+              </button>
+            </span>
+            <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+              placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+              data-plugin="typeahead">
+          </form>
+        </div>
+        <ul class="nav navbar-menu order-1 order-lg-2">
+
+          <li class="nav-item d-none d-sm-block">
+            <a class="nav-link px-2 i-con-h-a" data-plugin="screenfull" data-toggle="tooltip" data-title="Fullscreen">
+              <i class="i-con i-con-fullscreen"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+              <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+                <small class='text-fade d-block mb-1'>Good evening,</small>
+                <span>Justin Timber</span>
+              </span>
+              <span class="avatar w-36 bg-primary-lt">
+                JT
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+              <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+                <div>
+                  <img src="../assets/img/animated-icons/settings/settings.svg" class="stop import-icon-check">
+                  <img src="../assets/img/animated-icons/settings/settings.gif" class="play">
+                </div>
+                <span class="ml-2">My account</span>
+              </a>
+              <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+                <div>
+                  <img src="../assets/img/animated-icons/sign-out/sign-out.svg" class="stop import-icon-check">
+                  <img src="../assets/img/animated-icons/sign-out/sign-out.gif" class="play">
+                </div>
+                <span class="ml-2">Sign out</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+              data-target="#navbarToggler">
+              <i class="i-con i-con-nav text-muted"><i></i></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </header>
+    <div id="main" class="layout-row flex">
+      <div id="aside" class="page-sidenav no-shrink  nav-expand animate fadeInRight fade" aria-hidden="true">
+        <div class="sidenav h-100 modal-dialog bg-white box-shadow" data-nav>
+          <div class="flex scroll-container">
+            <div class="nav-border b-primary mt-3">
+              <ul class="nav bg">
+                <li>
+                  <a href="dashboard.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/home/home.svg" class="stop import-icon-check" alt="">
+                        <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">DASHBOARD</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/tags/tags.svg" class="stop import-icon-check" alt="">
+                        <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">PRODUCTS</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="products.all.empty.html">
+                        <span class="nav-text">All Products</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="products.category.empty.html" class="">
+                        <span class="nav-text">Categories</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="products.modifier.empty.html" class="">
+                        <span class="nav-text">Modifiers</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/list/list.svg" class="stop import-icon-check" alt="">
+                        <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">INVENTORY</span>
+                    <span class="nav-badge">
+                      <b class="badge badge-sm badge-pill ">12</b>
+                    </span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="inventory.purchase.html">
+                        <span class="nav-text">Purchase Orders</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.transfer.html" class="">
+                        <span class="nav-text">Transfer Orders</span>
+                        <span class="nav-badge">
+                          <b class="badge badge-sm badge-pill bg-danger">12</b>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.stock.html" class="">
+                        <span class="nav-text">Stock Adjustment</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.counts.html" class="">
+                        <span class="nav-text">Inventory Counts</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.history.html" class="">
+                        <span class="nav-text">Inventory History</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.valuation.html" class="">
+                        <span class="nav-text">Inventory Valuation</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.planner.html" class="">
+                        <span class="nav-text">Inventory Planner</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="productions.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/gears/gears.svg" class="stop import-icon-check" alt="">
+                        <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">PRODUCTIONS</span>
+                    <span class="nav-badge">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/discount/discount.svg" class="stop import-icon-check"
+                          alt="">
+                        <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">DISCOUNTS</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="discount.code.html">
+                        <span class="nav-text">Discount Code</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="discount.auto.html" class="">
+                        <span class="nav-text">Automatic Discounts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="supplier.empty.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/business-network/business-network.svg"
+                          class="stop import-icon-check" alt="">
+                        <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play"
+                          alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">SUPPLIERS</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./customers.html" class="i-con-h-a">
+                    <span class="nav-icon">
+                      <i class='i-con i-con-user'><i></i></i>
+                    </span>
+                    <span class="nav-text">CUSTOMERS</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#" class="i-con-h-a">
+                    <span class="nav-icon">
+                      <i class='i-con i-con-users'><i></i></i>
+                    </span>
+                    <span class="nav-text">EMPLOYEES</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="employee.all.html">
+                        <span class="nav-text">All Employees</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="employee.roll.html" class="">
+                        <span class="nav-text">Rolls/Access Rights</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="employee.schedule.html" class="">
+                        <span class="nav-text">Schedule Timesheet</span>
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a href="employee.payroll.html" class="">
+                        <span class="nav-text">Payroll</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop import-icon-check"
+                          alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">BOOKEEPING</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="bookeeping.sales.html">
+                        <span class="nav-text">Sales</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="bookeeping.expense.html" class="">
+                        <span class="nav-text">Expenses</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="bookeeping.vat.html" class="">
+                        <span class="nav-text">VAT Overview</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="bookeeping.account.html" class="">
+                        <span class="nav-text">Accounts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="reports.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg"
+                          class="stop import-icon-check" alt="">
+                        <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">REPORTS</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="no-shrink ">
+            <div class="nav-border b-primary">
+              <ul class="nav bg">
+                <li>
+                  <a href="setting.general.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/gear/gear.svg" class="stop import-icon-check" alt="">
+                        <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">SETTINGS</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm p-3 mt-5">
+              <div class="hidden-folded text-sm">
+                <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="flex">
+        <div class="flex">
+          <div class="padding">
+            <div class="row animate fadeInLeft" v-if="showPage === 'index'">
+              <div class="col-12 d-flex justify-content-between" style="height: 50px">
+                <h2>Payroll</h2>
+                <div class="d-flex align-items-center">
+                  <div class="alert-container">
+                    <div class="alert bg-success" v-if="isShowAlert">
+                      {{message}}
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-md ml-3" @click="toPayrollCreatePage">
+                    <i class="la la-plus-circle"></i>
+                    Pay employee
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 mb-4">
+                <a class="text-primary animation-icon mr-3 d-flex" data-toggle="modal" data-target="#export-modal">
+                  <div class="mr-2">
+                    <img src="../assets/img/animated-icons/uninstalling-updates/uninstalling-updates.svg"
+                      class="stop import-icon-check" alt="">
+                    <img src="../assets/img/animated-icons/uninstalling-updates/uninstalling-updates.gif" class="play"
+                      alt="">
+                  </div>
+                  Export
+                </a>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row mb-4">
+                      <div class="col-12 col-md-3">
+                        <div class='input-group input-daterange' data-plugin="datepicker" data-option="{}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text p-2 i-con-h-a">
+                              <i class="i-con i-con-calendar"><i></i></i>
+                            </span>
+                          </div>
+                          <input type='text' class="form-control" name="start">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">-</span>
+                          </div>
+                          <input type='text' class="form-control" name="end">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="row">
+                          <div class="col-12 col-md-4 d-flex align-items-center">
+                            <label for="" class="i-con-h-a text-secondary d-flex mb-0">
+                              <i class="i-con i-con-user"><i></i></i>
+                              <span class="mx-2">EMPLOEE: </span>
+                            </label>
+                            <select name="" id="" class="custom-select">
+                              <option value="">ALL EMPLOYEES</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-4 d-flex align-items-center">
+                            <label for="" class="i-con-h-a text-secondary d-flex mb-0">
+                              <i class="i-con i-con-user"><i></i></i>
+                              <span class="mx-2">ROLE: </span>
+                            </label>
+                            <select name="" id="" class="custom-select">
+                              <option value="">ALL ROLES</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-4 d-flex align-items-center">
+                            <label for="" class="i-con-h-a text-secondary d-flex mb-0">
+                              <img src="https://image.flaticon.com/icons/svg/2922/2922830.svg" class="icon" alt="">
+                              <span class="mx-2">STORE: </span>
+                            </label>
+                            <select name="" id="" class="custom-select">
+                              <option value="">ALL STORES</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text p-2">
+                              <i class="la la-search"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Search date, time, employee">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Payment period</th>
+                              <th>Employee</th>
+                              <th>Store</th>
+                              <th>Rate</th>
+                              <th>Time worked</th>
+                              <th>Adjusted pay</th>
+                              <th class="text-right">Total pay</th>
+                              <th class="text-right"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr @click="toPayrollInfoPage" data-toggle="modal" data-target="#modal">
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td class="text-primary" @click="toEmployeeInfoPage">Anastasia Al Gadinarosian</td>
+                              <td>West Side Location</td>
+                              <td>L£ 1,350,000/mo</td>
+                              <td>25.6 days</td>
+                              <td>- L£ 10,000</td>
+                              <td class="text-right">L£ 1,152,000</td>
+                              <td class="text-right">
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-pdf h5"></i>
+                                      Save as PDF
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-file-csv h5"><i></i></i>
+                                      Save as CSV
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">
+                                      <i class="la la-print h5"><i></i></i>
+                                      Print
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row animate fadeInRight" v-if="showPage !== 'index'">
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="i-con-h-a text-muted" @click="toIndexPage">
+                    <i class="i-con i-con-left"></i>
+                    Payroll
+                  </a>
+                  <div class="d-flex justify-content-between">
+                    <h2>
+                      {{showPage === 'payroll-create' ? 'Pay employee' : ''}}
+                      {{showPage === 'payroll-info' ? '#PR1001' : '' }}
+                      {{showPage === 'payroll-edit' ? 'Edit #PR1001' : '' }}
+                      {{showPage === 'employee-info' ? 'Jessie James' : '' }}
+                    </h2>
+                    <button class="btn btn-md btn-primary" v-if="showPage === 'employee-info'"
+                      @click="toPayrollCreatePage">Pay employee</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5">
+                <div class="card"
+                  v-if="showPage === 'payroll-info' || showPage === 'payroll-edit' || showPage === 'employee-info'">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 mb-3">
+                        <div v-if="showPage !== 'employee-info'">
+                          <h4>Employee overview</h4>
+                        </div>
+                        <div v-if="showPage === 'employee-info'" class="d-flex justify-content-between">
+                          <h4>Employee info</h4>
+                          <a class="text-primary">
+                            <i class="la la-edit"></i>Edit profile
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-4 d-flex align-items-center">
+                        <div class="avatar w-64 bg-danger-lt d-flex align-items-center justify-content-center">
+                          <span class="text-danger h4">JJ</span>
+                        </div>
+                        <div class="ml-2 col">
+                          <p class="mb-2 text-primary"><b>Jessie James</b></p>
+                          <p class="d-flex justify-content-between">
+                            <span>
+                              Bakery Employee<br>
+                              West Side Location
+                            </span>
+                            <span>
+                              +96171539655<br>
+                              email@email.com
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12 border-top mt-3 pt-3" v-if="showPage === 'payroll-info'">
+                        <h4>Payment method</h4>
+                        <span class="h5">Cash (LBP)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div v-if="showPage === 'employee-info' || showPage === 'payroll-info'">
+                  <h4>Timeline</h4>
+                  <hr class="w-100">
+                  <h5>Today</h5>
+                  <div class="timeline animates animates-fadeInUp mb-4">
+                    <div class="tl-item  active">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">just now</div>
+                      <div class="tl-content">
+                        <div class="">
+                          Jack changed this customer's phone from +96171809091 to +961718090
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">James processed order #1003 for this customer on POS ↓</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">5 hour ago</div>
+                      <div class="tl-content">
+                        <div class="">
+                          You changed this customer's email from email@mail.com to email@mail2.com.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">
+                          You added a note to this customer. ↓
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">2:00 pm</div>
+                      <div class="tl-content">
+                        <div class="">You accepted, canceled, and rejected items in a transfer from Zouk Mikael. →</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">You created order <span class="text-primary">#1001</span> for this customer.</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">2:00 pm</div>
+                      <div class="tl-content">
+                        <div class="">
+                          <b>Mike</b> created this customer.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div v-if="showPage !== 'employee-info'">
+                  <div class="card" v-if="showPage === 'payroll-create'">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <h5 class="mb-4">Store location</h5>
+                        </div>
+                        <div class="col-12">
+                          <label for="">Store name</label>
+                          <select name="" id="" class="custom-select">
+                            <option value="">Select store</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" v-if="showPage === 'payroll-create' || showPage === 'payroll-edit'">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <h5 class="mb-4">Select employee</h5>
+                        </div>
+                        <div class="col-12">
+                          <label for="">Employee name</label>
+                          <select class="custom-select" v-model="employee">
+                            <option value="0"></option>
+                            <option value="1">Jessie James</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" v-if="showPage === 'payroll-create' || showPage === 'payroll-edit'">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <h5 class="mb-4">Payroll period</h5>
+                        </div>
+                        <div class="col-12 form-group">
+                          <label for="">Start date</label>
+                          <div class="input-group">
+                            <input type='text' class="form-control" data-plugin="datepicker"
+                              data-option="{autoclose: true}">
+                            <div class="input-group-append">
+                              <span class="input-group-text i-con-h-a">
+                                <i class="i-con i-con-calendar"><i></i></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="">End date</label>
+                          <div class="input-group">
+                            <input type='text' class="form-control" data-plugin="datepicker"
+                              data-option="{autoclose: true}">
+                            <div class="input-group-append">
+                              <span class="input-group-text i-con-h-a">
+                                <i class="i-con i-con-calendar"><i></i></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="card" v-if="showPage === 'employee-info'">
+                  <div class="card-body">
+                    <div class="row py-3">
+                      <div class="col-12 col-md-3 text-center">
+                        <span>Employee since</span><br>
+                        <span class="h5 mt-3">Apr 12, 2020</span>
+                      </div>
+                      <div class="col-12 col-md-3 text-center">
+                        <span>Salary rate</span><br>
+                        <span class="h5 mt-3">L£ 1.25M</span><span>/mo</span>
+                      </div>
+                      <div class="col-12 col-md-3 text-center">
+                        <span>Total pay to date</span><br>
+                        <span class="h5 mt-3">L£ 12.455M</span>
+                      </div>
+                      <div class="col-12 col-md-3 text-center">
+                        <span>Average monthly pay</span><br>
+                        <span class="h5 mt-3">L£ 700K</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" v-if="showPage === 'employee-info'">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 d-flex justify-content-between">
+                        <h4>Payroll overview</h4>
+                        <div>
+                          <div class='input-group input-daterange' data-plugin="datepicker" data-option="{}">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text p-2 i-con-h-a">
+                                <i class="i-con i-con-calendar"><i></i></i>
+                              </span>
+                            </div>
+                            <input type='text' class="form-control" name="start">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">-</span>
+                            </div>
+                            <input type='text' class="form-control" name="end">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Payment period</th>
+                              <th>Store</th>
+                              <th>Time worked</th>
+                              <th>Adjusted</th>
+                              <th>Total pay</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                            <tr>
+                              <td>Apr 15 - Mar 15, 2020</td>
+                              <td>Sultan Bakery - Zouk Mikael</td>
+                              <td>25.6 days</td>
+                              <td>L£ 0</td>
+                              <td>L£ 2,750,000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 mb-4">
+                        <h5>
+                          {{employee !== '0' ? 'Jessie James paroll for Apr 5 - Mar 5, 2020' : 'Employee payroll'}}
+                        </h5>
+                      </div>
+                      <div class="col-12">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Clock in</th>
+                              <th>Clock out</th>
+                              <th>Hour worked </th>
+                              <th class="text-right">Pay</th>
+                            </tr>
+                          </thead>
+                          <tbody v-if="employee !== '0' || showPage === 'payroll-info'">
+                            <tr>
+                              <td>Mar 31, 2020</td>
+                              <td>12:30 pm</td>
+                              <td>11:25 pm</td>
+                              <td>7.4</td>
+                              <td>L£ 15,000</td>
+                            </tr>
+                            <tr>
+                              <td>Mar 31, 2020</td>
+                              <td>12:30 pm</td>
+                              <td>11:25 pm</td>
+                              <td>7.4</td>
+                              <td>L£ 15,000</td>
+                            </tr>
+                            <tr>
+                              <td>Mar 31, 2020</td>
+                              <td>12:30 pm</td>
+                              <td>11:25 pm</td>
+                              <td>7.4</td>
+                              <td>L£ 15,000</td>
+                            </tr>
+                            <tr>
+                              <td>Mar 31, 2020</td>
+                              <td>12:30 pm</td>
+                              <td>11:25 pm</td>
+                              <td>7.4</td>
+                              <td>L£ 15,000</td>
+                            </tr>
+                            <tr>
+                              <td>Mar 31, 2020</td>
+                              <td>12:30 pm</td>
+                              <td>11:25 pm</td>
+                              <td>7.4</td>
+                              <td>L£ 15,000</td>
+                            </tr>
+                            <tr>
+                              <td>Mar 31, 2020</td>
+                              <td>12:30 pm</td>
+                              <td>11:25 pm</td>
+                              <td>7.4</td>
+                              <td>L£ 15,000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" v-if="showPage !== 'employee-info'">
+                  <div class="card-body">
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <h5>Adjusted pay</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Reason</th>
+                              <th class="text-right">Amount</th>
+                              <th width="20px" class="text-right"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><input type="text" class="form-control" value="Reason for payment adjustment"></td>
+                              <td>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">L£</span>
+                                  </div>
+                                  <input type="text" class="form-control" value="10,000">
+                                </div>
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr class="border-bottom" v-if="employee !== '0'">
+                              <td><input type="text" class="form-control" placeholder="Type in reason"></td>
+                              <td>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">L£</span>
+                                  </div>
+                                  <input type="number" class="form-control">
+                                </div>
+                              </td>
+                              <td>
+                                <a href="" class="text-danger i-con-h-a">
+                                  <i class="i-con i-con-trash"><i></i></i>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" v-if="showPage !== 'employee-info'">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th width="*"></th>
+                              <th width="200px" class="text-right"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-right">
+                                <b>Subtotal</b>
+                              </td>
+                              <td class="text-right">
+                                L£ {{ employee === '0' ? '0' : '750,000'}}
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-right">
+                                <b>Adjusted pay</b>
+                              </td>
+                              <td class="text-right">
+                                L£ {{ employee === '0' ? '0' : '10,000'}}
+                              </td>
+                            </tr>
+                            <tr class="bg-success-lt">
+                              <td class="text-right"></td>
+                              <td class="text-right">
+                                <div class="d-flex flex-column">
+                                  <span>TOTAL AMOUNT</span>
+                                  <span class="h5 mb-0 text-success">
+                                    L£ {{ employee === '0' ? '0' : '1,350,000'}}
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" v-if="showPage !== 'employee-info'">
+                  <div class="card-body">
+                    <div class="row mb-3">
+                      <div class="col-12 col-md-9">
+                        <label for="">Select payment method</label>
+                        <select name="" id="" class="custom-select">
+                          <option value="">How will you pay for this?</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <label for="" class="d-flex justify-content-between">
+                          <span>Amount</span>
+                          <span class="text-primary">
+                            <i class="la la-level-up-alt"></i>
+                            Split payment
+                          </span>
+                        </label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">L£</span>
+                          </div>
+                          <input type="number" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" v-if="employee !== '0'">
+                      <div class="col-12 col-md-9">
+                        <label for="">Select payment method</label>
+                        <select name="" id="" class="custom-select">
+                          <option value="">How will you pay for this?</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <label for="" class="d-flex justify-content-between">
+                          <span>Amount</span>
+                          <span class="text-primary">
+                            <i class="la la-close"></i>
+                          </span>
+                        </label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">L£</span>
+                          </div>
+                          <input type="number" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="leave-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">You have unsaved changes</h5>
+          </div>
+          <div class="modal-body p-lg">
+            <p>
+              If you leave this page, all unsaved changes will be lost
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger back" data-dismiss="modal" v-on:click="toIndexPage">Leave
+              page</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="export-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Export payroll</h5>
+          </div>
+          <div class="modal-body p-lg">
+            <table class="table table-hover">
+              <tbody>
+                <tr class="py-3">
+                  <td>
+                    <b>Individual employee payroll</b><br>
+                    Export each employee's payroll within selected timeframe
+                  </td>
+                  <td class="text-right">
+                    <a class="text-dark">
+                      <i class="la la-angle-right"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="py-3">
+                  <td>
+                    <b>Payroll overview</b><br>
+                    Export payroll overview based on selected timeframe
+                  </td>
+                  <td class="text-right">
+                    <a class="text-dark">
+                      <i class="la la-angle-right"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="send-email-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Send bill by email</h5>
+          </div>
+          <div class="modal-body p-lg">
+            <div class="row">
+              <div class="col-12 form-group">
+                <label for="">From</label>
+                <input type="email" class="form-control" placeholder="main@email.com">
+              </div>
+              <div class="col-12 form-group">
+                <label for="">To</label>
+                <input type="email" class="form-control" placeholder="default.email@mail.com">
+              </div>
+              <div class="col-12 form-group">
+                <label for="">CC</label>
+                <input type="email" class="form-control" placeholder="default.email@mail.com">
+              </div>
+              <div class="col-12 form-group">
+                <label for="">Subject</label>
+                <input type="text" class="form-control" placeholder="(#BI1001) Bill - {Status} by Store Name">
+              </div>
+              <div class="col-12 form-group">
+                <label for="">Attachment</label>
+                <p>
+                  <i class="la la-file"></i>
+                  #BI1001
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success send">Send</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <div id="share-whatsapp-modal" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Share with WhatsApp</h5>
+          </div>
+          <div class="modal-body p-lg">
+            <div class="row">
+              <div class="col-12 form-group">
+                <label for="">Contact's mobile</label>
+                <input type="number" class="form-control" placeholder="main@email.com">
+              </div>
+              <div class="col-12 form-group">
+                <label for="">Manage to supplier</label>
+                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+              <div class="col-12 form-group">
+                <label for="">Attachment</label>
+                <p>
+                  <i class="la la-file"></i>
+                  #BI1001
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success send">Send</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+
+    <footer class="d-none">
+      <div class="row" v-if="showPage === 'payroll-create' || showPage === 'payroll-edit'">
+        <div class="col-12 d-flex justify-content-between">
+          <div class="d-flex align-items-center">
+            <span class="text-secondary saved-status">Unsaved changes</span>
+          </div>
+          <div>
+            <button class="btn btn-secondary" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+            <button class="btn btn-danger delete" v-if="isEdit" data-toggle="modal" data-target="#delete-modal">
+              Delete employee
+            </button>
+            <button type="button" class="btn btn-success" v-on:click="handleSave">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="row" v-if="showPage === 'payroll-info'">
+        <div class="col-12 d-flex justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="item-action dropdown mr-2">
+              <button data-toggle="dropdown" class="btn btn-secondary">
+                Send
+                <i class="la la-angle-up"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+                <a class="dropdown-item" data-toggle="modal" data-target="#send-email-modal">Send by email</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#share-whatsapp-modal">Share with WhatsApp</a>
+              </div>
+            </div>
+            <div class="item-action dropdown mr-2">
+              <button data-toggle="dropdown" class="btn btn-secondary">
+                More
+                <i class="la la-angle-up"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+                <a class="dropdown-item edit">Save as PDF</a>
+                <a class="dropdown-item edit">Save as CSV</a>
+                <a class="dropdown-item edit">Print</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-primary" @click="handlePayrollEdit">Edit</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/vue.min.js"></script>
+
+  <script src="../assets/js/office/employee.payroll.js"></script>
+</body>
+
+</html>

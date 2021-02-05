@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "type": "Appointment",
+      "title": "Project Kick-off meeting",
+      "description": "This is a cool event",
+      "className": ["bg-primary--lt b-t b-t-2x b-primary"],
+      "participant": [1,2,4,7,9]
+    },
+    {
+      "id": 2,
+      "type": "Event",
+      "title": "Call to company office",
+      "description": "Phasellus at ultricies neque augue",
+      "className": ["bg-info--lt b-t b-t-2x b-info"],
+      "participant": [4,5,7,8]
+    },
+    {
+      "id": 3,
+      "type": "Important",
+      "title": "Mobile application mockup design",
+      "description": "Quis malesuada augue",
+      "className": ["bg-success--lt b-t b-t-2x b-success"],
+      "participant": [6,7]
+    },
+    {
+      "id": 4,
+      "type": "Appointment",
+      "title": "Weekly report meeting",
+      "description": "Donec eleifend  nisl eu consectetur.",
+      "className": ["bg-danger--lt b-t b-t-2x b-danger"],
+      "participant": [3,6]
+    },
+    {
+      "id": 5,
+      "type": "Event",
+      "title": "All day Event",
+      "description": "Malesuada augue onec eleifend nisl eu.",
+      "className": ["bg-warning--lt b-t b-t-2x b-warning"],
+      "participant": [2,6,8,9]
+    },
+    {
+      "id": 6,
+      "type": "Important",
+      "title": "Repeating Event",
+      "description": "Donec eleifend nisl eu consectetur.",
+      "className": ["bg-primary--lt b-t b-t-2x b-primary"],
+      "participant": [6,9]
+    }
+ ]

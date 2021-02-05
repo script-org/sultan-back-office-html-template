@@ -1,0 +1,27 @@
+/*
+Dark theme
+*/
+.bg-dark{
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .text-dark, a.text-dark, a.text-dark:hover, .text-color{
+    color: inherit !important;
+  }
+  .bg-white,
+  .btn-white,
+  .card,
+  .block,
+  .list-group,
+  .ui-switch i:before,
+  .table-theme tbody td{
+    color: inherit;
+    background-color: lighten( $dark, $color-percent ) !important;
+  }
+  .bg-body,
+  .form-control{
+    background: transparent;
+  }
+  .input-group-btn{
+    .btn{
+      background-color: $border-color-lt;
+    }
+  }
+}

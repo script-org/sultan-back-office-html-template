@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+
+<body class="layout-column">
+
+    <header id="header" class="page-header bg-white box-shadow">
+        <div class="navbar navbar-expand-lg">
+            <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+                <i class="i-con i-con-menu text-muted"></i>
+            </a>
+            <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+            <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+                <form class="input-group m-2 my-lg-0 i-con-h-a" style="padding-left: 40px">
+                    <span class="input-group-prepend">
+                        <button type="button" class="btn no-shadow no-bg px-0">
+                            <i class="i-con i-con-search text-fade w-16"></i>
+                        </button>
+                    </span>
+                    <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+                        placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+                        data-plugin="typeahead">
+                </form>
+            </div>
+
+            <ul class="nav navbar-menu order-1 order-lg-2">
+
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link px-2 i-con-h-a" data-plugin="screenfull" data-toggle="tooltip"
+                        data-title="Fullscreen">
+                        <i class="i-con i-con-fullscreen"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown"
+                        class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+                        <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+                            <small class='text-fade d-block mb-1'>Good evening,</small>
+                            <span>Justin Timber</span>
+                        </span>
+                        <span class="avatar w-36 bg-primary-lt">
+                            JT
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+                        <a class="py-3 dropdown-item animation-icon d-flex align-items-center"
+                            href="account.general.html">
+                            <div>
+                                <img src="../assets/img/animated-icons/settings/settings.svg">
+                            </div>
+                            <span class="ml-2">My account</span>
+                        </a>
+                        <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+                            <div>
+                                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+                            </div>
+                            <span class="ml-2">Sign out</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+                        data-target="#navbarToggler">
+                        <i class="i-con i-con-nav text-muted"><i></i></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <div id="main" class="layout-row flex">
+        <div id="aside" class="page-sidenav no-shrink  nav-expand animate fadeInRight fade" aria-hidden="true">
+            <div class="sidenav h-100 modal-dialog bg-white box-shadow" data-nav>
+                <div class="flex scroll-container">
+                    <div class="nav-border b-primary mt-3">
+                        <ul class="nav bg">
+                            <li>
+                                <a href="dashboard.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/home/home.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">DASHBOARD</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/tags/tags.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">PRODUCTS</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="products.all.empty.html">
+                                            <span class="nav-text">All Products</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="products.category.empty.html" class="">
+                                            <span class="nav-text">Categories</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="products.modifier.empty.html" class="">
+                                            <span class="nav-text">Modifiers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/list/list.svg"
+                                                class="stop import-icon-check" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">INVENTORY</span>
+                                    <span class="nav-badge">
+                                        <b class="badge badge-sm badge-pill ">12</b>
+                                    </span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="inventory.purchase.html">
+                                            <span class="nav-text">Purchase Orders</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.transfer.html" class="">
+                                            <span class="nav-text">Transfer Orders</span>
+                                            <span class="nav-badge">
+                                                <b class="badge badge-sm badge-pill bg-danger">12</b>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.stock.html" class="">
+                                            <span class="nav-text">Stock Adjustment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.counts.html" class="">
+                                            <span class="nav-text">Inventory Counts</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.history.html" class="">
+                                            <span class="nav-text">Inventory History</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.valuation.html" class="">
+                                            <span class="nav-text">Inventory Valuation</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.planner.html" class="">
+                                            <span class="nav-text">Inventory Planner</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="productions.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/gears/gears.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">PRODUCTIONS</span>
+                                    <span class="nav-badge">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/discount/discount.svg"
+                                                class="stop import-icon-check" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">DISCOUNTS</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="discount.code.html">
+                                            <span class="nav-text">Discount Code</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="discount.auto.html" class="">
+                                            <span class="nav-text">Automatic Discounts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="supplier.empty.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/business-network/business-network.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/business-network/business-network.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">SUPPLIERS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./customers.html" class="i-con-h-a">
+                                    <span class="nav-icon">
+                                        <i class='i-con i-con-user'><i></i></i>
+                                    </span>
+                                    <span class="nav-text">CUSTOMERS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="i-con-h-a">
+                                    <span class="nav-icon">
+                                        <i class='i-con i-con-users'><i></i></i>
+                                    </span>
+                                    <span class="nav-text">EMPLOYEES</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="employee.all.html">
+                                            <span class="nav-text">All Employees</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.roll.html" class="">
+                                            <span class="nav-text">Rolls/Access Rights</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.schedule.html" class="">
+                                            <span class="nav-text">Schedule Timesheet</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.payroll.html" class="">
+                                            <span class="nav-text">Payroll</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/calculator/calculator.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/calculator/calculator.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">BOOKEEPING</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="bookeeping.sales.html">
+                                            <span class="nav-text">Sales</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.expense.html" class="">
+                                            <span class="nav-text">Expenses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.vat.html" class="">
+                                            <span class="nav-text">VAT Overview</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.account.html" class="">
+                                            <span class="nav-text">Accounts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="reports.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">REPORTS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="no-shrink ">
+                    <div class="nav-border b-primary">
+                        <ul class="nav bg">
+                            <li class="active">
+                                <a href="setting.general.html">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/gear/gear.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/gear/gear.gif" class="play d-none"
+                                                alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">SETTINGS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-sm p-3 mt-5">
+                        <div class="hidden-folded text-sm">
+                            <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ############ Aside END-->
+
+        <!-- ############ Content START-->
+        <div id="content" class="flex" data-plugin="notie">
+            <!-- ############ Main START-->
+            <div class="flex">
+                <div class="padding" style="padding-bottom: 80px;">
+                    <div class="row sticky" style="height: initial; top: 100px;">
+                        <div style="width: 275px" class="pl-3">
+                            <h2 class="mb-4 d-flex justify-content-between">
+                                Settings
+                            </h2>
+                        </div>
+                        <div class="col d-flex justify-content-end align-items-center mb-5">
+                            <button data-toggle="modal" data-target="#content-aside" data-modal
+                                class="btn btn-sm btn-white d-md-none i-con-h-a ml-2">
+                                <i class="i-con i-con-nav text-muted"><i></i></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="aside aside-sm pl-3 sticky" id="content-aside"
+                            style="width: 275px; max-height: calc(100vh - 230px); height: 100vh; top: 150px;">
+                            <div class="card modal-dialog setting-menu scroll-container" style="max-height: 100%;">
+                                <div class="list list-row" data-sub-nav>
+                                    <a href="setting.general.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <div>
+                                                <img src="../assets/img/animated-icons/gear/gear.svg"
+                                                    class="stop import-icon-check" alt="">
+                                                <img src="../assets/img/animated-icons/gear/gear.gif" class="play"
+                                                    alt="">
+                                            </div>
+                                        </span>
+                                        <span class="h5">
+                                            General<br>
+                                            <small>View and update yout store details</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.location.html" class="list-item border-top-0 active">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/address/address.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/address/address.gif"
+                                                class="play d-none" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Locations<br>
+                                            <small>Manage places you stock and sell products</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.payment.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/money/money.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/money/money.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Payment types<br>
+                                            <small>Enable and manage your payment options</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.notification.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/bell/bell.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/bell/bell.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Notifications<br>
+                                            <small>Manage all system notifications</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.cash.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/coins/coins.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/coins/coins.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Cash rounding<br>
+                                            <small>Set total amount to round to nearest interval</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.period.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/alarm-clock/alarm-clock.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/alarm-clock/alarm-clock.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Period of service<br>
+                                            <small>Set your store’s hours of operation</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.tax.empty.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/hand-scissors/hand-scissors.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/hand-scissors/hand-scissors.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Taxes<br>
+                                            <small>Manage how your store charges taxes</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.receipt.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/receipt/receipt.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/receipt/receipt.gif" class="play"
+                                                alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Receipts<br>
+                                            <small>Manage printed receipts design</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.loyalty.empty.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/prize/prize.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/prize/prize.gif" class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Loyalty<br>
+                                            <small>Enable loyalty points and percent credited</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.pos.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/computer-display/computer-display.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/computer-display/computer-display.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            POS devices<br>
+                                            <small>Manage your POS devices</small>
+                                        </span>
+                                    </a>
+                                    <a href="settings.posEditor.empty.html"
+                                        class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/computer-display/computer-display.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/computer-display/computer-display.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            POS editor<br>
+                                            <small>Edit featured list</small>
+                                        </span>
+                                    </a>
+                                    <a href="setting.backup.html" class="list-item border-top-0 animation-icon">
+                                        <span>
+                                            <img src="../assets/img/animated-icons/restore-window/restore-window.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/restore-window/restore-window.gif"
+                                                class="play" alt="">
+                                        </span>
+                                        <span class="h5">
+                                            Backup and restore<br>
+                                            <small>Setup store data backup or restore past data</small>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="content-body" style="overflow-x: hidden;">
+                            <div>
+                                <div class="d-none" id="ghost">
+                                    <a class="all-link" href="setting.location.html"></a>
+                                    <a class="any-link"></a>
+                                    <span class="success-title-message"></span>
+                                </div>
+                                <div class="mb-4">
+                                    <a class="text-muted" href="setting.location.html">
+                                        <i class="i-con i-con-left"></i>
+                                        <span class="top-title">Locations</span>
+                                    </a>
+                                    <h2 id="title">Add location</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card is-sub-location">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 pb-4">
+                                                        <span class="h5">Details</span><br>
+                                                    </div>
+                                                    <div class="col-12 form-group">
+                                                        <label>Location name</label>
+                                                        <input type="text" id="location-name"
+                                                            placeholder="West Side Location" class="form-control">
+                                                    </div>
+                                                    <div class="col-12 form-group sub-form">
+                                                        <label class="md-check mr-2">
+                                                            <input type="checkbox" id="is-sub-location">
+                                                            <i class="blue"></i>
+                                                            Is a sub-location
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-12 sub-location-form sub-form form-group d-none">
+                                                        <label for="">Main location name</label>
+                                                        <!-- <select class="form-control" data-plugin="select2" data-option="{}"
+                                data-placeholder="Select main location" style="width: auto;"> -->
+                                                        <select class="form-control main-location-name"
+                                                            data-placeholder="Select main location"
+                                                            style="width: 100%;">
+                                                            <option>West Side Location</option>
+                                                            <option>East Side Location</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 pb-4">
+                                                        <span class="h5">Store address</span>
+                                                        <a data-toggle="tooltip" data-placement="right"
+                                                            data-title="This address will be used to appear on your invoices and receipts.">
+                                                            <i class="i-con i-con-info">
+                                                                <i class="i-con-border"></i>
+                                                            </i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="form-group col-9">
+                                                        <label>Legal name of business</label>
+                                                        <input type="text" class="form-control" placeholder="Bakery">
+                                                    </div>
+                                                    <div class="form-group col-3">
+                                                        <label>TVA ID number</label>
+                                                        <input type="number" class="form-control"
+                                                            placeholder="120345-111">
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>Phone number</label>
+                                                        <input type="number" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>Street</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>Building, suite, etc</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>City</label>
+                                                        <div>
+                                                            <select style="width: 100%;" class="form-control"
+                                                                data-plugin="select2" data-option="{}"
+                                                                data-placeholder="Select an option">
+                                                                <option></option>
+                                                                <option>Aabey</option>
+                                                                <option>Abbasieh</option>
+                                                                <option>Abdelleh</option>
+                                                                <option>Abdine</option>
+                                                                <option>Achrafieh</option>
+                                                                <option>Adlieh</option>
+                                                                <option>Adlouna</option>
+                                                                <option>Ain Dara</option>
+                                                                <option>Ain Zhalta</option>
+                                                                <option>Ainata</option>
+                                                                <option>Aintoura</option>
+                                                                <option>Aishiah</option>
+                                                                <option>Aita el Chaab</option>
+                                                                <option>Akkar El Atika</option>
+                                                                <option>Akoura</option>
+                                                                <option>Albrine</option>
+                                                                <option>Aley</option>
+                                                                <option>Ali El Nahri</option>
+                                                                <option>Alma</option>
+                                                                <option>Almat</option>
+                                                                <option>Amchit</option>
+                                                                <option>Amioun</option>
+                                                                <option>Amrousieh</option>
+                                                                <option>Andkit</option>
+                                                                <option>Anjar</option>
+                                                                <option>Ankoun</option>
+                                                                <option>Annabi Chit</option>
+                                                                <option>Annaya</option>
+                                                                <option>Ansar</option>
+                                                                <option>Antelias</option>
+                                                                <option>Arab Salim</option>
+                                                                <option>Araya</option>
+                                                                <option>Arbanieh</option>
+                                                                <option>Arjess</option>
+                                                                <option>Assia</option>
+                                                                <option>Baabda</option>
+                                                                <option>Baabdat</option>
+                                                                <option>Baakline</option>
+                                                                <option>Baalbek</option>
+                                                                <option>Bab El Tabaneh</option>
+                                                                <option>Badaro</option>
+                                                                <option>Bahsas</option>
+                                                                <option>Bakhoun</option>
+                                                                <option>Bar Elias</option>
+                                                                <option>Baraachit</option>
+                                                                <option>Barja</option>
+                                                                <option>Barouk</option>
+                                                                <option>Baskinta</option>
+                                                                <option>Batroun</option>
+                                                                <option>Baysour</option>
+                                                                <option>Bazourieh</option>
+                                                                <option>Bchaale</option>
+                                                                <option>Bebnine</option>
+                                                                <option>Beino</option>
+                                                                <option>Beirut</option>
+                                                                <option>Beit Ed Dine</option>
+                                                                <option>Beit Meri</option>
+                                                                <option>Bejjeh</option>
+                                                                <option>Berkayel</option>
+                                                                <option>Berti</option>
+                                                                <option>Bhamdoun</option>
+                                                                <option>Bickfaya</option>
+                                                                <option>Bint Jbeil</option>
+                                                                <option>Bir Hassan</option>
+                                                                <option>Biri</option>
+                                                                <option>Bissarieh</option>
+                                                                <option>Bkassine</option>
+                                                                <option>Bkorzla</option>
+                                                                <option>Bois De Boulogne</option>
+                                                                <option>Boqsmaya</option>
+                                                                <option>Brital</option>
+                                                                <option>Broumana</option>
+                                                                <option>Btater</option>
+                                                                <option>Bteghrine</option>
+                                                                <option>Btourram</option>
+                                                                <option>Chabtine</option>
+                                                                <option>Chadra</option>
+                                                                <option>Chahour</option>
+                                                                <option>Chbaniyeh</option>
+                                                                <option>Chebaa</option>
+                                                                <option>Chekka</option>
+                                                                <option>Chhim</option>
+                                                                <option>Chiyah</option>
+                                                                <option>Choueifat</option>
+                                                                <option>Chtaura</option>
+                                                                <option>Damour</option>
+                                                                <option>Dawra</option>
+                                                                <option>Dbaiyeh</option>
+                                                                <option>Deddeh</option>
+                                                                <option>Deir Coucha</option>
+                                                                <option>Deir El Kamar</option>
+                                                                <option>Deir el Zahrani</option>
+                                                                <option>Deir Jannine</option>
+                                                                <option>Deir Koubel</option>
+                                                                <option>Dekouane</option>
+                                                                <option>Dhour choueir</option>
+                                                                <option>Dibbiyeh</option>
+                                                                <option>Douma</option>
+                                                                <option>Ehmej</option>
+                                                                <option>Elissar</option>
+                                                                <option>Fatka</option>
+                                                                <option>Fatri</option>
+                                                                <option>Ferzol</option>
+                                                                <option>Fissane</option>
+                                                                <option>Fneidek</option>
+                                                                <option>Furn el Chebbak</option>
+                                                                <option>Ghabat</option>
+                                                                <option>Ghassanieh</option>
+                                                                <option>Ghazieh</option>
+                                                                <option>Ghazir</option>
+                                                                <option>Ghazze</option>
+                                                                <option>Ghine</option>
+                                                                <option>Ghosta</option>
+                                                                <option>Haddath</option>
+                                                                <option>Halate</option>
+                                                                <option>Halba</option>
+                                                                <option>Hammana</option>
+                                                                <option>Hamra</option>
+                                                                <option>Hardine</option>
+                                                                <option>Hasbaya</option>
+                                                                <option>Hazmieh</option>
+                                                                <option>Hermel</option>
+                                                                <option>Hossnieh</option>
+                                                                <option>Houmine el Fawka</option>
+                                                                <option>Hrajel</option>
+                                                                <option>Ijbaa</option>
+                                                                <option>Jal el Dib</option>
+                                                                <option>Jbaa</option>
+                                                                <option>Jbeil</option>
+                                                                <option>Jdeideh</option>
+                                                                <option>Jeita</option>
+                                                                <option>Jezzine</option>
+                                                                <option>Jibchit</option>
+                                                                <option>Jiye</option>
+                                                                <option>Joub Jannine</option>
+                                                                <option>Joun</option>
+                                                                <option>Jounieh</option>
+                                                                <option>Jourat Ballout</option>
+                                                                <option>Jweya</option>
+                                                                <option>Kaakaeiet El Jisir</option>
+                                                                <option>Kab Elias</option>
+                                                                <option>Kabr Chmoun</option>
+                                                                <option>Kahf El Malloul</option>
+                                                                <option>Kaitouli</option>
+                                                                <option>Kalamoun</option>
+                                                                <option>Kana</option>
+                                                                <option>Karaaoun</option>
+                                                                <option>Kartaba</option>
+                                                                <option>Kawkaba South</option>
+                                                                <option>Kfar Akab</option>
+                                                                <option>Kfar Habou</option>
+                                                                <option>Kfar Hatti</option>
+                                                                <option>Kfar Hilda</option>
+                                                                <option>Kfar Yassine</option>
+                                                                <option>Kfar Zeina</option>
+                                                                <option>Kfarhatta</option>
+                                                                <option>Kfarhim</option>
+                                                                <option>Kfarkila</option>
+                                                                <option>Kfour el Arabi</option>
+                                                                <option>Khalde</option>
+                                                                <option>Kharayeb</option>
+                                                                <option>Khorbet Kanafar</option>
+                                                                <option>Khorbet Silm</option>
+                                                                <option>Khyam</option>
+                                                                <option>Klaiaa</option>
+                                                                <option>Kobayat</option>
+                                                                <option>Kornayel</option>
+                                                                <option>Kour</option>
+                                                                <option>Kousba</option>
+                                                                <option>Koussaya</option>
+                                                                <option>Koutariet el Sayed</option>
+                                                                <option>Laklouk</option>
+                                                                <option>Lebaa</option>
+                                                                <option>Lehfed</option>
+                                                                <option>Maad</option>
+                                                                <option>Maaraka</option>
+                                                                <option>Maaroub</option>
+                                                                <option>Maaser el Chouf</option>
+                                                                <option>Machghara</option>
+                                                                <option>Maghdouche</option>
+                                                                <option>Mais el Jabal</option>
+                                                                <option>Mansoura</option>
+                                                                <option>Mansourieh</option>
+                                                                <option>Marjayoun</option>
+                                                                <option>Markaba</option>
+                                                                <option>Mashta Hamoud</option>
+                                                                <option>Mastita</option>
+                                                                <option>Mayfouk</option>
+                                                                <option>Mazraa</option>
+                                                                <option>Mazraat el Shouf</option>
+                                                                <option>Metn Moyen</option>
+                                                                <option>Meyrouba</option>
+                                                                <option>Minet El Hosn</option>
+                                                                <option>Minie</option>
+                                                                <option>Miriata</option>
+                                                                <option>Miziara</option>
+                                                                <option>Moukhtara</option>
+                                                                <option>Mounsef</option>
+                                                                <option>Mradiya</option>
+                                                                <option>Mreijeh</option>
+                                                                <option>Nabatieh</option>
+                                                                <option>Naher</option>
+                                                                <option>Nahr Ibrahim</option>
+                                                                <option>Niha</option>
+                                                                <option>Obeidat</option>
+                                                                <option>Rachaya al Fakhar</option>
+                                                                <option>Rachaya El Wadi</option>
+                                                                <option>Rahba</option>
+                                                                <option>Ras Beirut</option>
+                                                                <option>Ras el Ein</option>
+                                                                <option>Ras el Metn</option>
+                                                                <option>Ras el Nabeh</option>
+                                                                <option>Rayak</option>
+                                                                <option>Reyfoun</option>
+                                                                <option>Rihan</option>
+                                                                <option>Riyad el Solh</option>
+                                                                <option>Rmaysh</option>
+                                                                <option>Rmeileh</option>
+                                                                <option>Roum</option>
+                                                                <option>Roumine</option>
+                                                                <option>Saadanayel</option>
+                                                                <option>Saghbine</option>
+                                                                <option>Saida</option>
+                                                                <option>Samrieh</option>
+                                                                <option>Saofar</option>
+                                                                <option>Sarafand</option>
+                                                                <option>Sebaal</option>
+                                                                <option>Seraal</option>
+                                                                <option>Sfire</option>
+                                                                <option>Sin el Fil</option>
+                                                                <option>Sir Ed Dannyeh</option>
+                                                                <option>Smar Jbeil</option>
+                                                                <option>Sohmor/Yohmor</option>
+                                                                <option>Souk El Gharb</option>
+                                                                <option>Sourat</option>
+                                                                <option>Srifa</option>
+                                                                <option>Taibih</option>
+                                                                <option>Tannourine</option>
+                                                                <option>Terbol</option>
+                                                                <option>Tibnine</option>
+                                                                <option>Tleil</option>
+                                                                <option>Tripoli Mina</option>
+                                                                <option>Tripoli Tell</option>
+                                                                <option>Tyr</option>
+                                                                <option>Wadi Chahrour</option>
+                                                                <option>Wadi Ez Zaini</option>
+                                                                <option>Yahchouch</option>
+                                                                <option>Yanta</option>
+                                                                <option>Zaarour</option>
+                                                                <option>Zahle</option>
+                                                                <option>Zahrani</option>
+                                                                <option>Zaoutar</option>
+                                                                <option>Zefta</option>
+                                                                <option>Zghorta</option>
+                                                                <option>Zouk Mikael
+                                                                <option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 pb-4">
+                                                        <span class="h5">Standards and formats</span>
+                                                        <a data-toggle="tooltip" data-placement="right"
+                                                            data-title="Standards and formats are used to calculate exchange rates, set default language, and order times.">
+                                                            <i class="i-con i-con-info">
+                                                                <i class="i-con-border"></i>
+                                                            </i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>Timezone</label>
+                                                        <select class="custom-select">
+                                                            <option value="0">(GMT+02.00) Asia/Beirut</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>USD/LBP excharge rate</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$1 = L£</span>
+                                                            </div>
+                                                            <input type="text" class="form-control number-format"
+                                                                placeholder="1,500">
+                                                            <!-- <div class="input-group-append">
+                                <span class="input-group-text">L£</span>
+                                </div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>Default language</label>
+                                                        <select class="custom-select">
+                                                            <option value="0">English</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>EDIT ORDER ID FORMAT (OPTIONAL)</label>
+                                                        <p class="text-muted">
+                                                            Order numbers start at #1001 by default. While you can’t
+                                                            change the order number itself, you can add a prefix or
+                                                            suffix to create IDs like "EN1001" or "1001-A."
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-group col-6">
+                                                        <label>Prefix</label>
+                                                        <input type="text" id="prefix" class="form-control" value="#">
+                                                    </div>
+                                                    <div class="form-group col-6">
+                                                        <label>Suffix</label>
+                                                        <input type="text" id="suffix" class="form-control">
+                                                    </div>
+                                                    <p class="text-muted col-12">
+                                                        Your order ID will appear as <span
+                                                            class="prefix-clone">#</span>1001<span
+                                                            class="suffix-clone"></span>,
+                                                        <span class="prefix-clone">#</span>1002<span
+                                                            class="suffix-clone"></span>,
+                                                        <span class="prefix-clone">#</span>1003<span
+                                                            class="suffix-clone"></span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 pb-4">
+                                                        <span class="h5">Store currency</span>
+                                                        <a data-toggle="tooltip" data-placement="right"
+                                                            data-title="This is the currency your products are sold in. A9er your first sale, currency is locked in and can’t be changed.">
+                                                            <i class="i-con i-con-info">
+                                                                <i class="i-con-border"></i>
+                                                            </i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <label>Store currency</label>
+                                                        <select id="store-currency" class="custom-select">
+                                                            <option value="0">United States Dollars ($, USD)
+                                                            </option>
+                                                            <option value="">Lebanese Pounds (L£, LBP)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="leave-modal" class="modal fade" data-backdrop="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-0">
+                                                <h5 class="modal-title">You have unsaved changes</h5>
+                                            </div>
+                                            <div class="modal-body p-lg">
+                                                <p>
+                                                    If you cancel, all unsaved changes will be lost
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer border-0">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-danger continue"
+                                                    data-dismiss="modal">Continue</a>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                </div>
+                                <div id="page-leave-modal" class="modal fade" data-backdrop="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-0">
+                                                <h5 class="modal-title">You have unsaved changes</h5>
+                                            </div>
+                                            <div class="modal-body p-lg">
+                                                <p>
+                                                    If you leave this page, all unsaved changes will be lost
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer border-0">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button class="btn btn-danger leave">Leave page</button>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js ../assets/js/site.min.js -->
+    <!-- jQuery -->
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- ajax page -->
+    <script src="../libs/pace-progress/pace.min.js"></script>
+    <script src="../libs/pjax/pjax.js"></script>
+    <script src="../assets/js/ajax.js"></script>
+    <!-- lazyload plugin -->
+    <script src="../assets/js/lazyload.config.js"></script>
+    <script src="../assets/js/lazyload.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <!-- theme -->
+    <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <!-- endbuild -->
+
+    <footer class="d-none">
+        <div class="row">
+            <div class="w-100 d-flex justify-content-between">
+                <div class="d-flex align-items-center" style="margin-left: -200px;">
+                    <span class="text-secondary saved-status">Unsaved changes</span>
+                </div>
+                <div>
+                    <button class="btn btn-secondary cancel mr-2">Cancel</button>
+                    <button class="btn btn-success save">Add location</button>
+                </div>
+            </div>
+        </div>
+        <style>
+            div.row.children:hover {
+                cursor: default !important;
+                background: #fbfbfd !important;
+            }
+        </style>
+        <script src="../assets/js/office/setting.location.new.js"></script>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- style -->
+  <!-- build:css ../assets/css/site.min.css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+
+<body class="layout-column">
+
+  <header id="header" class="page-header bg-white box-shadow">
+    <div class="navbar navbar-expand-lg">
+      <!-- btn to toggle sidenav on small screen -->
+      <a class="d-lg-none i-con-h-a px-1" data-toggle="modal" data-target="#aside">
+        <i class="i-con i-con-menu text-muted"></i>
+      </a>
+      <!-- brand -->
+      <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+      <!-- / brand -->
+
+      <!-- Navbar collapse -->
+      <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+        <form class="input-group m-2 my-lg-0 i-con-h-a" style="padding-left: 40px">
+          <span class="input-group-prepend">
+            <button type="button" class="btn no-shadow no-bg px-0">               <i class="la la-search"></i>             </button>
+          </span>
+          <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+            placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+            data-plugin="typeahead">
+        </form>
+      </div>
+
+      <ul class="nav navbar-menu order-1 order-lg-2">
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip"
+            data-title="Fullscreen">
+            <i class="i-con i-con-fullscreen"></i>
+          </a>
+        </li>
+
+        <!-- User dropdown menu -->
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+            <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Good evening,</small>
+              <span>Justin Timber</span>
+            </span>
+            <span class="avatar w-36 bg-primary-lt">
+              JT
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+            <a class="py-3 dropdown-item" href="account.general.html">
+              <img src="../assets/img/animated-icons/settings/settings.svg" class="icon">
+              <span>My account</span>
+            </a>
+            <a class="py-3 dropdown-item" href="../signin.html">
+              <img src="../assets/img/animated-icons/sign-out/sign-out.svg" class="icon">
+              <span>Sign out</span>
+            </a>
+          </div>
+        </li>
+        <!-- Navarbar toggle btn -->
+        <li class="nav-item d-lg-none">
+          <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+            data-target="#navbarToggler">
+            <i class="i-con i-con-nav text-muted"><i></i></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div id="main" class="layout-row flex">
+
+    <!-- ############ LAYOUT START-->
+
+    <!-- ############ Aside START-->
+    <div id="aside" class="page-sidenav no-shrink  nav-expand" aria-hidden="true">
+      <div class="sidenav h-100 modal-dialog bg-white box-shadow">
+        <div class="flex scroll-container">
+          <div class="nav-border b-primary mt-3" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="dashboard.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/home/home.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DASHBOARD</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/tags/tags.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li class="active">
+                    <a href="products.all.html">
+                      <span class="nav-text">All Products</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.category.html" class="">
+                      <span class="nav-text">Categories</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.modifier.html" class="">
+                      <span class="nav-text">Modifiers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/list/list.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">INVENTORY</span>
+                  <span class="nav-badge">
+                    <b class="badge badge-sm badge-pill ">12</b>
+                  </span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="inventory.purchase.html">
+                      <span class="nav-text">Purchase Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.transfer.html" class="">
+                      <span class="nav-text">Transfer Orders</span>
+                      <span class="nav-badge">
+                        <b class="badge badge-sm badge-pill bg-danger">12</b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.stock.html" class="">
+                      <span class="nav-text">Stock Adjustment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.counts.html" class="">
+                      <span class="nav-text">Inventory Counts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.history.html" class="">
+                      <span class="nav-text">Inventory History</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.valuation.html" class="">
+                      <span class="nav-text">Inventory Valuation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.planner.html" class="">
+                      <span class="nav-text">Inventory Planner</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="productions.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gears/gears.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTIONS</span>
+                  <span class="nav-badge">
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/discount/discount.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DISCOUNTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="discount.code.html">
+                      <span class="nav-text">Discount Code</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="discount.auto.html" class="">
+                      <span class="nav-text">Automatic Discounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="suppliers.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/business-network/business-network.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SUPPLIERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-user'><i></i></i>
+                  </span>
+                  <span class="nav-text">CUSTOMERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-users'><i></i></i>
+                  </span>
+                  <span class="nav-text">EMPLOYEES</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="employee.all.html">
+                      <span class="nav-text">All Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.roll.html" class="">
+                      <span class="nav-text">Rolls/Access Rights</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.schedule.html" class="">
+                      <span class="nav-text">Schedule Timesheet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.payroll.html" class="">
+                      <span class="nav-text">Payroll</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/calculator/calculator.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">BOOKEEPING</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="bookeeping.sales.html">
+                      <span class="nav-text">Sales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.expense.html" class="">
+                      <span class="nav-text">Expenses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.vat.html" class="">
+                      <span class="nav-text">VAT Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.account.html" class="">
+                      <span class="nav-text">Accounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="reports.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">REPORTS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="no-shrink ">
+          <div class="nav-border b-primary" data-nav>
+            <ul class="nav bg">
+              <li>
+                <a href="setting.general.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                      <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm p-3 mt-5">
+            <div class="hidden-folded text-sm">
+              <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############ Aside END-->
+
+    <!-- ############ Content START-->
+    <div id="content" class="flex animate fadeInRight">
+      <!-- ############ Main START-->
+      <div class="flex">
+        <div class="padding" id="content">
+          <div class="mb-4">
+            <a class="i-con-h-a back">
+              <i class="i-con i-con-left"></i>
+              Products
+            </a>
+          </div>
+          <div class="d-flex flex h-100 block">
+            <div class="aside aside-sm" id="content-aside">
+              <div class="d-flex flex-column w-xl b-r bg-white modal-dialog" id="chat-nav">
+                <div class="scrollable hover">
+                  <div class="list list-row">
+                    <div class="list-item border-bottom" style="border-right: 3px solid #4D7CFE">
+                      <div>
+                        <a class="text-primary">
+                          <i class="i-con i-con-user"></i>
+                        </a>
+                      </div>
+                      <div class="flex">
+                        <a href="account.general.html" class="item-author">
+                          <b>Print label</b>
+                        </a>
+                        <div class="item-except text-muted h-1x">
+                          Setup & print labels
+                        </div>
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex px-4 py-2" id="content-body">
+              <div class="row">
+                <div class="col-12 py-3">
+                  <h3>Print labels</h3>
+                </div>
+                <div class="col-6 form-group">
+                  <label for="">Label types</label>
+                  <select class="custom-select">
+                    <option value="">Dymo - 1-1/8ʺ × 3-1/2ʺ (28 mm × 89 mm)</option>
+                  </select>
+                </div>
+                <div class="col-6 form-group">
+                  <label for="">Barcode source field</label>
+                  <select class="custom-select">
+                    <option value="">Barcode</option>
+                  </select>
+                </div>
+                <div class="col-6 d-flex mt-3 justify-content-between border-bottom">
+                  <p>
+                    <span class="font-weight-bold">Print name</span><br>
+                    <span>Include name of product on label</span>
+                  </p>
+                  <span>
+                    <label class="ui-switch ui-switch-md">
+                      <input type="checkbox" checked>
+                      <i></i>
+                    </label>
+                  </span>
+                </div>
+                <div class="col-6 d-flex mt-3 justify-content-between border-bottom">
+                  <p>
+                    <span class="font-weight-bold">Print price</span><br>
+                    <span>Include price of product on label</span>
+                  </p>
+                  <span>
+                    <label class="ui-switch ui-switch-md">
+                      <input type="checkbox">
+                      <i></i>
+                    </label>
+                  </span>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-12">
+                  <a class="text-primary i-con-h-a" data-toggle="modal" data-target="#add-category-modal">
+                    <i class="mr-2 i-con i-con-menu"><i></i></i>
+                    Add by category
+                  </a>
+                  <a class="text-primary i-con-h-a ml-3" data-toggle="modal" data-target="#add-supplier-modal">
+                    <i class="mr-2 i-con i-con-table"><i></i></i>
+                    Add by supplier
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Product name</th>
+                        <th>Barcode</th>
+                        <th class="text-right">Quantity</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span>Taanayel Laban 500g</span><br>
+                          <span class="text-muted"><small>SKU 1000-110</small></span>
+                        </td>
+                        <td>528203849211</td>
+                        <td class="text-right">
+                          <input type="text" class="form-control" value="99">
+                        </td>
+                        <td class="text-right">
+                          <a class="text-danger i-con-h-a">
+                            <i class="mr-2 i-con i-con-trash"><i></i></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>Taanayel Laban 500g</span><br>
+                          <span class="text-muted"><small>SKU 1000-110</small></span>
+                        </td>
+                        <td>528203849211</td>
+                        <td class="text-right">
+                          <input type="text" class="form-control" value="99">
+                        </td>
+                        <td class="text-right">
+                          <a class="text-danger i-con-h-a">
+                            <i class="mr-2 i-con i-con-trash"><i></i></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td colspan="2">
+                          <div class="input-group">
+                            <div class="input-group-append">
+                              <span class="input-group-text border-right-0 p-2 no-bg" id="basic-addon2">
+                                <i class="i-con i-con-search"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control border-left-0" placeholder="Search products"
+                              aria-describedby="basic-addon2">
+                          </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row pt-5 mb-2">
+                <div class="col-12 d-flex justify-content-end">
+                  <button class="btn btn-secondary mr-1">Cancel</button>
+                  <button class="btn btn-success">Print labels</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="add-category-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Add products by category</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <div class="row">
+            <div class="col-12">
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text border-right-0 p-2 no-bg" id="basic-addon2">
+                    <i class="i-con i-con-search"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control border-left-0" placeholder="Search products"
+                  aria-describedby="basic-addon2">
+              </div>
+            </div>
+            <table class="table mt-3">
+              <tbody>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Bakery</td>
+                </tr>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Dr Bread</td>
+                </tr>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Charcuterie</td>
+                </tr>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Supermarket</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="add-supplier-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Add products by supplier</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <div class="row">
+            <div class="col-12">
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text border-right-0 p-2 no-bg" id="basic-addon2">
+                    <i class="i-con i-con-search"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control border-left-0" placeholder="Search suppliers"
+                  aria-describedby="basic-addon2">
+              </div>
+            </div>
+            <table class="table mt-3">
+              <tbody>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Supplier One</td>
+                </tr>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Lebanese Food Company SARL</td>
+                </tr>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Nutzz SAL</td>
+                </tr>
+                <tr>
+                  <td width=50>
+                    <label class="md-check">
+                      <input type="checkbox" id="all-check">
+                      <i class="blue"></i>
+                    </label>
+                  </td>
+                  <td>Castania Foods SAL</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+
+  <script src="../assets/js/office/product.print.label.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

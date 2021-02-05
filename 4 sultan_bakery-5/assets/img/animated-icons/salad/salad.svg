@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<g id="R_Leaf">
+	<g>
+		<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M35.35,26
+			c2.87-2.35,5.66-3.73,5.66-3.73"/>
+		<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+			M30,26h-0.02c0-0.04,0-0.07,0.01-0.11C30,25.93,30,25.96,30,26z"/>
+	</g>
+</g>
+<g id="L_Leaf">
+	<g>
+		<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M9.65,26
+			C8.78,25.18,8,24.37,7.39,23.64"/>
+		<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+			M16.5,26H4.47C2.92,22.6,3,19,3,19s6.68-0.6,10.72,3.16c0.97,0.9,1.74,1.93,2.34,2.99C16.22,25.43,16.36,25.71,16.5,26z"/>
+	</g>
+</g>
+<g id="Tomato">
+	<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M16.06,25.15c0.16,0.28,0.3,0.56,0.44,0.85H16C16,25.71,16.02,25.43,16.06,25.15z"/>
+	<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M30,26h-0.02c0-0.04,0-0.07,0.01-0.11C30,25.93,30,25.96,30,26z"/>
+</g>
+<g id="L_Lettuce_Leaf">
+	<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M29.99,25.89c-0.01,0.04-0.01,0.07-0.01,0.11H16.5c-0.14-0.29-0.28-0.57-0.44-0.85c0.27-2.31,1.67-4.28,3.64-5.33
+		C20.68,19.3,21.8,19,23,19c0.62,0,1.23,0.08,1.8,0.24C27.76,20.02,29.95,22.69,29.99,25.89z"/>
+	<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M6.1,19c0.09-0.45,0.25-0.88,0.45-1.28C7.38,16.1,9.06,15,11,15h1c0.25-1.69,1.74-3,3.5-3c1.4,0,2.94,0.82,3.5,2l0.15,0.45
+		l0.01,0.02c0.14-0.07,0.28-0.14,0.43-0.2c0.27-0.11,0.57-0.19,0.88-0.23C20.64,14.01,20.82,14,21,14c0.87,0,1.68,0.28,2.34,0.76"/>
+</g>
+<g id="R_Lettuce_Leaf">
+	<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M46.13,26H30c0-0.04,0-0.07-0.01-0.11c0.38-2.21,1.32-4.58,3.35-6.41c2.61-1.98,5.7-2.47,8.27-2.42c2.98,0.04,5.25,0.82,5.25,0.82
+		S47.57,21.85,46.13,26z"/>
+	<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M29.98,26c0-0.04,0-0.07,0.01-0.11C30,25.93,30,25.96,30,26H29.98z"/>
+	<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		M41.61,17.06c-2.57-0.05-5.66,0.44-8.27,2.42c-2.03,1.83-2.97,4.2-3.35,6.41c-0.04-3.2-2.23-5.87-5.19-6.65
+		C24.93,18.85,25,18.43,25,18c0-1.34-0.65-2.52-1.66-3.24C24.03,13.14,25.63,12,27.5,12c1.02,0,1.96,0.34,2.71,0.92
+		C30.63,11.79,31.72,11,33,11c1.66,0,3,1.34,3,3c0,0.03,0,0.07-0.01,0.1C36.32,14.04,36.66,14,37,14
+		C39.07,14,40.85,15.26,41.61,17.06z"/>
+</g>
+<g id="Bowl_Mask">
+</g>
+<g id="Bowl">
+	<g>
+		<path style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" d="M26,47c8,0,11.875,0.24,13.679-1.731
+			c0.741-0.814,7.839-7.06,8.32-18.092C48.027,26.533,47.539,26,46.951,26h-1.15H4.199h-1.15c-0.588,0-1.076,0.534-1.048,1.178
+			c0.481,11.037,7.579,17.286,8.32,18.1C12.125,47.25,16,47,24,47H26z"/>
+		<line style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" x1="3" y1="33" x2="47" y2="33"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,90 @@
+$full-black:  		rgba(0, 0, 0, 1);
+$light-black: 		rgba(0, 0, 0, 0.35);
+$min-black:			rgba(135, 150, 165, 0.1);
+$full-white:  		rgba(255, 255, 255, 1);
+$light-white: 		rgba(255, 255, 255, 0.35);
+$min-white:			rgba(255, 255, 255, 0.1);
+
+$primary:           #137eff;
+$secondary:         #7e8d9a;
+
+$info:              #7258ff;
+$success:           #5bc146;
+$warning:           #ffd14d;
+$danger:            #fe4d62;
+
+$light:             #f0f2f5;
+$dark:              #2b3035;
+$black:				#121212;
+$white:				#ffffff;
+
+$body-bg:       	#f7f8fa;
+$text-color:        #647787;
+$text-muted:        #a8afbb;
+
+$border-color:	 	rgba(135, 150, 165, 0.1);
+$border-color-lt:	rgba(135, 150, 165, 0.075);
+$box-shadow:		0 1px 3px rgba(0,0,0,0.05), 0 -1px 0px rgba(0,0,0,0.015);
+$box-shadows: 		0 5px 30px rgba(0,0,0,0.1);
+$card-box-shadow:   $box-shadow;
+$color-percent:     2.5%;
+$color-level:  		-10.5;
+
+$font-family-base:			-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-serif:         Georgia, "Times New Roman", Times, serif;
+
+$font-size-base:			0.875rem;
+$line-height-base:			1.25/0.875;
+
+$font-size-lg:            	2.5rem;
+$font-size-md:              1rem;
+$font-size-sm:            	0.75rem;
+
+$border-radius-base:      	3px;
+
+$navbar-height:                  3.75rem;
+$navbar-brand-height:            2.5rem;
+$navbar-brand-size: 			 1.125rem;
+
+$aside-width:                    15rem;
+$aside-slide-width:              17.5rem;
+$aside-folded-width:             5rem;
+$aside-folded-md-width:          5.5rem;
+$aside-nav-height:               2.25rem;
+$aside-nav-folded-height:        3rem;
+$aside-nav-sub-height:           2rem;
+$aside-nav-stacked-height:		 2rem;
+$aside-nav-stacked-margin:       0.15rem;
+$aside-nav-icon-margin:          0.5rem;
+$aside-nav-icon-size:			 1rem;
+$aside-nav-folded-icon-size:     1rem;
+
+$table-border-color:             $border-color;
+$table-striped-color:            rgba(0, 0, 0, 0.025);
+$list-group-border:				 $border-color-lt;
+
+$input-border:                   rgba(135, 150, 165, 0.15);
+$input-border-width:             1px;
+$input-border-focus:             $primary;
+$input-border-radius:            0.25rem;
+
+$switch-width:                   24px;
+$switch-height:                  14px;
+$switch-md-width:                32px;
+$switch-md-height:               20px;
+$switch-lg-width:                40px;
+$switch-lg-height:               24px;
+
+$ui-check-size:                  14px;
+$ui-check-md-size:               20px;
+$ui-check-lg-size:               24px;
+$ui-check-sign-size:             6px;
+$ui-check-sign-color:            $primary;
+$ui-check-border:        		 rgba(135, 150, 165, 0.35);
+
+$badge-border-radius:			 0.15rem;
+
+$list-hover-color:			     $info;
+$list-row-padding-x:			 0.625rem;
+$list-row-padding-y:			 0.75rem;
+$list-content-padding:			 1rem;

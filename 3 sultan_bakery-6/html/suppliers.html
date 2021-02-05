@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+
+<body class="layout-column">
+    <header id="header" class="page-header bg-white box-shadow">
+        <div class="navbar navbar-expand-lg">
+            <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+                <i class="i-con i-con-menu text-muted"></i>
+            </a>
+            <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+            <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+                <form class="input-group m-2 my-lg-0 i-con-h-a" style="padding-left: 40px">
+                    <span class="input-group-prepend">
+                        <button type="button" class="btn no-shadow no-bg px-0">
+                            <i class="i-con i-con-search text-fade w-16"></i>
+                        </button>
+                    </span>
+                    <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+                        placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+                        data-plugin="typeahead">
+                </form>
+            </div>
+
+            <ul class="nav navbar-menu order-1 order-lg-2">
+
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link px-2 i-con-h-a" data-plugin="screenfull" data-toggle="tooltip"
+                        data-title="Fullscreen">
+                        <i class="i-con i-con-fullscreen"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown"
+                        class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+                        <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+                            <small class='text-fade d-block mb-1'>Good evening,</small>
+                            <span>Justin Timber</span>
+                        </span>
+                        <span class="avatar w-36 bg-primary-lt">
+                            JT
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+                        <a class="py-3 dropdown-item animation-icon d-flex align-items-center"
+                            href="account.general.html">
+                            <div>
+                                <img src="../assets/img/animated-icons/settings/settings.svg">
+                            </div>
+                            <span class="ml-2">My account</span>
+                        </a>
+                        <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+                            <div>
+                                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+                            </div>
+                            <span class="ml-2">Sign out</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+                        data-target="#navbarToggler">
+                        <i class="i-con i-con-nav text-muted"><i></i></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <div id="main" class="layout-row flex">
+        <div id="aside" class="page-sidenav no-shrink nav-expand animate fadeInLeft fade" aria-hidden="true">
+            <div class="sidenav h-100 modal-dialog bg-white box-shadow" data-nav>
+                <div class="flex scroll-container">
+                    <div class="nav-border b-primary mt-3">
+                        <ul class="nav bg">
+                            <li>
+                                <a href="dashboard.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/home/home.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">DASHBOARD</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/tags/tags.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">PRODUCTS</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="products.all.empty.html">
+                                            <span class="nav-text">All Products</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="products.category.empty.html" class="">
+                                            <span class="nav-text">Categories</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="products.modifier.empty.html" class="">
+                                            <span class="nav-text">Modifiers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/list/list.svg"
+                                                class="stop import-icon-check" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">INVENTORY</span>
+                                    <span class="nav-badge">
+                                        <b class="badge badge-sm badge-pill ">12</b>
+                                    </span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="inventory.purchase.html">
+                                            <span class="nav-text">Purchase Orders</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.transfer.html" class="">
+                                            <span class="nav-text">Transfer Orders</span>
+                                            <span class="nav-badge">
+                                                <b class="badge badge-sm badge-pill bg-danger">12</b>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.stock.html" class="">
+                                            <span class="nav-text">Stock Adjustment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.counts.html" class="">
+                                            <span class="nav-text">Inventory Counts</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.history.html" class="">
+                                            <span class="nav-text">Inventory History</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.valuation.html" class="">
+                                            <span class="nav-text">Inventory Valuation</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="inventory.planner.html" class="">
+                                            <span class="nav-text">Inventory Planner</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="productions.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/gears/gears.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">PRODUCTIONS</span>
+                                    <span class="nav-badge">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/discount/discount.svg"
+                                                class="stop import-icon-check" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">DISCOUNTS</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="discount.code.html">
+                                            <span class="nav-text">Discount Code</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="discount.auto.html" class="">
+                                            <span class="nav-text">Automatic Discounts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="supplier.empty.html">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/business-network/business-network.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/business-network/business-network.gif"
+                                                class="play d-none" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">SUPPLIERS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./customers.html" class="i-con-h-a">
+                                    <span class="nav-icon">
+                                        <i class='i-con i-con-user'><i></i></i>
+                                    </span>
+                                    <span class="nav-text">CUSTOMERS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="i-con-h-a">
+                                    <span class="nav-icon">
+                                        <i class='i-con i-con-users'><i></i></i>
+                                    </span>
+                                    <span class="nav-text">EMPLOYEES</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="employee.all.html">
+                                            <span class="nav-text">All Employees</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.roll.html" class="">
+                                            <span class="nav-text">Rolls/Access Rights</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.schedule.html" class="">
+                                            <span class="nav-text">Schedule Timesheet</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="employee.payroll.html" class="">
+                                            <span class="nav-text">Payroll</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/calculator/calculator.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/calculator/calculator.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">BOOKEEPING</span>
+                                    <span class="nav-caret"></span>
+                                </a>
+
+                                <ul class="nav-sub">
+                                    <li>
+                                        <a href="bookeeping.sales.html">
+                                            <span class="nav-text">Sales</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.expense.html" class="">
+                                            <span class="nav-text">Expenses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.vat.html" class="">
+                                            <span class="nav-text">VAT Overview</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bookeeping.account.html" class="">
+                                            <span class="nav-text">Accounts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="reports.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif"
+                                                class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">REPORTS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="no-shrink ">
+                    <div class="nav-border b-primary">
+                        <ul class="nav bg">
+                            <li>
+                                <a href="setting.general.html" class="animation-icon">
+                                    <span class="nav-icon">
+                                        <div>
+                                            <img src="../assets/img/animated-icons/gear/gear.svg"
+                                                class="stop import-icon-check" alt="">
+                                            <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                                        </div>
+                                    </span>
+                                    <span class="nav-text">SETTINGS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-sm p-3 mt-5">
+                        <div class="hidden-folded text-sm">
+                            <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="flex">
+            <div data-plugin="notie">
+                <div class="d-none" id="ghost">
+                    <a class="ajax edit-link" href="supplier.edit.html"></a>
+                    <a class="ajax profile-link" href="supplier.profile.html"></a>
+                    <a class="any-link ajax"></a>
+                    <span class="success-title-message"></span>
+                    <span class="title-item-name"></span>
+                </div>
+                <div class="padding">
+                    <div class="row row-sm">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <span class="h2 mb-0">Suppliers</span>
+                                <div class="d-flex">
+                                    <div class="alert-container">
+                                        <div class="alert bg-success d-none" role="alert"></div>
+                                    </div>
+                                    <a class="btn btn-md btn-primary ajax" href="supplier.new.html">
+                                        <i class="la la-plus-circle"></i> Add Supplier
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3 d-flex">
+                            <a class="text-primary mr-3 d-flex">
+                                <img src="../assets/img/export.png" alt="" class="icon">
+                                <p class="text-primary" style="font-size: 14px;">Export</p>
+                            </a>
+                            <a class="text-primary d-flex" data-toggle="modal" data-target="#import-modal"
+                                id="import-start" style="font-size: 14px;">
+                                <img src="../assets/img/import.png" alt="" class="icon">
+                                <p class="text-primary" style="font-size: 14px;">Import</p>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="row px-3" id="toolbar">
+                                        <div class="col-6">
+                                            <div class="d-flex">
+                                                <label class="d-flex align-items-center mr-2 mb-0">
+                                                    <img src="https://image.flaticon.com/icons/svg/2922/2922830.svg"
+                                                        class="icon" alt="">
+                                                    Store:
+                                                </label>
+                                                <select id="store-name" class="custom-select border-0"
+                                                    style="width: 200px">
+                                                    <option>WEST SIDE LOCATION</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2"></div>
+                                        <div class="input-group d-flex col-4 float-right">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text p-2">
+                                                        <i class="la la-search"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="text"
+                                                    placeholder="Search suppliers, purchase orders, phone number, etc…"
+                                                    class="form-control" id="custom-search-box">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="padding all-table">
+                                    <table class="table-theme v-middle" 
+                                        data-plugin="bootstrapTable" id="table"
+                                        data-search="true"
+                                        data-search-align="left"
+                                        data-detail-view="false"
+                                        data-mobile-responsive="true" data-pagination="true"
+                                        data-page-list="[10, 25, 50, 100, ALL]"
+                                        data-search-selector="#custom-search-box">
+                                        <thead>
+                                            <tr>
+                                                <th data-field="supplier">Supplier</th>
+                                                <th>Contact</th>
+                                                <th>Phone number</th>
+                                                <th>Email</th>
+                                                <th class="text-right">Open balance</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bruit Shose Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 0</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                        </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9619999</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 10</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>I have all.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com, ...</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>I have nothing.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td></td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 0</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                        </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lebanese Food Company S.A.R.L.</td>
+                                                <td>Raymond Ghanem</td>
+                                                <td>+9613221992</td>
+                                                <td>mail@mail.com</td>
+                                                <td class="text-right">L£ 100,000</td>
+                                                <td>
+                                                    <div class="item-action dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="text-muted">
+                                                            <i class="i-con i-con-more"><i></i></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right bg-dark"
+                                                            role="menu">
+                                                            <a class="dropdown-item edit ml-2">
+                                                                <i class="la la-pen h5"></i> Edit
+                                                            </a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item"
+                                                                href="../html/bookeeping.expense.payment.html">
+                                                                <img src="../assets/img/payment.png" class="icon mr-2"
+                                                                    alt=""> Make payment
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="import-modal" class="modal fade">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="carousel slide" id="import-modal-carousel" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="modal-header border-0">
+                                            <h5 class="modal-title">Import suppliers by CSV</h5>
+                                        </div>
+                                        <div class="modal-body p-lg" style="height: 280px;">
+                                            <div class="row">
+                                                <p class="px-3">Download a <a href="#">sample CSV template</a> to see an
+                                                    example of the format required.
+                                                </p>
+                                                <div class="col-12 animation-icon">
+                                                    <form action="api/dropzone"
+                                                        class="dropzone white b-a b-dashed b-secondary rounded text-center p-0"
+                                                        data-plugin="dropzone"
+                                                        data-option="{url: '../assets/api/dropzone'}">
+                                                        <div class="dz-message">
+                                                            <h4
+                                                                class="my-4 d-flex align-items-center justify-content-center">
+                                                                <div class="d-flex align-items-center mr-2">
+                                                                    <img src="../assets/img/animated-icons/upload-to-cloud/upload-to-cloud.gif"
+                                                                        class="play icon-lg" alt=""
+                                                                        style="height: 80px; width: auto;">
+                                                                    <img src="../assets/img/animated-icons/upload-to-cloud/upload-to-cloud.svg"
+                                                                        class="stop icon-lg" alt=""
+                                                                        style="height: 80px; width: auto;">
+                                                                </div>
+                                                                <h4>Drag your file here to upload</h4>
+
+                                                            </h4>
+                                                            <span>or click to browse</span>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-12 d-flex mt-3 justify-content-between">
+                                                    <p class="text-muted">Overwrite any current suppliers that have the
+                                                        same handle. Existing values will be used for any missing
+                                                        columns</p>
+                                                    <span>
+                                                        <label class="ui-switch ui-switch-md">
+                                                            <input type="checkbox" id="switch">
+                                                            <i></i>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer border-0 d-block">
+                                            <div class="text-right">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <a role="button" class="btn btn-primary" href="#import-modal-carousel"
+                                                    data-slide="next">Upload & continue</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="modal-header border-0">
+                                            <h5 class="modal-title">Preview your first supplier</h5>
+                                        </div>
+                                        <div class="modal-body p-lg" style="height: 280px;">
+                                            <div class="row">
+                                                <p class="px-3">You will be importing approximately <b>12 suppliers</b>
+                                                    with a total of <b>12
+                                                        Contact
+                                                        names</b> and <b>12 VAT #</b>. Importing will <span
+                                                        class="overwrite font-weight-bold"> not overwrite any existing
+                                                        suppliers</span> that have the same supplier handle.</p>
+                                                <div class="col-12">
+                                                    <div class="border p-3 rounded">
+                                                        <div class="row" style="font-size: 14px;">
+                                                            <div class="col-9 mb-4 d-flex align-items-center">
+                                                                <div
+                                                                    class="rounded w-64 bg-success-lt d-flex align-items-center justify-content-center">
+                                                                    <span class="text-success"
+                                                                        style="font-size: 20px;">T</span>
+                                                                </div>
+                                                                <div class="ml-2">
+                                                                    <p class="mb-1 text-dark" style="font-size: 14px;">
+                                                                        <b>Lebanese Food Company SARL</b>
+                                                                    </p>
+                                                                    <span style="font-size: 11px;">Legal name</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 text-right pt-2">
+                                                                <p class="mb-0 text-dark" style="font-size: 14px;">
+                                                                    Jessie Al Jamalioun</p>
+                                                                <span style="font-size: 11px;">Contact name</span>
+                                                            </div>
+                                                            <div class="col-4 mb-3">
+                                                                <p class="mb-0 text-dark" style="font-size: 14px;">
+                                                                    <b>USD — 1,520</b>
+                                                                </p>
+                                                                <span style="font-size: 11px;">Account type</span>
+                                                            </div>
+                                                            <div class="col-4 mb-3">
+                                                                <p class="mb-0 text-dark" style="font-size: 14px;">
+                                                                    <b>394857- 238</b>
+                                                                </p>
+                                                                <span style="font-size: 11px;">VAT #</span>
+                                                            </div>
+                                                            <div class="col-4 mb-3 text-right">
+                                                                <p class="mb-0 text-dark" style="font-size: 14px;">
+                                                                    <b>companyname.com</b>
+                                                                </p>
+                                                                <span style="font-size: 11px;">Website</span>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <p class="mb-0 text-dark" style="font-size: 14px;"><b>03
+                                                                        239 238</b></p>
+                                                                <span style="font-size: 11px;">Mobile</span>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <p class="mb-0 text-dark" style="font-size: 14px;"><b>01
+                                                                        394 220</b></p>
+                                                                <span style="font-size: 11px;">Phone</span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <p class="mb-0 text-dark" style="font-size: 14px;">
+                                                                    <b>mail@mail.com, …</b>
+                                                                </p>
+                                                                <span style="font-size: 11px;">Emails</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer border-0 d-block">
+                                            <a role="button" href="#import-modal-carousel" class="btn btn-secondary"
+                                                data-slide="prev">
+                                                <i class="i-con i-con-left"></i> Go back</a>
+                                            <a id="import-supplier-start" role="button"
+                                                class="btn btn-primary float-right" href="#import-modal-carousel"
+                                                data-slide="next">Import suppliers</a>
+                                            <button type="button" class="btn btn-secondary float-right"
+                                                data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="modal-header border-0">
+                                            <h5 class="modal-title">Supplier import in progress</h5>
+                                        </div>
+                                        <div class="modal-body p-lg" style="height: 280px;">
+                                            <div class="row d-flex flex">
+                                                <div class="col-12"><br></div>
+                                                <div class="col-12">
+                                                    <p><b>We're currently importing your suppliers into your store’s
+                                                            back
+                                                            office.</b></p>
+                                                    <p>This could take some time to complete. If you'd like, you can
+                                                        close this dialog box and continue working.
+                                                    </p>
+                                                    <div class="progress my-2">
+                                                        <div class="progress-bar bg-success" style="width: 0%"></div>
+                                                    </div>
+                                                    <span class="progress-bar-percent"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer border-0 d-block">
+                                            <div class="text-right">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/pace-progress/pace.min.js"></script>
+    <script src="../libs/pjax/pjax.js"></script>
+    <script src="../assets/js/ajax.js"></script>
+    <script src="../assets/js/lazyload.config.js"></script>
+    <script src="../assets/js/lazyload.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+    <script src="../assets/js/theme.js"></script>
+
+
+    <footer class="d-none">
+        <style>
+            .i-con-more:hover {
+                color: blue;
+            }
+        </style>
+        <script src="../assets/js/common.js"></script>
+
+        <script src="../assets/js/office/suppliers.js"></script>
+    </footer>
+</body>
+
+</html>

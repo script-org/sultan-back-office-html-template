@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <style>
+    table tr td {
+      height: 65px !important;
+    }
+  </style>
+</head>
+
+<body class="layout-column">
+  <div id="main-page">
+    <header id="header" class="page-header bg-white box-shadow">
+      <div class="navbar navbar-expand-lg">
+        <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+          <i class="i-con i-con-menu text-muted"></i>
+        </a>
+        <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+        <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+          <form class="input-group m-2 my-lg-0 " style="padding-left: 40px">
+            <span class="input-group-prepend">
+              <button type="button" class="btn no-shadow no-bg px-0">
+                <i class="la la-search"></i>
+              </button>
+            </span>
+            <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+              placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+              data-plugin="typeahead">
+          </form>
+        </div>
+
+        <ul class="nav navbar-menu order-1 order-lg-2">
+
+          <li class="nav-item d-none d-sm-block">
+            <a class="nav-link px-2 i-con-h-a" data-toggle="fullscreen" data-plugin="screenfull" data-toggle="tooltip"
+              data-title="Fullscreen">
+              <i class="i-con i-con-fullscreen"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+              <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+                <small class='text-fade d-block mb-1'>Good evening,</small>
+                <span>Justin Timber</span>
+              </span>
+              <span class="avatar w-36 bg-primary-lt">
+                JT
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+              <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+                <div>
+                  <img src="../assets/img/animated-icons/settings/settings.svg" class="stop">
+                  <img src="../assets/img/animated-icons/settings/settings.gif" class="play">
+                </div>
+                <span class="ml-2">My account</span>
+              </a>
+              <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+                <div>
+                  <img src="../assets/img/animated-icons/sign-out/sign-out.svg" class="stop">
+                  <img src="../assets/img/animated-icons/sign-out/sign-out.gif" class="play">
+                </div>
+                <span class="ml-2">Sign out</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+              data-target="#navbarToggler">
+              <i class="i-con i-con-nav text-muted"><i></i></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </header>
+    <div id="main" class="layout-row flex">
+      <div id="aside" class="page-sidenav no-shrink  nav-expand" aria-hidden="true">
+        <div class="sidenav h-100 modal-dialog bg-white box-shadow">
+          <div class="flex scroll-container">
+            <div class="nav-border b-primary mt-3" data-nav>
+              <ul class="nav bg">
+                <li>
+                  <a href="dashboard.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/home/home.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">DASHBOARD</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/tags/tags.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">PRODUCTS</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="products.all.html">
+                        <span class="nav-text">All Products</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="products.category.html" class="">
+                        <span class="nav-text">Categories</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="products.modifier.html" class="">
+                        <span class="nav-text">Modifiers</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="active">
+                  <a href="#" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/list/list.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/list/list.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">INVENTORY</span>
+                    <span class="nav-badge">
+                      <b class="badge badge-sm badge-pill ">12</b>
+                    </span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="inventory.purchase.html">
+                        <span class="nav-text">Purchase Orders</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.transfer.html" class="">
+                        <span class="nav-text">Transfer Orders</span>
+                        <span class="nav-badge">
+                          <b class="badge badge-sm badge-pill bg-danger">12</b>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a href="inventory.stock.html" class="">
+                        <span class="nav-text">Stock Adjustment</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.counts.html" class="">
+                        <span class="nav-text">Inventory Counts</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.history.html" class="">
+                        <span class="nav-text">Inventory History</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.valuation.html" class="">
+                        <span class="nav-text">Inventory Valuation</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="inventory.planner.html" class="">
+                        <span class="nav-text">Inventory Planner</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="productions.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/gears/gears.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">PRODUCTIONS</span>
+                    <span class="nav-badge">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/discount/discount.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/discount/discount.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">DISCOUNTS</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="discount.code.html">
+                        <span class="nav-text">Discount Code</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="discount.auto.html" class="">
+                        <span class="nav-text">Automatic Discounts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="suppliers.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/business-network/business-network.svg" class="stop"
+                          alt="">
+                        <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play"
+                          alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">SUPPLIERS</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./customers.html" class="i-con-h-a">
+                    <span class="nav-icon">
+                      <i class='i-con i-con-user'><i></i></i>
+                    </span>
+                    <span class="nav-text">CUSTOMERS</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="i-con-h-a">
+                    <span class="nav-icon">
+                      <i class='i-con i-con-users'><i></i></i>
+                    </span>
+                    <span class="nav-text">EMPLOYEES</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="employee.all.html">
+                        <span class="nav-text">All Employees</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="employee.roll.html" class="">
+                        <span class="nav-text">Rolls/Access Rights</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="employee.schedule.html" class="">
+                        <span class="nav-text">Schedule Timesheet</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="employee.payroll.html" class="">
+                        <span class="nav-text">Payroll</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/calculator/calculator.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">BOOKEEPING</span>
+                    <span class="nav-caret"></span>
+                  </a>
+
+                  <ul class="nav-sub">
+                    <li>
+                      <a href="bookeeping.sales.html">
+                        <span class="nav-text">Sales</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="bookeeping.expense.html" class="">
+                        <span class="nav-text">Expenses</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="bookeeping.vat.html" class="">
+                        <span class="nav-text">VAT Overview</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="bookeeping.account.html" class="">
+                        <span class="nav-text">Accounts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="reports.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">REPORTS</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="no-shrink ">
+            <div class="nav-border b-primary" data-nav>
+              <ul class="nav bg">
+                <li>
+                  <a href="setting.general.html" class="animation-icon">
+                    <span class="nav-icon">
+                      <div>
+                        <img src="../assets/img/animated-icons/gear/gear.svg" class="stop" alt="">
+                        <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                      </div>
+                    </span>
+                    <span class="nav-text">SETTINGS</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm p-3 mt-5">
+              <div class="hidden-folded text-sm">
+                <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="flex animate fadeInLeft">
+        <div class="flex">
+          <div class="padding">
+            <div class="row animate fadeInLeft" v-if="showPage === 'index'">
+              <div class="col-12 d-flex justify-content-between mb-3">
+                <h2>Stock adjustment</h2>
+                <button class="btn btn-primary btn-md ml-3" @click="toCreatePage">
+                  <i class="la la-plus-circle"></i>
+                  Add stock adjustment
+                </button>
+              </div>
+
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row mb-4">
+                      <div class="col-12 col-md-3">
+                        <div class='input-group input-daterange' data-plugin="datepicker" data-option="{}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text p-2 i-con-h-a">
+                              <i class="i-con i-con-calendar"><i></i></i>
+                            </span>
+                          </div>
+                          <input type='text' class="form-control" name="start">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">-</span>
+                          </div>
+                          <input type='text' class="form-control" name="end">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-12 col-md-4 d-flex align-items-center">
+                            <label for="" class="i-con-h-a text-secondary d-flex mb-0">
+                              <i class="i-con i-con-user"><i></i></i>
+                              <span class="mx-2">EMPLOYEE: </span>
+                            </label>
+                            <select name="" id="" class="custom-select">
+                              <option value="">ALL EMPLOYEES</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-4 d-flex align-items-center">
+                            <label for="" class="i-con-h-a text-secondary d-flex mb-0">
+                              <img src="https://image.flaticon.com/icons/svg/2922/2922830.svg" class="icon" alt="">
+                              <span class="mx-2">STORE: </span>
+                            </label>
+                            <select name="" id="" class="custom-select">
+                              <option value="">ALL STORES</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-4 d-flex align-items-center">
+                            <label for="" class="i-con-h-a text-secondary d-flex mb-0">
+                              <i class="i-con i-con-user"><i></i></i>
+                              <span class="mx-2">REASON: </span>
+                            </label>
+                            <select name="" id="" class="custom-select">
+                              <option value="">ALL REASONS</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text p-2">
+                              <i class="la la-search"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control"
+                            placeholder="Search products, reference number, employee, reason…">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>SA#</th>
+                              <th>Date</th>
+                              <th>Reason</th>
+                              <th>Employee</th>
+                              <th>Store</th>
+                              <th class="text-right">Quantity</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Inventory count</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Inventory count</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Loss</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Damage</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Inventory count</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Inventory count</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Inventory count</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Inventory count</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                            <tr>
+                              <td>#SA1001</td>
+                              <td>Apr 8, 2020 - 10:25pm</td>
+                              <td>Inventory count</td>
+                              <td>Jackline Jamesons</td>
+                              <td>West Side Location - Beirut</td>
+                              <td class="text-right">12</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 offset-md-3 text-center mb-5">
+                <img src="../assets/img/illustrations/Inventory- stock-adjustment.svg " width="100%">
+                <p class="h1 mt-5">Create your first stock adjustment</p>
+                <p>Stock Adjustment functionality allows you to modify the stock of items and indicate the reason for
+                  that adjustment.</p>
+                <button class="btn btn-md btn-primary" @click="toCreatePage">Add stock adjustment</button>
+              </div>
+            </div>
+            <div class="row animate fadeInRight" v-if="showPage === 'create'" @change="handleChanged">
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="i-con-h-a text-muted" @click="toIndexPage">
+                    <i class="i-con i-con-left"></i>
+                    Stock adjustment
+                  </a>
+                  <h2>Create stock adjustment</h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <h4>Store location</h4>
+                      </div>
+                      <div class="col-12 form-group">
+                        <label for="">Store name</label>
+                        <select v-model="data.name" class="custom-select">
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <h4>Reason</h4>
+                      </div>
+                      <div class="col-12 form-group">
+                        <label for="">Select reason</label>
+                        <select v-model="data.reason" class="custom-select">
+                          <option value="inventory-count">Inventory count</option>
+                          <option value="loss">Loss</option>
+                          <option value="damage">Damage</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <h4>Notes</h4>
+                      </div>
+                      <div class="col-12 form-group">
+                        <textarea v-model="data.note" style="height: 200px" class="form-control"></textarea>
+                        <p class="text-right">{{data.note.length}} / 500</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-7">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <h4 class="mb-0">
+                          Products
+                        </h4>
+                        <span>Enter the products and quanIIes you would like to adjust.</span>
+                      </div>
+                      <div class="col-12">
+                        <table class="table table-hover" v-if="data.reason === 'inventory-count'">
+                          <thead>
+                            <tr>
+                              <th>Products</th>
+                              <th class="text-right">Expired stock</th>
+                              <th class="text-right">Counted stock</th>
+                              <th style="width: 30px"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td class="text-right">5</td>
+                              <td class="text-right" style="width: 100px"><input type="number" class="form-control"
+                                  value="0"></td>
+                              <td class="text-right">
+                                <a href="" class="text-danger i-con-h-a">
+                                  <i class="i-con i-con-trash"><i></i></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td class="text-right">5</td>
+                              <td class="text-right" style="width: 100px"><input type="number" class="form-control"
+                                  value="0"></td>
+                              <td class="text-right">
+                                <a href="" class="text-danger i-con-h-a">
+                                  <i class="i-con i-con-trash"><i></i></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="4">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <i class="la la-search"></i>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Search Composite items">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="table table-hover" v-if="data.reason !== 'inventory-count'">
+                          <thead>
+                            <tr>
+                              <th>Products</th>
+                              <th class="text-right">In stock</th>
+                              <th class="text-right">Remove stock</th>
+                              <th class="text-right">Stock after</th>
+                              <th style="width: 30px"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td class="text-right">5</td>
+                              <td class="text-right" style="width: 100px"><input type="number" class="form-control"
+                                  value="0"></td>
+                              <td class="text-right">5</td>
+                              <td class="text-right">
+                                <a href="" class="text-danger i-con-h-a">
+                                  <i class="i-con i-con-trash"><i></i></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td class="text-right">5</td>
+                              <td class="text-right" style="width: 100px"><input type="number" class="form-control"
+                                  value="0"></td>
+                              <td class="text-right">5</td>
+                              <td class="text-right">
+                                <a href="" class="text-danger i-con-h-a">
+                                  <i class="i-con i-con-trash"><i></i></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="5">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <i class="la la-search"></i>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Search Composite items">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row animate fadeInRight" v-if="showPage === 'detail'">
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="i-con-h-a text-muted" @click="toIndexPage">
+                    <i class="i-con i-con-left"></i>
+                    Stock adjustment
+                  </a>
+                  <h2>#SA1008</h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <h4>Adjustment overview</h4>
+                      </div>
+                      <div class="col-12 form-group">
+                        <p class="d-flex justify-content-between">
+                          <span>Date created</span>
+                          <span>Reason</span>
+                        </p>
+                        <p class="d-flex justify-content-between">
+                          <span class="font-weight-bold ">Apr 10, 2020 at 12:39pm</span>
+                          <span class="font-weight-bold ">
+                            {{ data.reason === 'inventory-count' ? 'Inventory count' : '' }}
+                            {{ data.reason === 'loss' ? 'Loss' : '' }}
+                            {{ data.reason === 'damage' ? 'Damage' : '' }}
+                          </span>
+                        </p>
+                      </div>
+                      <div class="col-12 form-group">
+                        <p class="d-flex justify-content-between">
+                          <span>Adjusted by</span>
+                          <span>Store</span>
+                        </p>
+                        <p class="d-flex justify-content-between">
+                          <span class="font-weight-bold ">James Brown</span>
+                          <span class="font-weight-bold ">West Side Store</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <h4>Notes</h4>
+                      </div>
+                      <div class="col-12">
+                        <span>
+                          Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In
+                          malesuada enim in dolor euismod, id commodo mi consectetur.
+                          Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis
+                          nisl, molestie ut ipsum et, suscipit vehicula odio. vestibulum
+                          interdum vestibulum felis ac molestie. Praesent aliquet quam et
+                          libero dictum, vitae dignissim leo eleifend. In in turpis turpis.
+                          Quisque justo turpis, vestibulum non enim nec, tempor mollis mi.
+                          Sed vel tristique quam.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <h4>Products</h4>
+                      </div>
+                      <div class="col-12">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Product</th>
+                              <th class="text-right">{{data.reason === 'inventory-count' ? 'Counted' : 'Removed'}} stock</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-dark">Strawberry Short Cake</span><br>
+                                <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                              </td>
+                              <td>20</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="leave-modal" class="modal fade" data-backdrop="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h5 class="modal-title">You have unsaved changes</h5>
+            </div>
+            <div class="modal-body p-lg">
+              <p>
+                If you leave this page, all unsaved changes will be lost
+              </p>
+            </div>
+            <div class="modal-footer border-0">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-danger" @click="toIndexPage" data-dismiss="modal">Leave page</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="d-none">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <span class="text-secondary saved-status"></span>
+            </div>
+            <div>
+              <button class="btn btn-secondary" data-toggle="modal" data-target="#leave-modal" v-if="showPage === 'create'">Cancel</button>
+              <button type="button" class="btn btn-success" v-on:click="toDetailPage" v-if="showPage === 'create'">Adjust</button>
+              <button data-toggle="dropdown" class="btn btn-secondary" v-if="showPage === 'detail'">
+                More
+                <i class="la la-angle-up"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+                <a class="dropdown-item edit">Save as PDF</a>
+                <a class="dropdown-item edit">Save as CSV</a>
+                <a class="dropdown-item edit">Print</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/vue.min.js"></script>
+  <script src="../assets/js/inventory.stock.js"></script>
+</body>
+
+</html>

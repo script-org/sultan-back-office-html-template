@@ -1,0 +1,4594 @@
+/*
+CSS Icon
+*/
+
+$icon-size: 16px;
+$icon-radius: 2px;
+
+.i-con{
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    border: 1px solid rgba(0,0,0,0.0);
+    border-radius: $icon-radius;
+  	display: inline-block;
+	vertical-align: -2px;
+    margin: -2px 0;
+	position: relative;
+	transition: all .3s;
+	width: $icon-size;
+	height: $icon-size;
+    background: rgba(0,0,0,0.0);
+    box-sizing: content-box;
+  	&:before,
+  	&:after,
+    span:before,
+    span:after,
+    i:before,
+    i:after{
+  		content: "";
+        width: 0;
+	    height: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-top-width: inherit;
+        border-color: currentColor;
+        border-top-style: solid;
+        position: absolute;
+        z-index: 2;
+        box-sizing: border-box;
+  	}
+    span,
+    i{
+        width: 100%;
+        height: 100%;
+        margin: 0 !important;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border: inherit;
+        border-radius: inherit;
+        border-color: transparent;
+        box-sizing: content-box;
+        position: absolute;
+        z-index: 3;
+    }
+    .i-con-border{
+        width: 87.5%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+        &.i-con-border-lg{
+            width: 125%;
+            height: 125%;
+        }
+    }
+    &.b-2x{
+        margin: -3px 0;
+    }
+}
+.i-con-h-a .i-con{
+    &:before,
+    &:after,
+    span:before,
+    span:after,
+    i:before,
+    i:after{
+        transition: all 0.2s ease-in-out;
+    }
+}
+.i-con-menu{
+    &:before{
+        width: 75%;
+	    top: 25%;
+        left: 12.5%;
+        transform: translate(0%, -50%);
+    }
+    &:after{
+        width: 50%;
+    	top: 75%;
+    	left: 12.5%;
+        transform: translate(0%, -50%);
+    }
+    i{
+        &:before{
+            width: 75%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+    	&:before{
+            width: 50%;
+    	}
+    	&:after{
+            width: 75%;
+    	}
+    }
+    .active > &{
+    	&:before{
+            width: 60% !important;
+            left: 50% !important;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-225deg);
+            transition-delay: 0.2s;
+    	}
+    	&:after{
+            width: 60% !important;
+            left: 50% !important;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(225deg);
+            transition-delay: 0.2s;
+    	}
+        i{
+            width: 0;
+        }
+    }
+}
+
+.i-con-nav{
+    &:before{
+        width: 75%;
+        top: 25%;
+        left: 12.5%;
+        transform: translate(0%, -50%);
+    }
+    &:after{
+        width: 75%;
+        top: 75%;
+        left: 12.5%;
+        transform: translate(0%, -50%);
+    }
+    i{
+        &:before{
+            width: 0%;
+            top: 25%;
+            left: 0%;
+        }
+        &:after{
+            width: 0%;
+            top: 75%;
+            left: 0%;
+        }
+        i{
+            &:before{
+                width: 75%;
+                left: 50%;
+                top: 50%;
+            }
+            &:after{
+                width: 0%;
+                left: 0%;
+                top: 50%;
+            }
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            width: 0;
+            left: 100%;
+            transition-delay: 0.1s;
+        }
+        &:after{
+            width: 0%;
+            left: 100%;
+            transition-delay: 0.3s;
+        }
+        i{
+            &:before{
+                width: 80%;
+                left: 50%;
+                transition-delay: 0.1s;
+            }
+            &:after{
+                width: 80%;
+                left: 50%;
+                transition-delay: 0.3s;
+            }
+            i{
+                &:before{
+                    width: 0%;
+                    left: 100%;
+                    transition-delay: 0.2s;
+                }
+                &:after{
+                    width: 80%;
+                    left: 50%;
+                    transition-delay: 0.2s;
+                }
+            }
+        }
+    }
+    .active > &{
+        &:before{
+            width: 60% !important;;
+            left: 50% !important;;
+            top: 50% !important;;
+            transform: translate(-50%, -50%) rotate(-225deg);
+            transition-delay: 0s !important;;
+            opacity: 1;
+        }
+        &:after{
+            width: 60% !important;;
+            left: 50% !important;;
+            top: 50% !important;;
+            transform: translate(-50%, -50%) rotate(225deg);
+            transition-delay: 0s !important;;
+            opacity: 1;
+        }
+        i{
+            opacity: 0;
+        }
+    }
+}
+
+.i-con-search{
+    transform: rotate(45deg);
+    &:before{
+        left: 31.25%;
+        width: 62.5%;
+        height: 62.5%;
+        border-radius: 100%;
+        border: inherit;
+        border-color: currentColor;
+    }
+    &:after{
+        left: 62.5%;
+        width: 37.5%;
+        transform: translate(0%,-50%);
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        transform: rotate(135deg);
+    }
+
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-plus{
+    &:before{
+        width: 75%;
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    &:after{
+        width: 75%;
+    }
+
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            transform: translate(-50%,-50%) rotate(180deg);
+        }
+        &:after{
+            transform: translate(-50%,-50%) rotate(90deg);
+        }
+    }
+}
+
+.i-con-minus{
+    &:before{
+        width: 75%;
+    }
+    &:after{
+        width: 0;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            transform: translate(-50%,-50%) rotate(90deg);
+        }
+    }
+    .active > &{
+        &:before{
+            height: 60%;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: $icon-radius;
+        }
+    }
+}
+
+.i-con-close{
+    &:before{
+        width: 75%;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:after{
+        width: 75%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            transform: translate(-50%,-50%) rotate(135deg);
+        }
+        &:after{
+            transform: translate(-50%,-50%) rotate(225deg);
+        }
+    }
+}
+
+.i-con-ok{
+    &:before{
+        height: 37.5%;
+        width: 75%;
+        top: 45%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(140deg);
+    }
+    &:after{
+        width: 0;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 80%;
+            transform: translate(-50%,-50%) rotate(130deg);
+        }
+    }
+}
+
+.i-con-edit{
+    transform: rotate(45deg);
+    &:before{
+        width: 37.5%;
+        height: 50%;
+        top: 35%;
+        border: inherit;
+        border-color: currentColor;
+        border-top-left-radius: $icon-radius;
+        border-top-right-radius: $icon-radius;
+    }
+    &:after{
+        width: 37.5%;
+        height: 37.5%;
+        top: 45%;
+        border: inherit;
+        border-color: transparent transparent currentColor currentColor;
+        transform: rotate(-45deg) translate(-50%,-50%) skew(-20deg, -20deg);
+        transform-origin: top center;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        transform: rotate(0deg);
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-trash{
+    &:before{
+        width: 55%;
+        height: 50%;
+        top: 45%;
+        border: inherit;
+        border-color: currentColor;
+        border-top-width: 0;
+        border-bottom-right-radius: $icon-radius;
+        border-bottom-left-radius: $icon-radius;
+        transform: translate(-50%, 0%);
+    }
+    &:after{
+        width: 0;
+    }
+    i{
+        transition: all .3s;
+        &:before{
+            width: 40%;
+            height: 25%;
+            top: 7.5%;
+            border: inherit;
+            border-color: currentColor currentColor transparent currentColor;
+            border-bottom: 0;
+            border-radius: $icon-radius $icon-radius 0 0;
+            transform: translate(-50%, 0%);
+        }
+        &:after{
+            width: 75%;
+            top: 25%;
+            transform: translate(-50%, 0%);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            transform: translate(-50%,-50%) rotate(25deg);
+            transform-origin: 80% 50%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-sort{
+    &:before{
+        width: 75%;
+        top: 25%;
+    }
+    &:after{
+        width: 25%;
+        top: 75%;
+    }
+    i{
+        &:before{
+            width: 50%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active &,
+    .asc &{
+        &:before{
+            width: 25%;
+        }
+        &:after{
+            width: 75%;
+        }
+    }
+}
+
+.i-con-help{
+    &:before{
+        width: 37.5%;
+        height: 37.5%;
+        top: 20%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(-50%,0) rotate(-45deg);
+    }
+    &:after{
+        width: 0%;
+        height: 15%;
+        top: 57.5%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    i{
+        &:before{
+            width: 0;
+            height: 1%;
+            top: 80%;
+            border-left: inherit;
+            border-left-color: currentColor;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            border-color: currentColor currentColor transparent currentColor;
+        }
+    }
+}
+
+.i-con-warning{
+    &:before{
+        width: 0;
+        height: 40%;
+        top: 40%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    &:after{
+        width: 0;
+        top: 75%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            height: 0;
+            top: 75%;
+        }
+        &:after{
+            height: 40%;
+            top: 40%;
+        }
+    }
+}
+
+.i-con-info{
+    &:before{
+        width: 0;
+        top: 25%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    &:after{
+        width: 0;
+        height: 40%;
+        top: 60%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            height: 40%;
+            top: 60%;
+        }
+        &:after{
+            height: 0;
+            top: 25%;
+        }
+    }
+}
+
+.i-con-attachment{
+    &:before{
+        width: 65%;
+        height: 50%;
+        left: auto;
+        right: 0%;
+        top: auto;
+        bottom: 25%;
+        transform: translate(0, 0);
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 0 10rem 10rem 0;
+        border-left-width: 0;
+    }
+    &:after{
+        width: 45%;
+        height: 30%;
+        bottom: 25%;
+        top: auto;
+        left: 25%;
+        transform: translate(0, 0);
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-radius: 10rem 0 0 10rem;
+        border-right-width: 0;
+    }
+    i{
+        &:before{
+            width: 35%;
+            height: 50%;
+            bottom: 25%;
+            top: auto;
+            left: 0%;
+            transform: translate(0, 0);
+            border: inherit;
+            border-color: currentColor transparent transparent currentColor;
+            border-radius: 10rem 0 0 10rem;
+            border-right-width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:after{
+            width: 50%;
+        }
+    }
+}
+
+.i-con-more{
+    &:before,
+    &:after,
+    i:after{
+        width: 12.5%;
+        height: 12.5%;
+        max-width: 4px;
+        max-height: 4px;
+        border-radius: 50%;
+        border: none;
+        background-color: currentColor;
+    }
+    &:before{
+        top: 25%;
+    }
+    &:after{
+        top: 75%;
+    }
+    i:before{
+        width: 0;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        transform: rotate(-180deg);
+    }
+}
+
+.i-con-more-h{
+    &:before,
+    &:after,
+    i:after{
+        width: 12.5%;
+        height: 12.5%;
+        max-width: 4px;
+        max-height: 4px;
+        border: none;
+        background-color: currentColor;
+        border-radius: 50%;
+    }
+    &:before{
+        left: 25%;
+    }
+    &:after{
+        left: 75%;
+    }
+    i:before{
+        width: 0;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        transform: rotate(-180deg);
+    }
+}
+
+.i-con-refresh{
+    &:before{
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        border: inherit;
+        border-color: currentColor currentColor transparent currentColor;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:after{
+        width: 0;
+        top: 87.5%;
+        border: 3px solid;
+        margin-top: -1px;
+        border-color: transparent currentColor transparent transparent;
+        border-left: 0;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        animation: i-a-rotate 1s linear infinite;
+    }
+}
+
+.i-con-tag{
+    transform: rotate(-45deg);
+    &:before{
+        width: 62.5%;
+        height: 62.5%;
+        top: 55%;
+        border: inherit;
+        border-color: currentColor;
+        border-top-width: 0;
+        border-bottom-right-radius: $icon-radius;
+        border-bottom-left-radius: $icon-radius;
+    }
+    &:after{
+        width: 45%;
+        height: 45%;
+        top: 25%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    i{
+        &:before{
+            width: 25%;
+            height: 25%;
+            max-width: 4px;
+            max-height: 4px;
+            top: 40%;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: 50%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        transform: rotate(45deg);
+    }
+    .active > &.active-solid,
+    &.solid{
+        i:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-droplet{
+    overflow:hidden;
+    &:before,
+    &:after{
+        width: 75%;
+        height: 75%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50% 50% 50% 0;
+        transform: translate(-50%, -50%) rotate(135deg);
+        top: 55%;
+    }
+    &:after{
+        width: 0;
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            width: 0;
+            height: 0;
+            top: 100%;
+            opacity: 0;
+        }
+        &:after{
+            width: 75%;
+            height: 75%;
+            top: 55%;
+            opacity: 1;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-lock{
+    &:before{
+        width: 75%;
+        height: 50%;
+        top: 45%;
+        border: inherit;
+        border-color: currentColor;
+        border-bottom-right-radius: $icon-radius;
+        border-bottom-left-radius: $icon-radius;
+        transform: translate(-50%, 0%);
+    }
+    &:after{
+        width: 0;
+    }
+    i{
+        &:before{
+            width: 50%;
+            height: 25%;
+            top: 5%;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: 100rem 100rem 0 0;
+            border-bottom-width: 0;
+            transform: translate(-50%, 0%);
+        }
+        &:after{
+            width: 50%;
+            height: 15%;
+            top: 30%;
+            border-left: inherit;
+            border-color: currentColor;
+            border-top-width: 0;
+            border-radius: 0;
+            transform: translate(-50%, 0%);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:after{
+                border-right: inherit;
+                border-color: currentColor;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-share{
+    &:before,
+    &:after,
+    i:before{
+        width: 25%;
+        height: 25%;
+        max-width: 4px;
+        max-height: 4px;
+        left: 70%;
+        top: 20%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    &:after{
+        top: 80%;
+    }
+    i{
+        &:before{
+            top: 50%;
+            left: 20%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            top: 50%;
+            left: 20%;
+            transition-delay: 0.1s;
+        }
+        &:after{
+            left: 70%;
+            top: 20%;
+            transition-delay: 0.15s;
+        }
+        i{
+            &:before{
+                top: 80%;
+                left: 70%;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after,
+        i:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-layer{
+    &:before,
+    &:after{
+        width: 60%;
+        height: 60%;
+        top: 45%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+        transform: rotate(45deg) translate(-50%,-50%) skew(-10deg,-10deg);
+        transform-origin: top left;
+    }
+    &:after{
+        top: 70%;
+        border-color: transparent currentColor currentColor transparent;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-top-left-radius: $icon-radius;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            border-color: currentColor transparent transparent currentColor;
+            border-right-width: 0;
+            border-bottom-width: 0;
+            border-radius: $icon-radius 0 0 0;
+        }
+        &:after{
+            border-color: currentColor;
+            border-radius: $icon-radius;
+            border-top-width: inherit;
+            border-left-width: inherit;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-circle{
+    &:before{
+        width: 100%;
+        height: 100%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    &:after{
+        width: 37.5%;
+        height: 37.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            width: 37.5%;
+            height: 37.5%;
+        }
+        &:after{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-globe{
+    &:before{
+        width: 100%;
+        height: 100%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    &:after{
+        width: 70%;
+        height: 70%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 95% 5%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    i{
+        &:before{
+            width: 100%;
+        }
+        &:after{
+            width: 0%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:after{
+            transform: translate(-50%, -50%) rotate(-60deg);
+        }
+        i{
+            &:before{
+                transform: translate(-50%, -50%) rotate(-15deg);
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-grid{
+    &:before,
+    &:after,
+    i:before,
+    i:after{
+        width: 37.5%;
+        height: 37.5%;
+        left: 5%;
+        top: 5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+        transform: none;
+    }
+    &:after{
+        left: auto;
+        top: auto;
+        right: 5%;
+        bottom: 5%;
+    }
+    i{
+        &:before{
+            left: auto;
+            right: 5%;
+        }
+        &:after{
+            top: auto;
+            bottom: 5%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:before{
+                transform: rotate(135deg);
+                transform-origin: center center;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-list{
+    &:before,
+    i:before{
+        width: 37.5%;
+        height: 37.5%;
+        left: 5%;
+        top: 5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+        transform: translate(0,0);
+    }
+    &:after,
+    i:after{
+        width: 37.5%;
+        left: auto;
+        right: 5%;
+        top: 75%;
+        transform: translate(0%, -50%);
+    }
+    i{
+        &:before{
+            top: auto;
+            bottom: 5%;
+        }
+        &:after{
+            top: 25%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before,
+        i:before{
+            transform: rotate(135deg);
+            transform-origin: center center;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-mouse{
+    &:before{
+        width: 75%;
+        height: 100%;
+        border-radius: 10rem;
+        border: inherit;
+        border-color: currentColor;
+    }
+    &:after{
+        width: 0;
+        height: 25%;
+        top: 35%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 55%; 
+        }
+        &:after{
+            top: 65%;
+        }
+    }
+}
+
+.i-con-shutdown{
+    &:before{
+        width: 87.5%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+        border-top-color: transparent;
+    }
+    &:after{
+        width: 0;
+        height: 37.5%;
+        top: 0;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: translate(-50%, 0%);
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            border-top-color: currentColor;
+            border-bottom-color: transparent;
+        }
+        &:after{
+            top: 62.5%;
+        }
+    }
+}
+
+.i-con-user{
+    &:before{
+        width: 50%;
+        height: 50%;
+        top: 0%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+        transform: translate(-50%,0);
+    }
+    &:after{
+        width: 87.5%;
+        height: 45%;
+        top: auto;
+        bottom: 0%;
+        border: inherit;
+        border-color: currentColor currentColor transparent currentColor;
+        border-radius: 50% 50% 0 0;
+        border-bottom-width: 0;
+        transform: translate(-50%,0);
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            width: 55%;
+            height: 55%;
+        }
+        &:after{
+            height: 35%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-users{
+    i:before,
+    &:before{
+        width: 43.75%;
+        height: 43.75%;
+        top: 5%;
+        left: 12.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+        transform: translate(0,0);
+    }
+    i:after,
+    &:after{
+        width: 70%;
+        height: 37.5%;
+        top: auto;
+        left: 0%;
+        bottom: 5%;
+        border: inherit;
+        border-color: currentColor currentColor transparent currentColor;
+        border-radius: 50% 50% 0 0;
+        border-bottom-width: 0;
+        transform: translate(0,0);
+    }
+    i{
+        z-index: 3;
+        &:before{
+            left: auto;
+            right: 12.5%;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            transform: translate(0,0) rotate(-45deg);
+        }
+        &:after{
+            width: 35%;
+            left: auto;
+            right: 0;
+            border-top-left-radius: 0;
+            border-left-color: transparent;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            left: auto;
+            right: 12.5%;
+        }
+        &:after{
+            left: auto;
+            right: 0;
+        }
+        i{
+            &:before{
+                left: 12.5%;
+                right: auto;
+                transform: translate(0,0) rotate(135deg);
+            }
+            &:after{
+                left: 0;
+                right: auto;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 0;
+                border-right-color: transparent;
+                border-left-color: currentColor;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-comment{
+    transform: rotate(45deg);
+    &:before,
+    &:after{
+        width: 100%;
+        height: 100%;
+        border: inherit;
+        border-color: currentColor currentColor transparent currentColor;
+        border-radius: 50%;
+        transform: translate(-50%,-50%) rotate(-30deg);
+    }
+    &:after{
+        border-color: transparent currentColor transparent transparent;
+        transform: translate(-50%,-50%) rotate(30deg);
+    }
+    i{
+        &:before{
+            width: 30%;
+            border-top-style: dotted;
+            transform: translate(-50%,-50%) rotate(-45deg);
+        }
+        &:after{
+            width: 25%;
+            height: 25%;
+            top: 100%;
+            border-left: inherit;
+            border-left-color: currentColor;
+            transform: translate(-50%, -50%) rotate(-135deg) skew(5deg, 5deg);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:before{
+                transform: translate(-50%,-50%) rotate(135deg);
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after,
+        i:after{
+            background-color: currentColor;
+        }
+        i:before{
+            border-color: #fff;
+        }
+    }
+}
+
+.i-con-star{
+    &:before,
+    &:after,
+    i:before,
+    i:after{
+        width: 37.5%;
+        height: 37.5%;
+        left: 32%;
+        top: 35%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        border-top-left-radius: $icon-radius;
+        transform: translate(-50%, -50%) rotate(45deg) skew(5deg, 5deg);
+        transform-origin: bottom right;
+    }
+    &:after{
+        display: none;
+    }
+    i{
+        &:before{
+            transform: translate(-50%, -50%) rotate(-27deg) skew(5deg, 5deg);
+        }
+        &:after{
+            transform: translate(-50%, -50%) rotate(117deg) skew(5deg, 5deg);
+        }
+        i{
+            &:before{
+                transform: translate(-50%, -50%) rotate(-99deg) skew(5deg, 5deg);
+            }
+            &:after{
+                transform: translate(-50%, -50%) rotate(-171deg) skew(5deg, 5deg);
+            }
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        transform: rotate(72deg);
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after,
+        i:before,
+        i:after{
+            background-color: currentColor;
+        }
+    }
+    &.half-solid{
+        &:before,
+        > i:before,
+        i i:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-setting{
+    &:before,
+    &:after,
+    i:before,
+    i:after{
+        width: 30%;
+        height: 30%;
+        border: inherit;
+        border-color: currentColor currentColor transparent currentColor;
+        transform-origin: bottom center;
+    }
+    &:after{
+        transform: translate(-50%, -50%) rotate(-300deg);
+    }
+    i{
+        &:before{
+            transform: translate(-50%, -50%) rotate(-60deg);
+        }
+        &:after{
+            transform: translate(-50%, -50%) rotate(-120deg);
+        }
+        i{
+            &:before{
+                transform: translate(-50%, -50%) rotate(-180deg);
+            }
+            &:after{
+                transform: translate(-50%, -50%) rotate(-240deg);
+            }
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after,
+        i:before,
+        i:after{
+            background-color: currentColor;
+        }
+    }
+    &.half-solid{
+        &:before,
+        > i:before,
+        i i:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-like{
+    transform: rotate(-45deg);
+    &:before{
+        width: 62.5%;
+        height: 30%;
+        left: 15%;
+        top: -10%;
+        border: inherit;
+        border-radius: 100rem 100rem 0 0;
+        border-color: currentColor currentColor currentColor transparent;
+        border-bottom-width: 0;
+        transform: none;
+        margin-top: 1px;
+    }
+    &:after{
+        width: 30%;
+        height: 62.5%;
+        left: 77.5%;
+        top: 20%;
+        border: inherit;
+        border-radius: 0 100rem 100rem 0;
+        border-color: currentColor currentColor currentColor transparent;
+        border-left-width: 0;
+        transform: none;
+        margin-left: -1px;
+    }
+    i{
+        &:before{
+            width: 62.5%;
+            height: 62.5%;
+            left: 15%;
+            top: 20%;
+            border-right: inherit;
+            border-right-color: currentColor;
+            border-top-right-radius: $icon-radius;
+            transform: rotate(180deg);
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            border-left-color: currentColor;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after,
+        i:before{
+            background-color: currentColor;
+            border-color: inherit;
+        }
+    }
+}
+
+.i-con-bookmark{
+    &:before{
+        width: 75%;
+        height: 65%;
+        top: 10%;
+        border: inherit;
+        border-radius: $icon-radius $icon-radius 0 0;
+        border-color: currentColor currentColor transparent currentColor;
+        border-bottom-width: 0;
+        transform: translate(-50%,0%);
+    }
+    &:after{
+        
+    }
+    i{
+        &:before{
+            width: 37.5%;
+            height: 30%;
+            left: 12.5%;
+            top: 75%;
+            border: inherit;
+            border-color: transparent transparent currentColor currentColor;
+            transform: translate(0%,-50%) skew(0, -35deg);
+            border-right-width: 0;
+            border-bottom-left-radius: $icon-radius;
+        }
+        &:after{
+            width: 37.5%;
+            height: 30%;
+            left: auto;
+            top: 75%;
+            right: 12.5%;
+            border: inherit;
+            border-color: transparent currentColor currentColor transparent;
+            transform: translate(0%,-50%) skew(0, 35deg);
+            border-left-width: 0;
+            border-bottom-right-radius: $icon-radius;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            height: 70%;
+        }
+        i{
+            &:before,
+            &:after{
+                top: 80%;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        i:before,
+        i:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-eye{
+    &:before{
+        width: 87.5%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 60% 25%;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:after{
+        width: 37.5%;
+        height: 37.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            border-radius: 80% 10%;
+        }
+    }
+    .close &{
+        &:before{
+            top: 45%;
+            border-radius: 75% 15%;
+            border-color: transparent currentColor currentColor transparent;
+        }
+        &:after{
+            border-color: transparent;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-time{
+    &:before{
+        width: 100%;
+        height: 100%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    &:after{
+        width: 0;
+    }
+    i{
+        &:before{
+            width: 25%;
+            left: 50%;
+            transform: translate(0,-50%) rotate(-90deg);
+            transform-origin: center left;
+        }
+        &:after{
+            width: 25%;
+            left: 50%;
+            transform: translate(0%,-50%) rotate(45deg);
+            transform-origin: center left;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i{
+            &:before{
+                transform: translate(0%,-50%) rotate(270deg);
+            }
+        }
+    }
+}
+
+.i-con-history{
+    &:before{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: inherit;
+        border-color: currentColor currentColor transparent currentColor;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:after{
+        width: 0;
+        left: 0;
+        border: 3px solid;
+        border-color: currentColor transparent transparent transparent;
+        border-bottom: 0;
+        margin: 1px 0 0 1px;
+    }
+    i{
+        &:before{
+            width: 25%;
+            left: 50%;
+            transform: translate(0,-50%) rotate(-90deg);
+            transform-origin: center left;
+        }
+        &:after{
+            width: 25%;
+            left: 50%;
+            transform: translate(0%,-50%) rotate(45deg);
+            transform-origin: center left;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &{
+            transform: rotate(-45deg);
+        }
+        i{
+            &:before{
+                transform: translate(0%,-50%) rotate(270deg);
+            }
+        }
+    }
+}
+
+.i-con-pin{
+    &:before{
+        width: 87.5%;
+        height: 87.5%;
+        top: 45%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50% 50% 50% 0;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    &:after{
+        width: 37.5%;
+        height: 37.5%;
+        top: 45%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            top: 50%;
+        }
+        &:after{
+            top: 50%;
+            width: 10%;
+            height: 10%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-bell{
+    &:before{
+        width: 62.5%;
+        height: 75%;
+        top: 0%;
+        border: inherit;
+        border-color: currentColor;
+        border-bottom-width: 0;
+        border-radius: 100rem 100rem 0 0;
+        transform: translate(-50%, 0);
+    }
+    &:after{
+        width: 75%;
+        top: 75%;
+    }
+    i{
+        &:before{
+            width: 15%;
+            top: 95%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:before{
+                transform: translate(-50%, -50%);
+                width: 25%;
+                height: 15%;
+                border: inherit;
+                border-color: currentColor;
+                border-top-width: 0;
+                border-radius: 0 0 100rem 100rem;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-trending-up{
+    transform: rotate(45deg);
+    &:before{
+        width: 40%;
+        height: 50%;
+        top: 75%;
+        left: 55%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    &:after{
+        width: 0%;
+        height: 50%;
+        top: 0%;
+        left: 75%;
+        border-top: 0;
+        border-right: inherit;
+        border-right-color: currentColor;
+        margin-top: 1px;
+        transform: translate(-50%, 0);
+    }
+    i{
+        &:before{
+            width: 0;
+            top: 0;
+            left: 75%;
+            border: 3px solid;
+            border-color: transparent transparent currentColor transparent;
+            border-top: 0;
+            transform: translate(-50%, 0);
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:after{
+            top: -15%;
+            height: 65%;
+        }
+        i{
+            &:before{
+                top: -15%;
+            }
+        }
+    }
+}
+
+.i-con-trending-down{
+    transform: rotate(-45deg);
+    &:before{
+        width: 40%;
+        height: 50%;
+        top: 25%;
+        left: 55%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    &:after{
+        width: 0%;
+        height: 50%;
+        top: 50%;
+        left: 75%;
+        border-top: 0;
+        border-right: inherit;
+        border-right-color: currentColor;
+        margin-top: -1px;
+        transform: translate(-50%, 0);
+    }
+    i{
+        &:before{
+            width: 0;
+            top: auto;
+            bottom: 0;
+            left: 75%;
+            border: 3px solid;
+            border-color: currentColor transparent transparent transparent;
+            border-bottom: 0;
+            transform: translate(-50%, 0);
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:after{
+            height: 65%;
+        }
+        i{
+            &:before{
+                bottom: -15%;
+            }
+        }
+    }
+}
+
+.i-con-upload{
+    &:before{
+        width: 0;
+        height: 50%;
+        top: 35%;
+        border-top: 0;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    &:after{
+        width: 25%;
+        height: 25%;
+        top: 10%;
+        border: inherit;
+        border-color: currentColor transparent transparent currentColor;
+        transform: translate(-50%,0%) rotate(45deg);
+    }
+    i{
+        &:before{
+            width: 62.5%;
+            top: 87.5%;
+        }
+        &:after{
+            width: 0%;
+            top: 87.5%;
+            left: 0%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 30%;
+        }
+        &:after{
+            top: 5%;
+        }
+        i{
+            &:before{
+                width: 0;
+                left: 100%;
+            }
+            &:after{
+                width: 62.5%;
+                left: 50%;
+            }
+        }
+    }
+}
+
+.i-con-download{
+    &:before{
+        width: 0;
+        height: 50%;
+        top: 30%;
+        border-top: 0;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    &:after{
+        width: 25%;
+        height: 25%;
+        top: 35%;
+        left: 50%;
+        border: inherit;
+        border-color: transparent transparent currentColor currentColor;
+        transform: translate(0%,0%) rotate(-45deg);
+        transform-origin: bottom left;
+    }
+    i{
+        &:before{
+            width: 62.5%;
+            top: 87.5%;
+        }
+        &:after{
+            width: 0%;
+            top: 87.5%;
+            left: 0%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 40%;
+        }
+        &:after{
+            top: 45%;
+        }
+        i{
+            &:before{
+                width: 0;
+                left: 100%;
+            }
+            &:after{
+                width: 62.5%;
+                left: 50%;
+            }
+        }
+    }
+}
+
+.i-con-bar-chart{
+    &:before,
+    &:after,
+    i:before,
+    i:after{
+        width: 0;
+        height: 75%;
+        top: auto;
+        bottom: 12.5%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: translate(-50%,0);
+    }
+    &:after{
+        height: 50%;
+        left: 15%;
+    }
+    i{
+        &:before{
+            height: 37.5%;
+            left: 85%;
+        }
+        &:after{
+            height: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            height: 50%;
+        }
+        &:after{
+            height: 37.5%;
+        }
+        i{
+            &:before{
+                height: 75%;
+            }
+        }
+    }
+}
+
+.i-con-pie-chart{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: 40%;
+        top: 55%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-radius: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    &:after{
+        width: 37.5%;
+        height: 37.5%;
+        top: 17.5%;
+        left: 40%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: translate(0%, 0%) rotate(-90deg);
+    }
+    i{
+        &:before{
+            width: 37.5%;
+            height: 37.5%;
+            left: auto;
+            right: 0;
+            top: 0;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: 0 100% 0 0;
+            transform: none;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        transform: rotate(-180deg);
+        &:before{
+            width: 100%;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+        }
+        &:after{
+            opacity: 0;
+        }
+        i{
+            &:before{
+                width: 50%;
+                height: 50%;
+                right: 0%;
+                top: 0%;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        i:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-home{
+    &:before{
+        width: 75%;
+        height: 75%;
+        top: 50%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    &:after{
+        width: 75%;
+        height: 62.5%;
+        top: 37.5%;
+        border: inherit;
+        border-color: transparent currentColor currentColor currentColor;
+        border-bottom-right-radius: $icon-radius;
+        border-bottom-left-radius: $icon-radius;
+        transform: translate(-50%,0%);
+    }
+    i{
+        &:before{
+            width: 37.5%;
+            height: 37.5%;
+            top: 62.5%;
+            transform: translate(-50%,0%);
+            transform-origin: bottom center;
+            border: inherit;
+            border-color: currentColor;
+            border-bottom-width: 0;
+            border-top-right-radius: $icon-radius;
+            border-top-left-radius: $icon-radius;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:before{
+                height: 50%;
+                top: 50%;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        i:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-mail{
+    &:before{
+        width: 100%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+        z-index: 4;
+    }
+    i:before,
+    &:after{
+        width: 60%;
+        height: 60%;
+        top: 25%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: rotate(225deg) translate(-50%,-50%) skew(-10deg,-10deg);
+        transform-origin: top left;
+        border-top-left-radius: $icon-radius;
+        border-bottom-right-radius: 100%;
+    }
+    i{
+        z-index: 3;
+        &:after{
+            width: 100%;
+            height: 25%;
+            top: 6.25%;
+            border: inherit;
+            border-color: transparent transparent currentColor transparent;
+            border-radius: $icon-radius $icon-radius 0 0;
+            transform: translate(-50%,0%);
+            opacity: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            border-top-width: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: transparent;
+        }
+        &:after{
+            width: 60%;
+            height: 60%;
+            top: 0%;
+            border-right: inherit;
+            border-right-color: currentColor;
+            border-bottom: inherit;
+            border-bottom-color: currentColor;
+            border-bottom-right-radius: $icon-radius;
+            border-top-left-radius: 100%;
+            border-top: 0;
+            border-left: 0;
+            background-color: transparent;
+        }
+        i{
+            &:before{
+                width: 30%;
+                height: 30%;
+                top: 25%;
+            }
+            &:after{
+                opacity: 0;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after,
+        i:after{
+            background-color: currentColor;
+            opacity: 1;
+        }
+    }
+}
+
+.i-con-calendar{
+    &:before{
+        width: 100%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    &:after{
+        width: 50%;
+        height: 25%;
+        top: 10%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 0;
+        border-top-width: 0;
+        border-bottom-width: 0;
+    }
+    i{
+        &:before{
+            width: 0%;
+            top: 55%;
+            left: 30%;
+        }
+        &:after{
+            width: 100%;
+            height: 30%;
+            top: 6.25%;
+            border: inherit;
+            border-color: transparent transparent currentColor transparent;
+            border-radius: $icon-radius $icon-radius 0 0;
+            transform: translate(-50%,0%);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:before{
+                width: 30%;
+                left: 50%;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        i:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-table{
+    &:before{
+        width: 100%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    &:after{
+        width: 100%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+    i{
+        &:before{
+            width: 37.5%;
+            height: 87.5%;
+            border: inherit;
+            border-color: transparent currentColor transparent currentColor;
+        }
+        &:after{
+            width: 0%;
+            height: 87.5%;
+            left: 6.25%;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: $icon-radius 0 0 $icon-radius;
+            transform: translate(0%, -50%);
+            opacity: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:after{
+            width: 37.5%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        i:after{
+            width: 25%;
+            background-color: currentColor;
+            opacity: 1;
+        }
+    }
+}
+
+.i-con-page{
+    &:before{
+        width: 60%;
+        height: 75%;
+        top: 55%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    &:after{
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 75%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            top: 45%;
+        }
+        &:after{
+            top: 75%;
+            left: 25%;
+            transform: translate(-50%, -50%) rotate(-180deg);
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-layout{
+    &:before{
+        width: 100%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    &:after{
+        width: 0%;
+        height: 75%;
+        left: 37.5%;
+        top: auto;
+        bottom: 12.5%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: translate(0%, 0%);
+    }
+    i{
+        &:before{
+            top: 40%;
+            width: 62.5%;
+            left: 37.5%;
+            transform: translate(0%, -50%);
+        }
+        &:after{
+            width: 0%;
+            height: 30%;
+            top: 6.25%;
+            border: inherit;
+            border-color: transparent transparent currentColor transparent;
+            border-radius: $icon-radius $icon-radius 0 0;
+            transform: translate(-50%,0%);
+            opacity: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:after{
+            height: 47.5%;
+        }
+        i:before{
+            width: 100%;
+            left: 0;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        i:before{
+            width: 100%;
+            left: 0;
+        }
+        i:after{
+            width: 100%;
+            opacity: 1;
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-file{
+    &:before{
+        width: 37.5%;
+        height: 100%;
+        left: 12.5%;
+        top: 0%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-top-left-radius: $icon-radius;
+        border-bottom-left-radius: $icon-radius;
+        border-right-width: 0;
+        transform: translate(0,0);
+        transform-origin: top left;
+    }
+    &:after{
+        width: 37.5%;
+        height: 62.5%;
+        top: 0%;
+        border: inherit;
+        border-color: currentColor currentColor transparent transparent;
+        border-top-right-radius: $icon-radius;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        transform: translate(0,0);
+        transform-origin: top left;
+    }
+    i{
+        &:before{
+            width: 0%;
+            top: 62.5%;
+            right: 12.5%;
+            left: auto;
+            transform: translate(0,0) rotate(-45deg);
+            transform-origin: bottom right;
+            margin-top: -1px;
+        }
+        &:after{
+            width: 37.5%;
+            height: 37.5%;
+            top: auto;
+            bottom: 0;
+            left: auto;
+            right: 12.5%;
+            border: inherit;
+            border-color: currentColor transparent transparent currentColor;
+            border-top-left-radius: $icon-radius;
+            transform: translate(0,0);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 25%;
+        }
+        &:after{
+            width: 50%;
+            height: 50%;
+            left: 37.5%;
+        }
+        i{
+            &:before{
+                width: 62.5%;
+                top: 50%;
+            }
+            &:after{
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+}
+
+.i-con-shop{
+    &:before,
+    &:after{
+        width: 55%;
+        height: 87.5%;
+        left: 30%;
+        top: auto;
+        bottom: 6.25%;
+        border: inherit;
+        border-color: currentColor;
+        border-right-color: transparent;
+        border-radius: $icon-radius 0 0 $icon-radius;
+        transform: translate(-50%, 0) skew(-4deg,0);
+    }
+    &:after{
+        left: 70%;
+        border-left: 0;
+        border-right-color: currentColor;
+        border-left-color: transparent;
+        border-radius: 0 $icon-radius $icon-radius 0;
+        transform: translate(-50%, 0) skew(4deg,0);
+    }
+    i{
+        &:before{
+            width: 50%;
+            height: 35%;
+            top: 6.25%;
+            border: inherit;
+            border-color: transparent currentColor currentColor currentColor;
+            border-top-width: 0;
+            border-radius: 0 0 50% 50%;
+            transform: translate(-50%, 0);
+        }
+        &:after{
+            width: 0;
+            height: 87.5%;
+            bottom: 6.25%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:before{
+                top: -15%;
+                border-color: currentColor currentColor transparent currentColor;
+                border-top-width: inherit;
+                border-bottom-width: 0;
+                border-radius: 50% 50% 0 0;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        i:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-archive{
+    &:before{
+        width: 100%;
+        height: 30%;
+        top: 20%;
+        border: inherit;
+        border-color: currentColor;
+    }
+    &:after{
+        width: 87.5%;
+        height: 62.5%;
+        top: 30%;
+        border: inherit;
+        border-color: currentColor;
+        border-top-width: 0;
+        border-bottom-left-radius: $icon-radius;
+        border-bottom-right-radius: $icon-radius;
+        transform: translate(-50%, 0%);
+    }
+    i{
+        &:before{
+            width: 25%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i:before{
+            width: 50%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-photo{
+    &:before{
+        width: 100%;
+        height: 75%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    i:before,
+    &:after{
+        width: 37.5%;
+        height: 37.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 100%;
+    }
+    i{
+        &:before{
+            opacity: 0;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:after{
+            opacity: 0;
+            width: 0%;
+            height: 0%;
+        }
+        i{
+            &:before{
+                opacity: 1;
+                width: 37.5%;
+                height: 37.5%;
+            }
+        }
+    }
+}
+
+.i-con-smile{
+    &:before{
+        width: 87.5%;
+        height: 87.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 100%;
+    }
+    &:after{
+        width: 50%;
+        height: 50%;
+        border: inherit;
+        border-color: transparent transparent currentColor transparent;
+        border-radius: 100%;
+    }
+    i{
+        &:before,
+        &:after{
+            width: 25%;
+            height: 25%;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: 100%;
+            left: 35%;
+            top: 37.5%;
+        }
+        &:after{
+            left: 65%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i:before,
+        i:after{
+            border-color: transparent transparent currentColor currentColor;
+            transform: translate(-50%,-50%) rotate(-45deg);
+        }
+    }
+}
+
+.i-con-video{
+    &:before{
+        width: 100%;
+        height: 75%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    i:before,
+    &:after{
+        width: 0;
+        border: 3px solid;
+        border-color: transparent transparent transparent currentColor;
+        border-right: 0;
+        margin-left: 1px;
+    }
+    i{
+        &:before{
+            opacity: 0;
+            left: 0%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:after{
+            left: 100%;
+            opacity: 0;
+        }
+        i{
+            &:before{
+                left: 50%;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.i-con-tv{
+    &:before{
+        width: 100%;
+        height: 75%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    &:after{
+        width: 25%;
+        height: 25%;
+        top: 0%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        transform: translate(-50%,-50%) rotate(135deg);
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:after{
+            width: 30%;
+            height: 20%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-monitor{
+    &:before{
+        width: 100%;
+        height: 75%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    &:after{
+        width: 35%;
+        top: 95%;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:after{
+            width: 50%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-mic{
+    &:before{
+        width: 37.5%;
+        height: 62.5%;
+        top: 0%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 37.5%;
+        transform: translate(-50%, 0);
+    }
+    &:after{
+        width: 0%;
+        height: 20%;
+        top: auto;
+        bottom: 0;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: translate(-50%,0%);
+    }
+    i{
+        &:before{
+            width: 75%;
+            height: 50%;
+            top: 55%;
+            border: inherit;
+            border-color: transparent currentColor currentColor currentColor;
+            border-top: 0;
+            border-radius: 0 0 10rem 10rem;
+        }
+        &:after{
+            width: 25%;
+            top: auto;
+            bottom: 0;
+            transform: translate(-50%,0%);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i{
+            &:before{
+                height: 75%;
+                top: 45%;
+                border-color: transparent transparent currentColor transparent;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-radio{
+    i:before,
+    i:after,
+    &:before{
+        width: 75%;
+        height: 75%;
+        border: inherit;
+        border-color: transparent currentColor transparent currentColor;
+        border-radius: 50%;
+    }
+    &:after{
+        width: 37.5%;
+        height: 37.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    i{
+        transition: all .3s;
+        &:before{
+            width: 87.5%;
+            height: 87.5%;
+            left: 37.5%;
+            border-color: transparent transparent transparent currentColor;
+        }
+        &:after{
+            width: 87.5%;
+            height: 87.5%;
+            left: 62.5%;
+            border-color: transparent currentColor transparent transparent;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:before{
+            transform: translate(-50%,-50%) rotate(179deg);
+        }
+        i{
+            transform: translate(-50%,-50%) rotate(-180deg);
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-circle-play{
+    &:before{
+        width: 100%;
+        height: 100%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    i:before,
+    &:after{
+        width: 0;
+        border: 3px solid;
+        border-color: transparent transparent transparent currentColor;
+        border-right: 0;
+        margin-left: 1px;
+    }
+    i{
+        &:before{
+            opacity: 0;
+            left: 0%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:after{
+            left: 100%;
+            opacity: 0;
+        }
+        i{
+            &:before{
+                left: 50%;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.i-con-phone{
+    transform: rotate(45deg);
+    &:before,
+    &:after{
+        width: 37.5%;
+        height: 30%;
+        left: 0%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 0 0 50% 50%;
+        transform: translate(0%,-50%)
+    }
+    &:after{
+        left: 62.5%;
+    }
+    i{
+        &:before{
+            width: 60%;
+            height: 30%;
+            transform: translate(-50%,-50%) rotate(180deg);
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        transform: rotate(75deg);
+    }
+
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-headset{
+    &:before,
+    &:after{
+        width: 31.25%;
+        height: 37.5%;
+        left: 0%;
+        top: auto;
+        bottom: 5%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 30%;
+        border-top-left-radius: 0;
+        transform: none;
+    }
+    &:after{
+        left: auto;
+        right: 0%;
+        border-top-left-radius: $icon-radius;
+        border-bottom-left-radius: 0;
+        transform: rotate(180deg);
+    }
+    i{
+        &:before{
+            width: 100%;
+            height: 80%;
+            top: 45%;
+            border: inherit;
+            border-color: currentColor currentColor transparent currentColor;
+            border-radius: 50% 50% 0 0;
+            border-bottom: 0;
+        }
+        &:after{
+            width: 40%;
+            height: 40%;
+            top: 110%;
+            border-right: inherit;
+            border-right-color: currentColor;
+            border-top-right-radius: 100%;
+            transform: translate(-50%,-50%) rotate(135deg);
+            opacity: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i:after{
+            opacity: 1;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:before,
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-left{
+    overflow: hidden;
+    &:before,
+    &:after{
+        width: 50%;
+        height: 50%;
+        left: 60%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(-135deg);
+    }
+    &:before{
+        left: 150%;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            left: 60%;
+        }
+        &:after{
+            left: -50%;
+        }
+    }
+}
+
+.i-con-right{
+    overflow: hidden;
+    &:before,
+    &:after{
+        width: 50%;
+        height: 50%;
+        left: 35%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:before{
+        left: -50%;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            left: 35%;
+        }
+        &:after{
+            left: 150%;
+        }
+    }
+}
+
+.i-con-up{
+    overflow: hidden;
+    &:before,
+    &:after{
+        width: 50%;
+        height: 50%;
+        top: 60%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    &:before{
+        top: 150%;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 60%;
+        }
+        &:after{
+            top: -50%;
+        }
+    }
+}
+
+.i-con-down{
+    overflow: hidden;
+    &:before,
+    &:after{
+        width: 50%;
+        height: 50%;
+        top: 40%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(135deg);
+    }
+    &:before{
+        top: -50%;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 40%;
+        }
+        &:after{
+            top: 150%;
+        }
+    }
+}
+
+.i-con-arrow-left{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 65%;
+        left: 55%;
+    }
+    i:after,
+    &:after{
+        width: 50%;
+        height: 50%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    i{
+        left: 200%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            left: -50%;
+        }
+        &:after{
+            left: -50%;
+        }
+        i{
+            left: 50%;
+        }
+    }
+}
+
+.i-con-arrow-right{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 65%;
+        left: 45%;
+    }
+    i:after,
+    &:after{
+        width: 50%;
+        height: 50%;
+        left: 50%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    i{
+        left: -100%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            left: 155%;
+        }
+        &:after{
+            left: 150%;
+        }
+        i{
+            left: 50%;
+        }
+    }
+}
+
+.i-con-arrow-up{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 0;
+        height: 65%;
+        top: 55%;
+        border-top-width: 0;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    i:after,
+    &:after{
+        width: 50%;
+        height: 50%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    i{
+        top: 200%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: -50%;
+        }
+        &:after{
+            top: -50%;
+        }
+        i{
+            top: 50%;
+        }
+    }
+}
+
+.i-con-arrow-down{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 0;
+        height: 65%;
+        top: 45%;
+        border-top-width: 0;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    i:after,
+    &:after{
+        width: 50%;
+        height: 50%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        transform: translate(-50%,-50%) rotate(135deg);
+    }
+    i{
+        top: -100%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.1s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 150%;
+        }
+        &:after{
+            top: 150%;
+        }
+        i{
+            top: 50%;
+        }
+    }
+}
+
+.i-con-long-arrow-left{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 100%;
+        margin-left: 1px;
+    }
+    i:after,
+    &:after{
+        width: 0;
+        left: 0;
+        border: 3px solid;
+        border-color: transparent currentColor transparent transparent;
+        border-left: 0;
+        transform: translate(0,-50%);
+    }
+    i{
+        left: 200%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.2s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            left: -55%;
+        }
+        &:after{
+            left: -50%;
+        }
+        i{
+            left: 50%;
+        }
+    }
+}
+
+.i-con-long-arrow-right{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 100%;
+        margin-left: -1px;
+    }
+    i:after,
+    &:after{
+        width: 0;
+        left: auto;
+        right: 0px;
+        border: 3px solid;
+        border-color: transparent transparent transparent currentColor;
+        border-right: 0;
+        transform: translate(0,-50%);
+    }
+    i{
+        left: -100%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.3s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            left: 155%;
+        }
+        &:after{
+            right: -50%;
+        }
+        i{
+            left: 50%;
+        }
+    }
+}
+
+.i-con-long-arrow-up{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 100%;
+        margin-top: 1px;
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    i:after,
+    &:after{
+        width: 0;
+        top: 0;
+        border: 3px solid;
+        border-color: transparent transparent currentColor transparent;
+        border-top: 0;
+        transform: translate(-50%, 0);
+    }
+    i{
+        top: 200%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.2s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: -55%;
+        }
+        &:after{
+            top: -50%;
+        }
+        i{
+            top: 50%;
+        }
+    }
+}
+
+.i-con-long-arrow-down{
+    overflow: hidden;
+    i:before,
+    &:before{
+        width: 100%;
+        margin-top: -1px;
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    i:after,
+    &:after{
+        width: 0;
+        top: auto;
+        bottom: 0;
+        border: 3px solid;
+        border-color: currentColor transparent transparent transparent;
+        border-bottom: 0;
+        transform: translate(-50%, 0);
+    }
+    i{
+        top: -100%;
+        pointer-events: none;
+        transition: all .3s;
+        transition-delay: 0.2s;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 155%;
+        }
+        &:after{
+            bottom: -50%;
+        }
+        i{
+            top: 50%;
+        }
+    }
+}
+
+.i-con-up-left{
+    &:before{
+        width: 60%;
+        height: 75%;
+        left: auto;
+        right: 20%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: 50%;
+        transform: translate(0, -50%);
+        transform-origin: center right;
+    }
+    &:after{
+        width: 0;
+        top: 12.5%;
+        left: 20%;
+        border: 3px solid;
+        border-color: transparent currentColor transparent transparent;
+        border-left: 0;
+        transform: translate(-50%, -50%);
+        margin-top: 1px;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 75%;
+        }
+        &:after{
+            left: 0%;
+        }
+    }
+}
+
+.i-con-up-right{
+    &:before{
+        width: 60%;
+        height: 75%;
+        left: 20%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        border-top-left-radius: 50%;
+        transform: translate(0, -50%);
+        transform-origin: center left;
+    }
+    &:after{
+        width: 0;
+        top: 12.5%;
+        left: 80%;
+        border: 3px solid;
+        border-color: transparent transparent transparent currentColor;
+        border-right: 0;
+        transform: translate(-50%, -50%);
+        margin-top: 1px;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 75%;
+        }
+        &:after{
+            left: 100%;
+        }
+    }
+}
+
+.i-con-play{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: 25%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(45deg) skew(-15deg,-15deg);
+    }
+    &:after{
+        width: 0;
+        height: 50%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        left: 25%;
+        top: 60%;
+        opacity: 1;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:after{
+            height: 75%;
+            top: 50%;
+        }
+    }
+    .active > &{
+        &:before{
+            width: 0;
+            left: 75%;
+            transform: translate(-50%,-50%) rotate(0deg);
+        }
+        &:after{
+            height: 75%;
+            top: 50%;
+        }
+    }
+}
+
+.i-con-pause{
+    &:before{
+        left: 25%;
+        width: 0;
+        height: 75%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    &:after{
+        left: 75%;
+        width: 0;
+        height: 75%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            top: 55%;
+        }
+        &:after{
+            top: 45%;
+        }
+    }
+}
+
+.i-con-stop{
+    &:before{
+        width: 75%;
+        height: 75%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: $icon-radius;
+    }
+    &:after{
+        width: 0;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            transform: translate(-50%,-50%) rotate(90deg);
+        }
+    }
+}
+
+.i-con-prev{
+    &:before{
+        width: 50%;
+        height: 50%;
+        border-left: inherit;
+        border-left-color: currentColor;
+        border-top-left-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    &:after{
+        width: 0;
+        height: 50%;
+        left: 75%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 45%;
+            height: 55%;
+        }
+        &:after{
+            height: 37.5%;
+        }
+    }
+}
+
+.i-con-next{
+    &:before{
+        width: 50%;
+        height: 50%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:after{
+        width: 0;
+        height: 50%;
+        left: 25%;
+        border-left: inherit;
+        border-left-color: currentColor;
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 45%;
+            height: 55%;
+        }
+        &:after{
+            height: 37.5%;
+        }
+    }
+}
+
+.i-con-volume{
+    &:before{
+        left: 25%;
+        width: 37.5%;
+        height: 37.5%;
+        border: inherit;
+        border-color: currentColor;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    &:after{
+        width: 50%;
+        height: 50%;
+        left: 45%;
+        border: inherit;
+        border-color: transparent currentColor transparent transparent;
+        border-radius: 50%;
+    }
+    i{
+        &:before{
+            width: 80%;
+            height: 80%;
+            left: 50%;
+            border: inherit;
+            border-color: transparent currentColor transparent transparent;
+            border-radius: 50%;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        &:after{
+            width: 55%;
+            height: 55%;
+            left: 50%;
+        }
+        i{
+            &:before{
+                width: 100%;
+                height: 100%;
+                left: 55%;
+            }
+        }
+    }
+    .active > &{
+        &:after{
+            height: 20%;
+            border-radius: 0;
+        }
+        i{
+            &:before{
+                height: 30%;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.i-con-repeat{
+    &:before{
+        width: 37.5%;
+        height: 50%;
+        left: 0%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right: 0;
+        border-radius: 10rem 0 0 10rem;
+        transform: translate(0,-50%);
+    }
+    &:after{
+        width: 37.5%;
+        height: 50%;
+        left: auto;
+        right: 0%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-left: 0;
+        border-radius: 0 10rem 10rem 0;
+        transform: translate(0,-50%);
+    }
+    i{
+        &:before{
+            width: 25%;
+            height: 50%;
+            transform: translate(-50%,-50%) rotate(180deg);
+        }
+        &:after{
+            width: 0;
+            top: 25%;
+            left: 40%;
+            border: 3px solid;
+            border-color: transparent transparent transparent currentColor;
+            border-right: 0;
+            transform: translate(-50%, -50%);
+            margin-top: 1px;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 70%;
+        }
+        i{
+            &:after{
+                left: 65%;
+            }
+        }
+    }
+}
+
+.i-con-shuffle{
+    &:before{
+        width: 40%;
+        height: 50%;
+        left: 0%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-left: 0;
+        border-radius: 0 10rem 10rem 0;
+        transform: translate(0,-50%);
+        margin-left: 1px;
+    }
+    &:after{
+        width: 50%;
+        height: 50%;
+        left: 40%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right: 0;
+        border-radius: 10rem 0 0 10rem;
+        transform: translate(0,-50%);
+    }
+    i{
+        &:before,
+        &:after{
+            width: 0;
+            top: 25%;
+            left: auto;
+            right: 0%;
+            border: 3px solid;
+            border-color: transparent transparent transparent currentColor;
+            border-right: 0;
+            transform: translate(0%, -50%);
+            margin-top: 1px;
+        }
+        &:after{
+            top: 75%;
+            margin-top: -1px;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            width: 50%;
+        }
+        &:after{
+            width: 40%;
+            left: 50%;
+        }
+    }
+}
+
+.i-con-fullscreen{
+    &:before,
+    &:after,
+    i:before,
+    i:after{
+        width: 25%;
+        height: 25%;
+        left: 75%;
+        top: 25%;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-right-radius: $icon-radius;
+    }
+    &:after{
+        left: 25%;
+        top: 75%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    i{
+        &:before{
+            left: 25%;
+            top: 25%;
+            transform: translate(-50%, -50%) rotate(270deg);
+        }
+        &:after{
+            top: 75%;
+            left: 75%;
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        transform: rotate(-90deg);
+        transform-origin: center center;
+    }
+    .is-fullscreen &,
+    .active > &{
+        &:before{
+            left: 25%;
+            top: 75%;
+        }
+        &:after{
+            left: 75%;
+            top: 25%;
+        }
+        i{
+            &:before{
+                left: 75%;
+                top: 75%;
+            }
+            &:after{
+                left: 25%;
+                top: 25%;
+            }
+        }
+    }
+}
+
+.i-con-music{
+    &:before{
+        width: 50%;
+        height: 70%;
+        top: 40%;
+        left: 40%;
+        border-top: 0;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-left-radius: $icon-radius;
+    }
+    &:after{
+        width: 50%;
+        height: 50%;
+        top: 70%;
+        left: 40%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    i{
+        &:before{
+            width: 25%;
+            top: 5%;
+            left: 65%;
+            transform: translate(0,0) rotate(45deg);
+            transform-origin: top left;
+        }
+        &:after{
+            width: 0;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        i:before{
+            width: 40%;
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-playlist{
+    &:before{
+        width: 31.25%;
+        height: 60%;
+        top: 40%;
+        left: 75%;
+        border-top: 0;
+        border-right: inherit;
+        border-right-color: currentColor;
+        border-top-left-radius: $icon-radius;
+    }
+    &:after{
+        width: 31.25%;
+        height: 31.25%;
+        top: 75%;
+        left: 75%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+    }
+    > i{
+        &:before{
+            width: 20%;
+            top: 10%;
+            left: 90%;
+            transform: translate(0,0) rotate(45deg);
+            transform-origin: top left;
+        }
+        &:after{
+            width: 45%;
+            left: 5%;
+            top: 62.5%;
+            transform: translate(0,0);
+        }
+        i{
+            &:before{
+                width: 65%;
+                top: 12.5%;
+                left: 5%;
+                transform: translate(0,0);
+            }
+            &:after{
+                width: 65%;
+                top: 37.5%;
+                left: 5%;
+                transform: translate(0,0);
+            }
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &{
+        > i{
+            &:after{
+                width: 50%;
+            }
+        }
+    }
+    .active > &.active-solid,
+    &.solid{
+        &:after{
+            background-color: currentColor;
+        }
+    }
+}
+
+.i-con-clear-day{
+    i:before,
+    i:after,
+    &:before,
+    &:after{
+        width: 100%;
+        border: inherit;
+        border-color: transparent currentColor transparent currentColor !important;
+    }
+    &:after{
+        transform: translate(-50%,-50%) rotate(-90deg) !important;
+    }
+    i{
+        width: 50%;
+        height: 50%;
+        border: inherit;
+        border-color: currentColor;
+        border-radius: 50%;
+        &:before{
+            width: 200%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+        }
+        &:after{
+            width: 200%;
+            transform: translate(-50%,-50%) rotate(-135deg);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        animation: i-a-rotate 5s linear infinite;
+    }
+}
+
+.i-con-clear-night{
+    transform: rotate(-45deg);
+    &:before{
+        width: 75%;
+        height: 75%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-radius: 50%;
+    }
+    &:after{
+        width: 55%;
+        height: 55%;
+        left: 75%;
+        border: inherit;
+        border-color: transparent transparent currentColor currentColor;
+        border-radius: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    i{
+        &:before,
+        &:after{
+            width: 0%;
+            border-left: inherit;
+            border-left-color: currentColor;
+            left: 95%;
+            top: 65%;
+            opacity: 0;
+            border-radius: 50%;
+        }
+        &:after{
+            left: 75%;
+            top: 45%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i{ 
+            &:before{
+                animation: i-a-fade 2s linear infinite;
+            }
+            &:after{
+                animation: i-a-fade 2s linear infinite;
+                animation-delay: 1s;
+            }
+        }
+    }
+}
+
+.i-con-cloudy{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        &:before{
+            width: 37.5%;
+            height: 75%;
+            left: 25%;
+            top: auto;
+            bottom: 10%;
+            transform: translate(0,0) rotate(180deg);
+        }
+        &:after{
+            width: 37.5%;
+            height: 37.5%;
+            left: 25%;
+            top: 45%;
+            opacity: 0;
+            border: inherit;
+            border-color: currentColor transparent transparent currentColor;
+            border-radius: 50%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i:after{
+            animation: i-a-fade 2s linear infinite;
+        }
+    }
+}
+
+.i-con-cloudy-day{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        &:before{
+            width: 0;
+        }
+        &:after{
+            width: 37.5%;
+            height: 37.5%;
+            left: 10%;
+            top: 15%;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: 50%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i:after{
+            animation: i-a-fade 2s linear infinite;
+        }
+    }
+}
+
+.i-con-cloudy-night{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        left: 10%;
+        top: 15%;
+        &:before{
+            width: 37.5%;
+            height: 37.5%;
+            border: inherit;
+            border-color: currentColor transparent currentColor currentColor;
+            border-radius: 50%;
+        }
+        &:after{
+            width: 25%;
+            height: 25%;
+            left: 60%;
+            border: inherit;
+            border-color: transparent transparent currentColor currentColor;
+            border-radius: 50%;
+            transform: translate(-50%,-50%) rotate(45deg);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i{
+            animation: i-a-fade 2s linear infinite;
+        }
+    }
+}
+
+.i-con-drizzle{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        &:before,
+        &:after{
+            width: 25%;
+            height: 10%;
+            max-height: 3px;
+            top: 90%;
+            border: inherit;
+            border-color: transparent currentColor transparent currentColor;
+            border-top:0;
+            border-bottom:0;
+            transform: translate(-50%, 0%) rotate(-30deg);
+        }
+        &:after{
+            top: 70%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i:before{
+            animation: i-a-fadeSlide 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        i:after{
+            animation: i-a-fadeSlide 1s linear infinite;
+        }
+    }
+}
+
+.i-con-rain{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        &:before,
+        &:after{
+            width: 30%;
+            left: 37.5%;
+            top: 90%;
+            transform: translate(-50%,-50%) rotate(90deg);
+        }
+        &:after{
+            left: 55%;
+            top: 70%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i:before{
+            animation: i-a-fadeSlide 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        i:after{
+            animation: i-a-fadeSlide 1s linear infinite;
+        }
+    }
+}
+
+.i-con-snow{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        width: 37.5%;
+        height: 0;
+        top: 90%;
+        border-top-color: currentColor;
+        border-bottom-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        &:before{
+            width: 100%;
+            transform: translate(-50%,-50%) rotate(-60deg);
+        }
+        &:after{
+            width: 100%;
+            transform: translate(-50%,-50%) rotate(-120deg);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i{
+            animation: i-a-fadeRotate 1.5s linear infinite;
+        }
+    }
+}
+
+.i-con-hail{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        &:before,
+        &:after{
+            width: 18.75%;
+            height: 18.75%;
+            left: 45%;
+            top: 95%;
+            border: inherit;
+            border-color: currentColor;
+            border-radius: 50%;
+        }
+        &:after{
+            left: 55%;
+            top: 70%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i:before{
+            animation: i-a-fadeSlide 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        i:after{
+            animation: i-a-fadeSlide 1s linear infinite;
+        }
+    }
+}
+
+.i-con-lightning{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor currentColor transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        &:before{
+            width: 25%;
+            height: 25%;
+            top: 85%;
+            left: 30%;
+            border-right: inherit;
+            border-right-color: currentColor;
+            transform: translate(0%, 0) skew(-30deg, 0);
+        }
+        &:after{
+            width: 25%;
+            height: 25%;
+            top: 60%;
+            left: 45%;
+            border-left: inherit;
+            border-left-color: currentColor;
+            border-top: 0;
+            transform: translate(0%, 0) skew(-30deg, 0);
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i{
+            animation: i-a-fade 2s linear infinite;
+        }
+    }
+}
+
+.i-con-fog{
+    &:before{
+        width: 75%;
+        height: 75%;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor currentColor transparent transparent;
+        border-radius: 50%;
+        transform: translate(0,0) rotate(-50deg);
+    }
+    &:after{
+        width: 30%;
+        height: 37.5%;
+        left: 0;
+        top: auto;
+        bottom: 10%;
+        border: inherit;
+        border-color: currentColor transparent currentColor currentColor;
+        border-right-width: 0;
+        border-radius: 50% 0 0 50%;
+        transform: translate(0,0);
+    }
+    i{
+        &:before{
+            width: 50%;
+            left: 65%;
+            top: 75%;
+        }
+        &:after{
+            width: 35%;
+            left: 65%;
+            top: 95%;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        i:before{
+            animation: i-a-fadeSlide 2s linear infinite;
+        }
+        i:after{
+            animation: i-a-fadeSlide 2s linear infinite;
+            animation-delay: 1s;
+        }
+    }
+}
+
+.i-con-circle-animate{
+    border-radius: 50% !important;
+    &:before{
+        width: 100% !important;
+        height: 100% !important;
+        border: 1px solid !important;
+        border-color: currentColor transparent transparent currentColor !important;
+        border-radius: 50% !important;
+        transform: translate(-50%, -50%) rotate(135deg) !important;
+        opacity: 0;
+    }
+    &:after{
+        top: 50% !important;
+        left: 50% !important;
+        width: 100% !important;
+        height: 100% !important;
+        border: 1px solid !important;
+        border-color: currentColor !important;
+        border-radius: 50% !important;
+        opacity: 0.3;
+        transform: translate(-50%, -50%) rotate(0deg)  !important;
+        margin: 0 !important;
+    }
+    span{
+        width: 50%;
+        height: 100%;
+        left: 75% !important;
+        overflow: hidden;
+        transform-origin: left center;
+        border-width: 0 !important;
+        border-radius: 0 !important;
+        &:before{
+            width: 200%;
+            height: 100%;
+            border: 1px solid;
+            border-color: currentColor transparent transparent currentColor;
+            border-radius: 50%;
+            transform: translate(-75%, -50%) rotate(-45deg);
+        }
+        &:after{
+            width: 0 !important;
+            height: 0 !important;
+        }
+    }
+    .i-con-h-a:hover &,
+    .i-con-h-a:active &,
+    .active > &{
+        &:before{
+            opacity: 1;
+            animation: i-a-show 0.5s 1;
+        }
+
+        span{
+            animation: i-a-cliprotate 0.5s 1;
+            transform: translate(-50%, -50%) rotate(180deg);
+            &:before{
+                transform: translate(-75%, -50%) rotate(135deg);
+                animation: i-a-rot 0.25s linear 2;
+            }
+        }
+    }
+}
+
+@keyframes i-a-cliprotate {
+  0% {transform: translate(-50%, -50%) rotate(0deg);}
+  50% {transform: translate(-50%, -50%) rotate(0deg);}
+  50.01% {transform: translate(-50%, -50%) rotate(180deg);}
+  100% {transform: translate(-50%, -50%) rotate(180deg);}
+}
+
+@keyframes i-a-rot {
+  0% {transform: translate(-75%, -50%) rotate(-45deg);}
+  100% {transform: translate(-75%, -50%) rotate(135deg);}
+}
+
+@keyframes i-a-show {
+  0% {opacity: 0;}
+  49.99% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes i-a-rotate {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes i-a-fade {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes i-a-fadeSlide {
+  0% {opacity: 0; top: 50%;}
+  50% {opacity: 1; top: 100%;}
+  100% {opacity: 0; top: 150%;}
+}
+
+@keyframes i-a-fadeRotate {
+  0% {opacity: 0; top: 50%;}
+  50% {opacity: 1; top: 100%; transform: translate(-50%, -50%) rotate(60deg);}
+  100% {opacity: 0; top: 150%; transform: translate(-50%, -50%) rotate(120deg);}
+}

@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+</head>
+
+<body class="layout-column">
+
+  <header id="header" class="page-header bg-white box-shadow">
+    <div class="navbar navbar-expand-lg">
+      <a class="d-lg-none px-1" data-toggle="modal" data-target="#aside">
+        <i class="i-con i-con-menu text-muted"></i>
+      </a>
+      <img src="../assets/img/logo/System-logo.svg" width="208px" alt="">
+      <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+        <form class="input-group m-2 my-lg-0 i-con-h-a" style="padding-left: 40px">
+          <span class="input-group-prepend">
+            <button type="button" class="btn no-shadow no-bg px-0">
+              <i class="i-con i-con-search text-fade w-16"></i>
+            </button>
+          </span>
+          <input type="text" style="width: 500px" class="form-control no-border no-shadow no-bg typeahead"
+            placeholder="Search inventory, suppliers, invoice, receipt, customers, employees, etc…"
+            data-plugin="typeahead">
+        </form>
+      </div>
+
+      <ul class="nav navbar-menu order-1 order-lg-2">
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link px-2 i-con-h-a" data-plugin="screenfull" data-toggle="tooltip" data-title="Fullscreen">
+            <i class="i-con i-con-fullscreen"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center py-0 px-lg-0 px-2 text-color">
+            <span class=" mx-2 d-none l-h-1x d-lg-block text-right">
+              <small class='text-fade d-block mb-1'>Good evening,</small>
+              <span>Justin Timber</span>
+            </span>
+            <span class="avatar w-36 bg-primary-lt">
+              JT
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right w py-0 mt-3 animate fadeIn">
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="account.general.html">
+              <div>
+                <img src="../assets/img/animated-icons/settings/settings.svg">
+              </div>
+              <span class="ml-2">My account</span>
+            </a>
+            <a class="py-3 dropdown-item animation-icon d-flex align-items-center" href="../signin.html">
+              <div>
+                <img src="../assets/img/animated-icons/sign-out/sign-out.svg">
+              </div>
+              <span class="ml-2">Sign out</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class
+            data-target="#navbarToggler">
+            <i class="i-con i-con-nav text-muted"><i></i></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div id="main" class="layout-row flex">
+    <div id="aside" class="page-sidenav no-shrink  nav-expand animate fadeInRight fade" aria-hidden="true">
+      <div class="sidenav h-100 modal-dialog bg-white box-shadow" data-nav>
+        <div class="flex scroll-container">
+          <div class="nav-border b-primary mt-3">
+            <ul class="nav bg">
+              <li>
+                <a href="dashboard.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/home/home.svg" class="stop import-icon-check" alt="">
+                      <img src="../assets/img/animated-icons/home/home.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DASHBOARD</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/tags/tags.svg" class="stop import-icon-check" alt="">
+                      <img src="../assets/img/animated-icons/tags/tags.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="products.all.empty.html">
+                      <span class="nav-text">All Products</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.category.empty.html" class="">
+                      <span class="nav-text">Categories</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.modifier.empty.html" class="">
+                      <span class="nav-text">Modifiers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/list/list.svg" class="stop import-icon-check" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">INVENTORY</span>
+                  <span class="nav-badge">
+                    <b class="badge badge-sm badge-pill ">12</b>
+                  </span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="inventory.purchase.html">
+                      <span class="nav-text">Purchase Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.transfer.html" class="">
+                      <span class="nav-text">Transfer Orders</span>
+                      <span class="nav-badge">
+                        <b class="badge badge-sm badge-pill bg-danger">12</b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.stock.html" class="">
+                      <span class="nav-text">Stock Adjustment</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.counts.html" class="">
+                      <span class="nav-text">Inventory Counts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.history.html" class="">
+                      <span class="nav-text">Inventory History</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.valuation.html" class="">
+                      <span class="nav-text">Inventory Valuation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="inventory.planner.html" class="">
+                      <span class="nav-text">Inventory Planner</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="productions.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gears/gears.svg" class="stop import-icon-check" alt="">
+                      <img src="../assets/img/animated-icons/gears/gears.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">PRODUCTIONS</span>
+                  <span class="nav-badge">
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/discount/discount.svg" class="stop import-icon-check"
+                        alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">DISCOUNTS</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="discount.code.html">
+                      <span class="nav-text">Discount Code</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="discount.auto.html" class="">
+                      <span class="nav-text">Automatic Discounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="supplier.empty.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/business-network/business-network.svg"
+                        class="stop import-icon-check" alt="">
+                      <img src="../assets/img/animated-icons/business-network/business-network.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SUPPLIERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-user'><i></i></i>
+                  </span>
+                  <span class="nav-text">CUSTOMERS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class='i-con i-con-users'><i></i></i>
+                  </span>
+                  <span class="nav-text">EMPLOYEES</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li>
+                    <a href="employee.all.html">
+                      <span class="nav-text">All Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.roll.html" class="">
+                      <span class="nav-text">Rolls/Access Rights</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.schedule.html" class="">
+                      <span class="nav-text">Schedule Timesheet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="employee.payroll.html" class="">
+                      <span class="nav-text">Payroll</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="#">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/calculator/calculator.svg" class="stop  import-icon-check"
+                        alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">BOOKEEPING</span>
+                  <span class="nav-caret"></span>
+                </a>
+
+                <ul class="nav-sub">
+                  <li class="active">
+                    <a href="bookeeping.sales.html">
+                      <span class="nav-text">Sales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.expense.html" class="">
+                      <span class="nav-text">Expenses</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.vat.html" class="">
+                      <span class="nav-text">VAT Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bookeeping.account.html" class="">
+                      <span class="nav-text">Accounts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="reports.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.svg" class="stop import-icon-check"
+                        alt="">
+                      <img src="../assets/img/animated-icons/combo-chart/combo-chart.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">REPORTS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="no-shrink ">
+          <div class="nav-border b-primary">
+            <ul class="nav bg">
+              <li>
+                <a href="setting.general.html" class="animation-icon">
+                  <span class="nav-icon">
+                    <div>
+                      <img src="../assets/img/animated-icons/gear/gear.svg" class="stop import-icon-check" alt="">
+                      <img src="../assets/img/animated-icons/gear/gear.gif" class="play" alt="">
+                    </div>
+                  </span>
+                  <span class="nav-text">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm p-3 mt-5">
+            <div class="hidden-folded text-sm">
+              <div class="text-muted text-center"><small class="text-muted">v1.01.1</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############ Aside END-->
+
+    <!-- ############ Content START-->
+    <div id="content" class="flex animate fadeInLeft">
+      <!-- ############ Main START-->
+
+      <div class="flex">
+        <div class="padding scroll-container">
+          <div class="index-page page">
+            <div class="row">
+              <div class="col-12">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h2 id="title">Sales</h2>
+
+                    <div class="item-action dropdown">
+                      <button class="btn btn-info btn-md" id="create-sale">
+                        <i class="la la-plus-circle"></i>
+                        Create sales
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row my-2">
+                  <a class="col-3 text-primary h5 d-flex align-items-end"><i class="la la-upload"></i>Export</a>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 mb-2 d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                          <div class="mr-2">
+                            <input type="text" data-plugin="datepicker" class="form-control"
+                              data-option="{autoclose: true}">
+                          </div>
+                          <div class="d-flex mr-2">
+                            <label class="d-flex align-items-center mb-0">
+                              <i class="la la-user"></i>
+                              EMPLOYEE:
+                            </label>
+                            <select id="store-name" class="custom-select border-0">
+                              <option>ALL</option>
+                            </select>
+                          </div>
+                          <div class="d-flex mr-2">
+                            <label class="d-flex align-items-center mb-0">
+                              <i class="la la-flash"></i>
+                              STATUS:
+                            </label>
+                            <select id="store-name" class="custom-select border-0">
+                              <option>ALL</option>
+                            </select>
+                          </div>
+                          <div class="d-flex mr-2">
+                            <label class="d-flex align-items-center mb-0">
+                              <i class="la la-home"></i>
+                              STORE:
+                            </label>
+                            <select id="store-name" class="custom-select border-0">
+                              <option>WEST SIDE LOCATION</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group mb-0">
+                          <div class="input-group">
+                            <div class="input-group-append">
+                              <span class="input-group-text border-right-0 p-2 no-bg" id="basic-addon2">
+                                <i class="i-con i-con-search"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control border-left-0" aria-label="Recipient's username"
+                              aria-describedby="basic-addon2">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 mt-3">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Ref.no</th>
+                              <th>Customer</th>
+                              <th>Employee</th>
+                              <th>Store</th>
+                              <th class="text-right">Subtatal</th>
+                              <th class="text-right">VAT</th>
+                              <th class="text-right">Tatal</th>
+                              <th class="text-right"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Apr 12, 2020</td>
+                              <td>
+                                #SO155515
+                                <i class="la la-square text-success"></i>
+                              </td>
+                              <td>Ricky Bobby</td>
+                              <td>Jacuviyak Mendocino</td>
+                              <td>West Side Location</td>
+                              <td class="text-right">20,000,000</td>
+                              <td class="text-right">2,200,000</td>
+                              <td class="text-right">20,000,000</td>
+                              <td>
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item edit">
+                                      <i class="la la-eye"></i>
+                                      View
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                      <i class="la la-trash"><i></i></i>
+                                      Delete
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Apr 12, 2020</td>
+                              <td>
+                                #SO155515
+                                <i class="la la-square text-danger"></i>
+                              </td>
+                              <td>Alfredo Frenendez</td>
+                              <td>Jacuviyak Mendocino</td>
+                              <td>West Side Location</td>
+                              <td class="text-right">20,000,000</td>
+                              <td class="text-right">2,200,000</td>
+                              <td class="text-right">20,000,000</td>
+                              <td>
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item edit">
+                                      <i class="la la-eye"></i>
+                                      View
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item edit">
+                                      <i class="la la-reply"></i>
+                                      Refund
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                      <i class="la la-trash"><i></i></i>
+                                      Delete
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Apr 12, 2020</td>
+                              <td>
+                                #SO155515
+                                <i class="la la-square text-warning"></i>
+                              </td>
+                              <td>Jack Russoe</td>
+                              <td>Jacuviyak Mendocino</td>
+                              <td>West Side Location</td>
+                              <td class="text-right">20,000,000</td>
+                              <td class="text-right">2,200,000</td>
+                              <td class="text-right">20,000,000</td>
+                              <td>
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item edit">
+                                      <i class="la la-eye"></i>
+                                      View
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                      <i class="la la-trash"><i></i></i>
+                                      Delete
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Apr 12, 2020</td>
+                              <td>
+                                #SO155515
+                                <i class="la la-square text-warning"></i>
+                              </td>
+                              <td>Jack Russoe</td>
+                              <td>Jacuviyak Mendocino</td>
+                              <td>West Side Location</td>
+                              <td class="text-right">20,000,000</td>
+                              <td class="text-right">2,200,000</td>
+                              <td class="text-right">20,000,000</td>
+                              <td>
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item edit">
+                                      <i class="la la-eye"></i>
+                                      View
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                      <i class="la la-trash"><i></i></i>
+                                      Delete
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Apr 12, 2020</td>
+                              <td>
+                                #SO155515
+                                <i class="la la-square text-warning"></i>
+                              </td>
+                              <td>Jack Russoe</td>
+                              <td>Jacuviyak Mendocino</td>
+                              <td>West Side Location</td>
+                              <td class="text-right">20,000,000</td>
+                              <td class="text-right">2,200,000</td>
+                              <td class="text-right">20,000,000</td>
+                              <td>
+                                <div class="item-action dropdown">
+                                  <a href="#" data-toggle="dropdown" class="text-muted">
+                                    <i class="i-con i-con-more"><i></i></i>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right bg-dark" role="menu">
+                                    <a class="dropdown-item edit">
+                                      <i class="la la-eye"></i>
+                                      View
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#delete-modal">
+                                      <i class="la la-trash"><i></i></i>
+                                      Delete
+                                    </a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-12">
+                        <div class="col-12 text-center mb-5">
+                          <img src="../assets/img/illustrations/Bookkeeping-sales.svg" width="50%">
+                          <p class="h1 mt-5">Not Expenses yet</p>
+                          <p>
+                            There are no expenses in the selected time period. Track all your expenses and plan your
+                            business accordingly
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="create-page page">
+            <div class="mb-4">
+              <a class="i-con-h-a back text-muted">
+                <i class="i-con i-con-left"></i>
+                Expenses
+              </a>
+              <h2 id="title">Create sales order</h2>
+            </div>
+            <div class="row">
+              <div class="col-5 pr-0">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3 title">Find customer</h4>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Customer name</label>
+                        <select name="" id="customer-select" class="custom-select">
+                          <option value="">Select customer</option>
+                          <option value="new">Add customer</option>
+                          <option value="l">Lebanese Food Company SARL</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Location</h4>
+                    <div class="row">
+                      <div class="col-12">
+                        <label>Store name</label>
+                        <select name="" id="" class="custom-select">
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Taxes</h4>
+                    <p class="text-muted">Select tax group if applicable</p>
+                    <div class="d-flex justify-content-between py-2 align-items-center">
+                      <div class="d-flex flex-column">
+                        <span class="text-dark font-weight-bold">Tax name(11%)</span>
+                        <span>11% VAT is inclusive of total cost</span>
+                      </div>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox" checked="">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between py-2 align-items-center">
+                      <div class="d-flex flex-column">
+                        <span class="text-dark font-weight-bold">Tax Name 2 (10%)</span>
+                        <span>10% VAT added to total</span>
+                      </div>
+                      <span>
+                        <label class="ui-switch ui-switch-md">
+                          <input type="checkbox" checked="">
+                          <i></i>
+                        </label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Payment details</h4>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Payment date</label>
+                        <input type="text" data-plugin="datepicker" data-option="{autoclose: true}"
+                          class="form-control">
+                      </div>
+                      <div class="col-12 form-group">
+                        <label>Select payment method</label>
+                        <selct class="custom-select">
+                          <option value="">How will the customer pay for this?</option>
+                        </selct>
+                      </div>
+                      <div class="col-12 form-group">
+                        <label>Deposit to</label>
+                        <selct class="custom-select">
+                          <option value="">Select deposit account</option>
+                        </selct>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Notes</h4>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Reference number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-12">
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                        <p class="text-right"><span class="length">0</span>/500</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-1">Products</h4>
+                    <p class="text-muted">Enter the products and quantities you would like to sell.</p>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Products</th>
+                          <th>Price</th>
+                          <th class="text-right">Cost</th>
+                          <th class="text-right">Amount</th>
+                          <th class="text-right"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="customer-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="customer-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="customer-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" class=" border-bottom">
+                            <input type="text" class="form-control" placeholder="Search Products">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td class="text-right"><b>Subtotal</b></td>
+                          <td class="text-right">L£ 0</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="text-right"><b>Subject to VAT</b></td>
+                          <td class="text-right">L£ 10,000,000</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="text-right"><b>VAT 11%</b></td>
+                          <td class="text-right">L£ 100,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6 form-group offset-6 d-flex justify-content-end">
+                        <select name="" id="" class="custom-select">
+                          <option value="">Discount percent</option>
+                        </select>
+                        <input type="text" class="ml-2 form-control text-right" placeholder="11%">
+                      </div>
+                      <div class="col-12">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td class="bg-light" width="34%">
+                                <span class="d-flex align-items-center justify-content-end h5 mt-2">
+                                  Total amount
+                                </span>
+                              </td>
+                              <td class="bg-warning-lt text-right" width="33%">
+                                <span>USD@1,520</span>
+                                <p claSs="h5 text-success">$ 0</p>
+                              </td>
+                              <td class="bg-success-lt text-right" width="33%">
+                                <span>LBP</span>
+                                <p claSs="h5 text-success">L£ 0</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-page page">
+            <div class="mb-4">
+              <a class="i-con-h-a back text-muted">
+                <i class="i-con i-con-left"></i>
+                Sales
+              </a>
+              <div class="row">
+                <div class="col-5 pr-0 d-flex justify-content-between">
+                  <div>
+                    <span class="h2 mb-0">#SO1001</span>
+                    <small class="ml-2">Created on Apr 15, 2020 at 9:32 pm</small>
+                  </div>
+                  <div>
+                    <span class="status badge badge-lg"></span>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="alert bg-success w-100 my-0 d-none" role="alert">
+                    changes have been saved.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5 pr-0">
+                <div class="sub-page pending-sub-page">
+                  <div class="card mb-3 supplier">
+                    <div class="card-body">
+                      <h4 class="pb-3 title">Find customer</h4>
+                      <div class="row">
+                        <div class="col-12 form-group">
+                          <label>Customer name</label><br>
+                          <select name="" id="" class="custom-select">
+                            <option value="">Select customer</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h4 class="pb-3">Location</h4>
+                      <div class="row">
+                        <div class="col-12">
+                          <label>Store name</label>
+                          <select name="" id="" class="custom-select">
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h4 class="pb-3">Taxes</h4>
+                      <p class="text-muted">Select tax group if applicable</p>
+                      <div class="d-flex justify-content-between py-2 align-items-center">
+                        <div class="d-flex flex-column">
+                          <span class="text-dark font-weight-bold">Tax name(11%)</span>
+                          <span>11% VAT is inclusive of total cost</span>
+                        </div>
+                        <span>
+                          <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked="">
+                            <i></i>
+                          </label>
+                        </span>
+                      </div>
+                      <div class="d-flex justify-content-between py-2 align-items-center">
+                        <div class="d-flex flex-column">
+                          <span class="text-dark font-weight-bold">Tax Name 2 (10%)</span>
+                          <span>10% VAT added to total</span>
+                        </div>
+                        <span>
+                          <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked="">
+                            <i></i>
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h4 class="pb-3">Payment details</h4>
+                      <div class="row">
+                        <div class="col-12 form-group">
+                          <label>Payment date</label>
+                          <input type="text" data-plugin="datepicker" data-option="{autoclose: true}"
+                            class="form-control">
+                        </div>
+                        <div class="col-12 form-group">
+                          <label>Select payment method</label>
+                          <selct class="custom-select">
+                            <option value="">How will the customer pay for this?</option>
+                          </selct>
+                        </div>
+                        <div class="col-12 form-group">
+                          <label>Deposit to</label>
+                          <selct class="custom-select">
+                            <option value="">Select deposit account</option>
+                          </selct>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sub-page paid-sub-page partial-refund-sub-page refund-sub-page">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h4 class="pb-3 title">Sale overview</h4>
+                      <div class="row">
+                        <div class="col-12 form-group">
+                          <table class="table bordered">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <p class="h4 text-muted">Customer</p>
+                                  <span class="text-dark">No customer</span>
+                                </td>
+                                <td class="text-right">
+                                  <p class="h4 text-muted">Location</p>
+                                  <span class="text-dark">West Side Location</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p class="h4 text-muted">Payment type</p>
+                                  <span class="text-dark">Cas(USD)</span>
+                                </td>
+                                <td class="text-right">
+                                  <p class="h4 text-muted">Deposit to</p>
+                                  <span class="text-dark">Bank Account(USD)</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p class="h4 text-muted">Device ID</p>
+                                  <span class="text-dark">POS 1</span>
+                                </td>
+                                <td class="text-right">
+                                  <p class="h4 text-muted">Employee</p>
+                                  <span class="text-dark">Jessica Simpson</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-3">Notes</h4>
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label>Reference number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-12">
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                        <p class="text-right"><span class="length">0</span>/500</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-1">Products</h4>
+                    <p class="text-muted">Enter the products and quantities you would like to sell.</p>
+                    <table class="table bordered">
+                      <thead>
+                        <tr>
+                          <th>Products</th>
+                          <th>Price</th>
+                          <th class="text-right">Cost</th>
+                          <th class="text-right">Amount</th>
+                          <th class="text-right"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="customer-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="customer-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="customer-info">
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100"><input type="text" class="form-control" placeholder="0"></td>
+                          <td class="text-right" width="100"><input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">$0</td>
+                          <td class="text-right" width="50">
+                            <a href="" class="text-danger h3">
+                              <i class="la la-trash"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" class=" border-bottom">
+                            <input type="text" class="form-control" placeholder="Search Products">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td class="text-right"><b>Subtotal</b></td>
+                          <td class="text-right">L£ 0</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="text-right"><b>Subject to VAT</b></td>
+                          <td class="text-right">L£ 10,000,000</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="text-right"><b>Discount percentage</b></td>
+                          <td class="text-right">11%</td>
+                        </tr>
+                        <tr class="sub-page paid-sub-page partial-refund-sub-page refund-sub-page">
+                          <td></td>
+                          <td class="text-right"><b>VAT 11%</b></td>
+                          <td class="text-right">L£ 100,000</td>
+                        </tr>
+                        <tr class="sub-page partial-refund-sub-page refund-sub-page">
+                          <td>Reason: <small>Damaged item</small></td>
+                          <td class="text-right"><b>Refund</b></td>
+                          <td class="text-right"><span class="text-danger">-L£ 100,000</span></td>
+                        </tr>
+                        <tr class="sub-page paid-sub-page">
+                          <td class="bg-light-lt text-right" width="34%">
+                            <span class="text-dark">CHANGE</span>
+                            <p claSs="h5 text-dark">L£ 0</p>
+                          </td>
+                          <td class="bg-light-lt text-right" width="33%">
+                            <span class="text-dark">CASH(USD)</span>
+                            <p class="h5 text-dark">$ 10,450.00</p>
+                          </td>
+                          <td class="bg-success-lt text-right" width="33%">
+                            <span>TOTAL</span>
+                            <p claSs="h5 text-success">L£ 20,000,000</p>
+                          </td>
+                        </tr>
+                        <tr class="sub-page partial-refund-sub-page">
+                          <td class="bg-light-lt" width="34%">
+                            <span class="text-dark">CHANGE</span>
+                            <p claSs="h5 text-dark">L£ 0</p>
+                          </td>
+                          <td class="bg-light-lt text-right" width="33%">
+                            <span class="text-dark">PAID BY CUSTOMER: CASH (USD)</span>
+                            <p claSs="h5 text-dark">$ 10,450.00</p>
+                          </td>
+                          <td class="bg-success-lt text-right" width="33%">
+                            <span>NET PAYMENT</span>
+                            <p claSs="h5 text-success">L£ 20,000,000</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="card mb-3 sub-page pending-sub-page">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6 form-group offset-6 d-flex justify-content-end">
+                        <select name="" id="" class="custom-select">
+                          <option value="">Discount percent</option>
+                        </select>
+                        <input type="text" class="ml-2 form-control text-right" placeholder="11%">
+                      </div>
+                      <div class="col-12">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td class="bg-light" width="34%">
+                                <span class="d-flex align-items-center justify-content-end h5 mt-2">
+                                  Total amount
+                                </span>
+                              </td>
+                              <td class="bg-warning-lt text-right" width="33%">
+                                <span>USD@1,520</span>
+                                <p claSs="h5 text-success">$ 0</p>
+                              </td>
+                              <td class="bg-success-lt text-right" width="33%">
+                                <span>LBP</span>
+                                <p claSs="h5 text-success">L£ 0</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Timeline</h4>
+                  <hr class="w-100">
+                  <h5>Today</h5>
+                  <div class="timeline animates animates-fadeInUp mb-4">
+                    <div class="tl-item  active">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">just now</div>
+                      <div class="tl-content">
+                        <div class="">
+                          Jack changed this customer's phone from +96171809091 to +961718090
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">James processed order #1003 for this customer on POS ↓</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">5 hour ago</div>
+                      <div class="tl-content">
+                        <div class="">
+                          You changed this customer's email from email@mail.com to email@mail2.com.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">
+                          You added a note to this customer. ↓
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">2:00 pm</div>
+                      <div class="tl-content">
+                        <div class="">You accepted, canceled, and rejected items in a transfer from Zouk Mikael. →</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">1:50 pm</div>
+                      <div class="tl-content">
+                        <div class="">You created order <span class="text-primary">#1001</span> for this customer.</div>
+                      </div>
+                    </div>
+                    <div class="tl-item  ">
+                      <div class="tl-dot ">
+                      </div>
+                      <div class="tl-date text-muted">2:00 pm</div>
+                      <div class="tl-content">
+                        <div class="">
+                          <b>Mike</b> created this customer.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="view-page page">
+            <div class="mb-4">
+              <a class="i-con-h-a back text-muted">
+                <i class="i-con i-con-left"></i>
+                Sales
+              </a>
+              <div class="row">
+                <div class="col-5 pr-0 d-flex justify-content-between">
+                  <div>
+                    <span class="h2 mb-0">Refund sale</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5 pr-0">
+                <div class="sub-page pending-sub-page">
+                  <div class="card mb-3 supplier">
+                    <div class="card-body">
+                      <h4 class="pb-3 title">Summary</h4>
+                      <div class="row">
+                        <div class="col-12 form-group">
+                          <p class="d-flex justify-content-between">
+                            <span class="h6">Item subtotal</span>
+                            <span class="h6">L£ 4,000</span>
+                          </p>
+                          <p><span class="text-muted">1 item</span></p>
+                          <p class="d-flex justify-content-between">
+                            <span class="h6">VAT 11% (included)</span>
+                            <span class="h6">L£ 850</span>
+                          </p>
+                          <p class="d-flex justify-content-between">
+                            <span class="h6">Refund total</span>
+                            <span class="h6">L£ 4,000</span>
+                          </p>
+                        </div>
+                        <hr class="w-100">
+                        <div class="col-12">
+                          <h4>REFUND AMOUNT</h4>
+                        </div>
+                        <div class="col-12">
+                          <label for="">Cash(LBP)</label>
+                          <input type="text" class="form-control">
+                          <span class="text-muted">L£ 7,450 available for refund</span>
+                        </div>
+                        <hr class="w-100">
+                        <div class="col-3">
+                          <button class="btn btn-secondary btn-block back">Cancel</button>
+                        </div>
+                        <div class="col-9">
+                          <button class="btn btn-primary btn-block">Refund L£ 4,000</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="pb-1">Products</h4>
+                    <p class="text-muted">Select the product and quanWty the customer would like refunded.</p>
+                    <table class="table bordered">
+                      <thead>
+                        <tr>
+                          <th>Products</th>
+                          <th class="text-right">Price</th>
+                          <th class="text-right">Quantity</th>
+                          <th class="text-right">Refund amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100">L£ 4,000</td>
+                          <td class="text-right" width="100">
+                            <input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">L£ 0</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100">L£ 4,000</td>
+                          <td class="text-right" width="100">
+                            <input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">L£ 0</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100">L£ 4,000</td>
+                          <td class="text-right" width="100">
+                            <input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">L£ 0</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="h6">Strawberry Short Cake</span><br>
+                            <small>SKU 10008 | 5280003102913 | VAT 11%</small>
+                          </td>
+                          <td width="100">L£ 4,000</td>
+                          <td class="text-right" width="100">
+                            <input type="number" class="form-control" placeholder="0">
+                          </td>
+                          <td class="text-right" width="50">L£ 0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="col-12">
+                      <label class="md-check mb-2">
+                        <input type="checkbox" id="all-check">
+                        <i class="blue"></i>
+                        Restock 1 item at:
+                      </label>
+                      <select name="" id="" class="custom-select"></select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="delete-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Delete sale</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <p>
+            Are you sure you want to delete Sales Order <b>#SO1001</b>
+          </p>
+          <b class="pt-3">This can’t be undone.</b>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger" id="delete-expense">Delete sale</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="customer-add-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0 d-block">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="modal-title">Customer quick add</h5>
+              <p class="d-flex justify-content-between">
+                <span>Enter customer's basic information</span>
+                <span>Custom no: 5280002</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <label>Select account type</label>
+              <div class="d-flex">
+                <div class="form-group">
+                  <label class="md-check mr-5">
+                    <input type="radio" name="account-type" value="c" checked>
+                    <i class="blue"></i>
+                    Customer
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="md-check mr-2">
+                    <input type="radio" name="account-type" value="b">
+                    <i class="blue"></i>
+                    Business
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 form-group business-item d-none">
+              <label for="">VAT ID Number</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-12 form-group business-item d-none">
+              <label for="">Company name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">First name</label>
+              <input type="text" class="form-control" placeholder="James">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Last name</label>
+              <input type="text" class="form-control" placeholder="Nakhleh">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Mobile</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 form-group">
+              <label for="">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="col-12">
+              <label for="">Customer ID</label>
+              <input type="number" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="send-email-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Send receipt by email</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <div class="row">
+            <div class="col-12 form-group">
+              <label for="">From</label>
+              <input type="email" class="form-control" placeholder="main@email.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">To</label>
+              <input type="email" class="form-control" placeholder="default.email@mail.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Subject</label>
+              <input type="text" class="form-control" placeholder="(#BI1001) Receipt - {Status} by Store Name">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Attachment</label>
+              <p>
+                <i class="la la-file"></i>
+                #SO1001
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success send">Send</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="share-whatsapp-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Share with WhatsApp</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <div class="row">
+            <div class="col-12 form-group">
+              <label for="">Contact's mobile</label>
+              <input type="number" class="form-control" placeholder="main@email.com">
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Manage to customer</label>
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="col-12 form-group">
+              <label for="">Attachment</label>
+              <p>
+                <i class="la la-file"></i>
+                #SO1001
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success send">Send</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <div id="leave-modal" class="modal fade" data-backdrop="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">You have unsaved changes</h5>
+        </div>
+        <div class="modal-body p-lg">
+          <p>
+            If you leave this page, all unsaved changes will be lost
+          </p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger back" data-dismiss="modal">Leave page</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="row create-footer">
+      <div class="col-12 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <span class="text-secondary saved-status">Unsaved Sales Order</span>
+        </div>
+        <div>
+          <button class="btn btn-secondary mr-1" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+          <button data-toggle="dropdown" class="btn btn-success">
+            Mark
+            <i class="la la-angle-up"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+            <a class="dropdown-item to-detail-page paid">Mark as paid</a>
+            <a class="dropdown-item to-detail-page pending">Mark as pending</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row detail-footer">
+      <div class="col-12 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <div class="item-action dropdown mr-2">
+            <button data-toggle="dropdown" class="btn btn-secondary">
+              Send
+              <i class="la la-angle-up"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+              <a class="dropdown-item" data-toggle="modal" data-target="#send-email-modal">Send by email</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#share-whatsapp-modal">Share with WhatsApp</a>
+            </div>
+          </div>
+          <div class="item-action dropdown mr-2">
+            <button data-toggle="dropdown" class="btn btn-secondary">
+              More
+              <i class="la la-angle-up"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-top bg-dark" role="menu">
+              <a class="dropdown-item edit">Save as PDF</a>
+              <a class="dropdown-item edit">Save as CSV</a>
+              <a class="dropdown-item edit">Print</a>
+            </div>
+          </div>
+          <button class="btn btn-danger" data-toggle="modal" data-target="#delete-bill-modal">Delete sale</button>
+        </div>
+        <div class="footer-bar pending-bar">
+          <button class="btn btn-secondary mr-1" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+          <button class="btn btn-success to-detail-page paid">Make as paid</button>
+        </div>
+        <div class="footer-bar paid-bar">
+          <button class="btn btn-secondary mr-1" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+          <button class="btn btn-danger to-detail-page partial-refund">Refund</button>
+        </div>
+        <div class="footer-bar partial-refund-bar">
+          <button class="btn btn-secondary mr-1" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+          <button class="btn btn-danger to-detail-page refund">Refund</button>
+        </div>
+        <div class="footer-bar refund-bar">
+          <button class="btn btn-secondary mr-1" data-toggle="modal" data-target="#leave-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/autoNumeric-1.8.3.js"></script>
+  <script src="../assets/js/theme.js"></script>
+
+  <!-- endbuild -->
+  <script src="../assets/js/office/bookeeping.sales.js"></script>
+</body>
+
+</html>

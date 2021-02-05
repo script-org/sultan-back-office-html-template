@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Admin | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <!-- style -->
+  <!-- build:css ../assets/css/site.min.css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+<body class="layout-column">
+
+
+<header id="header" class="page-header p-2 bg-white box-shadow sticky">
+  <div class="navbar navbar-expand-lg" >
+    <!-- brand -->
+    <a href="index.html" class="navbar-brand">
+    	<svg fill="#a9a9a9" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    	    <path class="fill" d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/>
+    	    <path d="M0 0h24v24H0z" fill="none"/>
+    	</svg>
+    	<!-- <img src="../assets/img/logo.png" alt="..."> -->
+    	<span class="hidden-folded d-inline l-s-n-1x ">Agile</span>
+    </a>
+    <!-- / brand -->
+  
+    <!-- Navbar collapse -->
+    <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+      <ul class="navbar-nav mx-auto" data-nav>
+        <li class="nav-item">
+          <a href="../html/card.admin.html" class="nav-link">
+            <span class="nav-text">Admin</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../html/card.news.html" class="nav-link">
+            <span class="nav-text">News</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../html/card.music.html" class="nav-link">
+            <span class="nav-text">Music &amp; Video</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../html/card.social.html" class="nav-link">
+            <span class="nav-text">Social</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <ul class="nav navbar-menu order-1 order-lg-2">
+      <li class="nav-item">
+        <a class="nav-link no-ajax" href="../docs?hideAside=false">
+          Docs
+        </a>
+      </li>
+      <li class="d-flex align-items-center">
+        <a href="https://gum.co/Joem" target="_blank" class="btn btn-rounded btn-sm btn-primary i-con-h-a">
+          Purchase
+        </a>
+      </li>
+      <!-- Navarbar toggle btn -->
+      <li class="nav-item d-lg-none">
+        <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class data-target="#navbarToggler">
+          <i class="i-con i-con-nav text-muted"><i></i></i>
+        </a>
+      </li>
+    </ul>
+  
+  </div>
+</header>
+<div id="main" class="layout-row flex">
+<!-- ############ Content START-->
+	<div id="content" class="flex ">
+		<div class="page-container">
+		
+<div class="padding" data-plugin="chartjs">
+    <div class="row">
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-primary avatar i-con-h-a"><i class="i-con i-con-user"></i></span>
+          <div class="mx-3">
+            <div><strong>2,300</strong></div>
+            <small class="text-muted">Users</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="VIP" data-option="
+            'bar',
+            {
+              height: 30,
+              width: 40,
+              padding: 0.2,
+              fill: [theme.color.primary, 'rgba(120, 130, 140, 0.1)']
+            }">15,32,21,16,25,23,20,30
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-info avatar i-con-h-a"><i class="i-con i-con-time"><i></i></i></span>
+          <div class="mx-3">
+            <div><strong>32,050</strong></div>
+            <small class="text-muted">Visitors</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="New" data-option="
+            'pie',
+            {
+              height: 30,
+              width: 30,
+              padding: 0.3,
+              fill: [theme.color.info, 'rgba(120, 130, 140, 0.1)']
+            }">15,85
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-danger avatar i-con-h-a"><i class="i-con i-con-menu"><i></i></i></span>
+          <div class="mx-3">
+            <div><strong>350</strong></div>
+            <small class="text-muted">Tasks</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="Finished" data-option="
+            'donut',
+            {
+              height: 30,
+              width: 30,
+              padding: 0.3,
+              fill: [theme.color.danger, 'rgba(120, 130, 140, 0.1)']
+            }">20,80
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-success avatar i-con-h-a"><i class="i-con i-con-trending-up"><i></i></i></span>
+          <div class="mx-3">
+            <div><strong>75%</strong></div>
+            <small class="text-muted">Sales</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="Finished" data-option="
+            'bar',
+            {
+              height: 30,
+              width: 50,
+              padding: 0.3,
+              fill: [hexToRGB(theme.color.success, 0.4)]
+            }">5,3,2,-1,-3,-2,2,3,5,2
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-info-lt avatar i-con-h-a"><i class="i-con i-con-eye solid"></i></span>
+          <div class="mx-3">
+            <div><strong>3,000</strong></div>
+            <small class="text-muted">Visitors</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="VIP" data-option="
+            'line',
+            {
+              height: 30,
+              width: 40,
+              padding: 0.2,
+              stroke: '',
+              fill: ['rgba(120, 130, 140, 0.1)']
+            }">15,32,21,16,25,23,20,30
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-warning text-white avatar i-con-h-a"><i class="i-con i-con-star solid"><i><i></i></i></i></span>
+          <div class="mx-3">
+            <div><strong>2,050</strong></div>
+            <small class="text-muted">Stars</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="New" data-option="
+            'donut',
+            {
+              height: 30,
+              width: 30,
+              radius: 15,
+              fill: [theme.color.warning, 'rgba(120, 130, 140, 0.1)']
+            }">15,85
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-primary-lt avatar i-con-h-a"><i class="i-con i-con-like solid"><i></i></i></span>
+          <div class="mx-3">
+            <div><strong>350</strong></div>
+            <small class="text-muted">Liked</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="Finished" data-option="
+            'bar',
+            {
+              height: 30,
+              width: 30,
+              padding: 0.3,
+              fill: function(_, i, all) {
+                var g = parseInt((i / all.length) * 255);
+                return 'rgb(0, ' + g + ', 255)';
+              }
+            }">2,3,2,2,3,5,2
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <span class="w-40 bg-success-lt avatar i-con-h-a"><i class="i-con i-con-bookmark solid"><i></i></i></span>
+          <div class="mx-3">
+            <div><strong>250</strong></div>
+            <small class="text-muted">Bookmarked</small>
+          </div>
+          <div class="flex"></div>
+          <div class="peity" data-plugin="peity" data-tooltip="true" data-title="Finished" data-option="
+            'line',
+            {
+              height: 30,
+              width: 50,
+              padding: 0.3,
+              stroke: theme.color.success,
+              fill: [hexToRGB(theme.color.success, 0.2)]
+            }">2,3,2,1,5,2,3,1,2
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <div>
+            <div class="text-md"><strong>20,500</strong></div>
+            <small class="text-muted">Marketing</small>
+          </div>
+          <div class="flex"></div>
+          <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.success}" data-percent="20" data-line-width="2" data-size="50" data-scale-length="0" data-line-cap="square">
+            <div>
+              <i class="i-con i-con-trending-up b-2x text-success"><i></i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <div>
+            <div class="text-md"><strong>50%</strong></div>
+            <small class="text-muted">Revenue</small>
+          </div>
+          <div class="flex"></div>
+          <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.danger}" data-percent="50" data-line-width="2" data-size="50" data-scale-length="0" data-line-cap="square">
+            <div>
+              <i class="i-con i-con-trending-down b-2x text-danger"><i></i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <div>
+            <div class="text-md"><strong>45,000</strong></div>
+            <small class="text-muted">Total users</small>
+          </div>
+          <div class="flex"></div>
+          <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.info}" data-percent="75" data-line-width="2" data-size="50" data-scale-length="0" data-line-cap="square">
+            <div>
+              <i class="i-con i-con-users b-2x text-info"><i></i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="block p-4 d-flex align-items-center">
+          <div>
+            <div class="text-md"><strong>1,560</strong></div>
+            <small class="text-muted">Monthly orders</small>
+          </div>
+          <div class="flex"></div>
+          <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.primary}" data-percent="85" data-line-width="2" data-size="50" data-scale-length="0" data-line-cap="square">
+            <div>
+              <i class="i-con i-con-shop b-2x text-primary"><i></i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="block p-4">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 b-r">
+              <div class="d-flex d-flex align-items-center">
+                <div>
+                  <span class="avatar w-40 b-a b-2x">
+                    <i class="i-con i-con-shop b-2x text-danger"><i></i></i>
+                  </span>
+                </div>
+                <div class="mx-3">
+                  <div class=""><strong>1,560</strong></div>
+                  <small class="text-muted">Monthly orders</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-flex d-flex align-items-center">
+                <div>
+                  <span class="avatar w-40 b-a b-2x">
+                    <i class="i-con i-con-history b-2x text-primary"><i></i></i>
+                  </span>
+                </div>
+                <div class="mx-3">
+                  <div class=""><strong>12:20</strong></div>
+                  <small class="text-muted">Man in the Wilderness</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-flex d-flex align-items-center">
+                <div>
+                  <span class="avatar w-40 b-a b-2x">
+                    <i class="i-con i-con-users b-2x text-info"><i></i></i>
+                  </span>
+                </div>
+                <div class="mx-3">
+                  <div class=""><strong>45,050</strong></div>
+                  <small class="text-muted">Users</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-flex d-flex align-items-center">
+                <div>
+                  <span class="avatar w-40 b-a b-2x">
+                    <i class="i-con i-con-mail b-2x text-success"><i></i></i>
+                  </span>
+                </div>
+                <div class="mx-3">
+                  <div class=""><strong>302</strong></div>
+                  <small class="text-muted">New messages</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Marketing</strong>
+          </div>
+          <div style="height: 160px">
+            <canvas id="chart-line-7"></canvas>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$12,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$3,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Members</strong>
+          </div>
+          <div class="px-3" style="height: 160px">
+            <canvas id="chart-bar-2">
+            </canvas>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>45,300</div>
+                <small class="text-muted">Users</small>
+              </div>
+              <div class="col">
+                <div>3,500</div>
+                <small class="text-muted">VIP</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Tasks</strong>
+          </div>
+          <div class="px-4 py-3" style="height: 160px">
+            <canvas id="chart-bar-3">
+            </canvas>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>300</div>
+                <small class="text-muted">Tasks</small>
+              </div>
+              <div class="col">
+                <div>100</div>
+                <small class="text-muted">Finished</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Sales</strong>
+          </div>
+          <div style="height: 160px">
+            <canvas id="chart-line-8">
+            </canvas>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$12,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$3,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Sales</strong>
+          </div>
+          <div class="p-4" style="height: 160px">
+            <canvas id="chart-pie-2">
+            </canvas>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$12,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$3,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Report</strong>
+          </div>
+          <div style="height: 160px">
+            <canvas id="chart-bubble-2">
+            </canvas>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$6,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$2,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <strong>Marketing</strong>
+          </div>
+          <div class="p-3" style="height: 222px">
+            <canvas id="chart-line-10">
+            </canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <strong>Marketing</strong>
+          </div>
+          <div class="p-3" style="height: 280px">
+            <canvas id="chart-bar-4">
+            </canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <strong>Marketing</strong>
+          </div>
+          <div class="p-3" style="height: 280px">
+            <canvas id="chart-bar-5">
+            </canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <strong>Marketing</strong>
+          </div>
+          <div class="p-3" style="height: 280px">
+            <canvas id="chart-bar-6">
+              </canvas>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <strong>Marketing</strong>
+          </div>
+          <div class="p-3" style="height: 280px">
+            <canvas id="chart-bar-7"></canvas>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Server report</strong>
+          </div>
+          <div class="p-4">
+            <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.success}" data-percent="65" data-line-width="2" data-size="120" data-scale-length="0" data-line-cap="square">
+              <div class="text-success text-md">
+                65
+              </div>
+            </div>
+            <div class="mt-3 text-sm text-center text-muted">Increasing in last week</div>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$6,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$2,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Sale report</strong>
+          </div>
+          <div class="p-4">
+            <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.primary}" data-percent="75" data-line-width="2" data-size="120" data-scale-length="0" data-line-cap="square">
+              <div class="text-primary text-md">
+                75
+              </div>
+            </div>
+            <div class="mt-3 text-sm text-center text-muted">Increasing in last week</div>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$6,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$2,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>User report</strong>
+          </div>
+          <div class="p-4">
+            <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.warning}" data-percent="45" data-line-width="2" data-size="120" data-scale-length="0" data-line-cap="square">
+              <div class="text-warning text-md">
+                45
+              </div>
+            </div>
+            <div class="mt-3 text-sm text-center text-muted">Decreasing in last week</div>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$6,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$2,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>Order report</strong>
+          </div>
+          <div class="p-4">
+            <div class="easypiechart" data-plugin="easyPieChart" data-option="{barColor: theme.color.danger}" data-percent="50" data-line-width="2" data-size="120" data-scale-length="0" data-line-cap="square">
+              <div class="text-danger text-md">
+                50
+              </div>
+            </div>
+            <div class="mt-3 text-sm text-center text-muted">Decreasing in last week</div>
+          </div>
+          <div class="card-footer text-center">
+            <div class="row">
+              <div class="col">
+                <div>$6,000</div>
+                <small class="text-muted">Target</small>
+              </div>
+              <div class="col">
+                <div>$2,500</div>
+                <small class="text-muted">Last Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <strong>Sales report</strong>
+          </div>
+          <div class="card-body py-5">
+            <div style="height: 120px">
+              <canvas id="chart-doughnut-3"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <strong>Order report</strong>
+          </div>
+          <div class="card-body py-5">
+            <div style="height: 120px">
+              <canvas id="chart-doughnut-4"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Marketing
+          </div>
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="pb-4">
+                <small class="text-muted">New visitor</small>
+                <div>
+                  <span class="text-md">95</span> 
+                  <i class="i-con i-con-trending-up text-success"><i></i></i> 
+                  <span class="text-muted">3% up</span>
+                </div>
+              </div>
+              <div class="pb-4 mx-3">
+                <small class="text-muted">New customer</small>
+                <div>
+                  <span class="text-md">$23,000</span> 
+                  <i class="i-con i-con-trending-down text-danger"><i></i></i> 
+                  <span class="text-muted">-5% down</span>
+                </div>
+              </div>
+            </div>
+            <div style="height: 160px">
+              <canvas id="chart-line-9"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Marketing
+          </div>
+          <div class="card-body">
+            <div class="pb-3">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-sm btn-white active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked=""> Month
+                </label>
+                <label class="btn btn-sm btn-white">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Week
+                </label>
+                <label class="btn btn-sm btn-white">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Day
+                </label>
+              </div>
+            </div>
+            <div style="height: 185px">
+              <canvas id="chart-line-11"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+      <div class="list list-grouped text-center">
+          <div class="list-item i-con-h-a block">
+            <div class="list-content p-0">
+              <div class="list-body">
+                <div class="p-3 b-b">
+                  Mon
+                </div>
+                <div class="py-4">
+                  <div class="i-con-h-a active mb-4">
+                  	<i class="i-con i-con-rain w-40 b-2x"><i></i></i>
+                  </div>
+                  <div class="mb-4">+9 <sup>&deg;</sup></div>
+                  <div class="text-muted">Rain</div>
+                </div>
+                <div class="p-3 b-t">21 May</div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item i-con-h-a block">
+            <div class="list-content p-0">
+              <div class="list-body">
+                <div class="p-3 b-b">
+                    Tue
+                </div>
+                <div class="py-4">
+                  <div class="i-con-h-a active mb-4">
+                  	<i class="i-con i-con-clear-day w-40 b-2x"><i></i></i>
+                  </div>
+                  <div class="mb-4">+10 <sup>&deg;</sup></div>
+                  <div class="text-muted">Clear day</div>
+                </div>
+                <div class="p-3 b-t">22 May</div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item i-con-h-a block">
+            <div class="list-content p-0">
+              <div class="list-body">
+                <div class="p-3 b-b">
+                    Wed
+                </div>
+                <div class="py-4">
+                  <div class="i-con-h-a active mb-4">
+                  	<i class="i-con i-con-snow w-40 b-2x"><i></i></i>
+                  </div>
+                  <div class="mb-4">-6 <sup>&deg;</sup></div>
+                  <div class="text-muted">Snow</div>
+                </div>
+                <div class="p-3 b-t">
+                  23 May
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item i-con-h-a block">
+            <div class="list-content p-0">
+              <div class="list-body">
+                <div class="p-3 b-b">
+                    Thu
+                </div>
+                <div class="py-4">
+                  <div class="i-con-h-a active mb-4">
+                    <i class="i-con i-con-cloudy w-40 b-2x"><i></i></i>
+                  </div>
+                  <div class="mb-4">-6 <sup>&deg;</sup></div>
+                  <div class="text-muted">Cloudy</div>
+                </div>
+                <div class="p-3 b-t">
+                  24 May
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item i-con-h-a block">
+            <div class="list-content p-0">
+              <div class="list-body">
+                <div class="p-3 b-b">
+                    Fri
+                </div>
+                <div class="py-4">
+                  <div class="i-con-h-a active mb-4">
+                    <i class="i-con i-con-drizzle w-40 b-2x"><i></i></i>
+                  </div>
+                  <div class="mb-4">-6 <sup>&deg;</sup></div>
+                  <div class="text-muted">Drizzle</div>
+                </div>
+                <div class="p-3 b-t">
+                  25 May
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item i-con-h-a block">
+            <div class="list-content p-0">
+              <div class="list-body">
+                <div class="p-3 b-b">
+                    Sat
+                </div>
+                <div class="py-4">
+                  <div class="i-con-h-a active mb-4">
+                    <i class="i-con i-con-lightning w-40 b-2x"><i></i></i>
+                  </div>
+                  <div class="mb-4">-6 <sup>&deg;</sup></div>
+                  <div class="text-muted">Lightning</div>
+                </div>
+                <div class="p-3 b-t">
+                  26 May
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item i-con-h-a block">
+            <div class="list-content p-0">
+              <div class="list-body">
+                <div class="p-3 b-b">
+                    Sun
+                </div>
+                <div class="py-4">
+                  <div class="i-con-h-a active mb-4">
+                    <i class="i-con i-con-hail w-40 b-2x"><i></i></i>
+                  </div>
+                  <div class="mb-4">-6 <sup>&deg;</sup></div>
+                  <div class="text-muted">Hail</div>
+                </div>
+                <div class="p-3 b-t">
+                  27 May
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+</div>
+
+		</div>
+		<!-- ############ Footer START-->
+		<footer id="footer" class="page-footer bg-black">
+			<div class="page-container">
+				<div class="padding ">
+					<div class="py-5 text-inherit text-hover-primary">
+						<div class="row">
+							<div class="col-6 col-md-4">
+								<div class="mb-5">
+									<!-- brand -->
+									<a href="index.html" class="navbar-brand">
+										<svg fill="#a9a9a9" width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										    <path class="fill" d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/>
+										    <path d="M0 0h24v24H0z" fill="none"/>
+										</svg>
+										<!-- <img src="../assets/img/logo.png" alt="..."> -->
+										<span class="hidden-folded d-inline l-s-n-1x ">Agile</span>
+									</a>
+									<!-- / brand -->
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<h5 class="mb-3 text-muted">UI kit</h5>
+								<ul class="list-unstyled l-h-2x">
+									<li><a href="../html/card.admin.html">Admin</a></li>
+									<li><a href="../html/card.news.html">News</a></li>
+									<li><a href="../html/card.music.html">Music &amp; Video</a></li>
+									<li><a href="../html/card.social.html">Social</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3">
+								<h5 class="mb-3 text-muted">Apps</h5>
+								<ul class="list-unstyled l-h-2x">
+									<li><a href="../html/app.calendar.html">Calendar</a></li>
+									<li><a href="../html/app.mail.html">Email</a></li>
+									<li><a href="../html/app.message.html">Message</a></li>
+									<li><a href="../html/app.user.html">User management</a></li>
+									<li><a href="../html/page.invoice.html">Invoice</a></li>
+									<li><a href="../html/page.search.html">Search</a></li>
+									<li><a href="../html/page.faq.html">FAQ</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-2">
+								<h5 class="mb-3 text-muted">Help</h5>
+								<ul class="list-unstyled l-h-2x">
+									<li><a href="../docs">Documentation</a></li>
+									<li><a href="../docs/changelog.html">Changelog</a></li>
+									<li><a href="../docs/changelog.html">Update</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text-center py-5 text-md">
+							<div class="text-muted mb-3">Follow us</div>
+							<div>
+								<a href="https://gumroad.com/blackui" class="mx-2">
+									<span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 180 190">
+					<path fill="currentColor" d="M25,27.4h123.6c2.7,5.2,8.2,8.8,14.5,8.8c9,0,16.3-7.3,16.3-16.3S172.1,3.6,163,3.6
+							c-6.8,0-12.7,4.2-15.1,10.2H25c-11.9,0-21.3,9.1-21.3,20.6V166c0,11.7,9.8,21.7,21.3,21.7h131.5c11.6,0,21-9.7,21-21.7v-78
+							c0-11.7-9.4-21.3-21-21.3h-78c-11.9,0-22,9.8-22,21.3v24.5c0,11.4,9.9,20.6,22,20.6h27.2c2.4,6,8.3,10.2,15.1,10.2
+							c9,0,16.3-7.3,16.3-16.3c0-9-7.3-16.3-16.3-16.3c-6.3,0-11.8,3.6-14.5,8.8H78.5c-4,0-8.3-2.7-8.3-7V87.9c0-4,4-7.7,8.3-7.7h78
+							c4.1,0,7.4,3.4,7.4,7.7v78c0,4.3-3.4,8-7.4,8H25c-4.1,0-7.7-3.8-7.7-8V34.4C17.3,30.5,20.6,27.4,25,27.4z M163,12.1
+							c4.3,0,7.8,3.5,7.8,7.8c0,4.3-3.5,7.8-7.8,7.8c-4.3,0-7.8-3.5-7.8-7.8C155.2,15.6,158.7,12.1,163,12.1z M120.9,119.2
+							c4.3,0,7.8,3.5,7.8,7.8c0,4.3-3.5,7.8-7.8,7.8c-4.3,0-7.8-3.5-7.8-7.8C113.1,122.6,116.6,119.2,120.9,119.2z" class=""></path>
+				</svg>
+				</span> 
+									gumroad.com/blackui
+								</a>
+								<a href="https://dribbble.com/blackui" class="mx-2">
+									<span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
+					<path fill="currentColor" d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z" class=""></path>
+				</svg>
+				</span> 
+									Blackui
+								</a>
+							</div>
+						</div>
+						<div class="text-center py-3">
+							<span class="text-muted text-sm">&copy; Copyright. Agile - Bootstrap 4 Web Application 2018, All rights reserved.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- ############ Footer END-->
+	</div>
+<!-- ############ Content END-->
+</div>
+
+
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/theme.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

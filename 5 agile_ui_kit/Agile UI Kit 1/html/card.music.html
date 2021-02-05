@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Music | Agile - Bootstrap 4 Web Application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <!-- style -->
+  <!-- build:css ../assets/css/site.min.css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+<body class="layout-column">
+
+
+<header id="header" class="page-header p-2 bg-white box-shadow sticky">
+  <div class="navbar navbar-expand-lg" >
+    <!-- brand -->
+    <a href="index.html" class="navbar-brand">
+    	<svg fill="#a9a9a9" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    	    <path class="fill" d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/>
+    	    <path d="M0 0h24v24H0z" fill="none"/>
+    	</svg>
+    	<!-- <img src="../assets/img/logo.png" alt="..."> -->
+    	<span class="hidden-folded d-inline l-s-n-1x ">Agile</span>
+    </a>
+    <!-- / brand -->
+  
+    <!-- Navbar collapse -->
+    <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarToggler">
+      <ul class="navbar-nav mx-auto" data-nav>
+        <li class="nav-item">
+          <a href="../html/card.admin.html" class="nav-link">
+            <span class="nav-text">Admin</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../html/card.news.html" class="nav-link">
+            <span class="nav-text">News</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../html/card.music.html" class="nav-link">
+            <span class="nav-text">Music &amp; Video</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../html/card.social.html" class="nav-link">
+            <span class="nav-text">Social</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <ul class="nav navbar-menu order-1 order-lg-2">
+      <li class="nav-item">
+        <a class="nav-link no-ajax" href="../docs?hideAside=false">
+          Docs
+        </a>
+      </li>
+      <li class="d-flex align-items-center">
+        <a href="https://gum.co/Joem" target="_blank" class="btn btn-rounded btn-sm btn-primary i-con-h-a">
+          Purchase
+        </a>
+      </li>
+      <!-- Navarbar toggle btn -->
+      <li class="nav-item d-lg-none">
+        <a href="#" class="nav-link i-con-h-a px-1" data-toggle="collapse" data-toggle-class data-target="#navbarToggler">
+          <i class="i-con i-con-nav text-muted"><i></i></i>
+        </a>
+      </li>
+    </ul>
+  
+  </div>
+</header>
+<div id="main" class="layout-row flex">
+<!-- ############ Content START-->
+	<div id="content" class="flex ">
+		<div class="page-container">
+		
+<div class="padding">
+  <div class="block">
+    <div data-plugin="plyr" class="plyrist plyrist_audio" id="plyrist_audio">
+      <audio controls hidden></audio>
+      <div class="plyr-list" style="display:none">
+        <div class="plyr-item" data-type="audio" data-source="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" data-poster="../assets/img/c8.jpg">
+          <span class="plyr-item-poster" style="background-image:url(../assets/img/c8.jpg)"></span>
+          <span class="plyr-item-title">Kishi Bashi - "It All Began With A Burst"</span>
+          <span class="plyr-item-author">Kishi Bashi</span>
+        </div>
+        <div class="plyr-item" data-type="audio" data-source="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" data-poster="../assets/img/c9.jpg">
+          <span class="plyr-item-poster" style="background-image:url(../assets/img/c9.jpg)"></span>
+          <span class="plyr-item-title">View From A Blue Moon</span>
+          <span class="plyr-item-author">John Florence</span>
+        </div>
+        <div class="plyr-item" data-type="audio" data-source="http://c4.auracast.net:8060/jazzmovil" data-poster="../assets/img/c7.jpg">
+          <span class="plyr-item-poster" style="background-image:url(../assets/img/c7.jpg)"></span>
+          <span class="plyr-item-title">Jazz radio</span>
+          <span class="plyr-item-author">Auracast</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-md list-grouped">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c9.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          For my love
+                  </a>
+                  <a class="d-block text-muted">Pretium</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c12.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Around the world
+                  </a>
+                  <a class="d-block text-muted">Justo</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c3.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Compton’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Semper</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c4.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Long liv cap’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Urna,</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c5.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Where we started’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Donec</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c6.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          The Tallest Unclimbed Mountains In The World
+                  </a>
+                  <a class="d-block text-muted">Nunc</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c7.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          What Not To Wear: The Hats, Scarves In History
+                  </a>
+                  <a class="d-block text-muted">Cursus</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c8.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          How AI Helps Recruiters Track Jobseekers’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Malesuada</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c11.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Is This The Most Crowded Island In The World?’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Lacus,</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c10.jpg)">
+              </a>
+              <div class="media-action media-action-overlay">
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-like active-solid"><i></i></i>
+                      </button>
+                      <button class="btn btn-raised btn-icon btn-rounded btn-md bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+                      <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                          <i class="i-con i-con-menu"><i></i></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          How AI Helps Recruiters Track Jobseekers’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Posuere</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-md list-grid">
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c3.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          For my love
+                  </a>
+                  <a class="d-block text-muted">Ac</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c4.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Around the world
+                  </a>
+                  <a class="d-block text-muted">Elit</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c5.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Compton’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Enim</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c6.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Long liv cap’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Viverra</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c7.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          In ac mauris
+                  </a>
+                  <a class="d-block text-muted">Odio</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c8.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Sit vulputate
+                  </a>
+                  <a class="d-block text-muted">Tincidunt</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c9.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Pellentesque enim orci
+                  </a>
+                  <a class="d-block text-muted">Feugiat</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="list-item block">
+          <div class="media col-4">
+              <a class="media-content " style="background-image:url(../assets/img/c10.jpg)">
+              </a>
+              <div class="media-action media-action-around">
+                      <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                          <i class="i-con i-con-play"></i>
+                      </button>
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Fames vestibulum at dolor,
+                  </a>
+                  <a class="d-block text-muted">Scelerisque</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-md">
+    <div class="col-md-9 col-lg-8 d-flex">
+      <div class="block flex">
+        <div class="plyrist plyrist_audio" id="plyrist_audio_1">
+          <audio controls hidden></audio>
+          <div class="plyr-list">
+            <div class="plyr-item" data-type="audio" data-source="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" data-poster="../assets/img/c8.jpg">
+              <span class="plyr-item-poster" style="background-image:url(../assets/img/c8.jpg)"></span>
+              <span class="plyr-item-title">Kishi Bashi - "It All Began With A Burst"</span>
+              <span class="plyr-item-author">Kishi Bashi</span>
+            </div>
+            <div class="plyr-item" data-type="video" data-source="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" data-poster="../assets/img/c9.jpg">
+              <span class="plyr-item-poster" style="background-image:url(../assets/img/c9.jpg)"></span>
+              <span class="plyr-item-title">View From A Blue Moon</span>
+              <span class="plyr-item-author">John Florence</span>
+            </div>
+            <div class="plyr-item" data-type="audio" data-source="http://c4.auracast.net:8060/jazzmovil" data-poster="../assets/img/c7.jpg">
+              <span class="plyr-item-poster" style="background-image:url(../assets/img/c7.jpg)"></span>
+              <span class="plyr-item-title">Jazz radio</span>
+              <span class="plyr-item-author">Auracast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-4 d-flex">
+      <div class="list-item block flex list-overlay text-center">
+          <div class="media media-4x3 cyan">
+              <a class="media-content " style="background-image:url('../assets/img/c4.jpg')">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body flex-grow-0">
+                  <a href="#" class="list-title text-lg font-weight-bold l-s-n-2x">
+                          Charts Europe
+                  </a>
+                  <a class="list-subtitle d-block text-muted mt-2 ">Top charts from Europe</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-md list-grouped">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="list-item block text-center">
+          <div class="media circle">
+              <a class="media-content m-3" style="background-image:url(../assets/img/a6.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Iceband
+                  </a>
+                  <a class="d-block text-muted">Aliquam</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="list-item block text-center">
+          <div class="media circle">
+              <a class="media-content m-3" style="background-image:url(../assets/img/a7.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          RightWay
+                  </a>
+                  <a class="d-block text-muted">Malesuada</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="list-item block text-center">
+          <div class="media circle">
+              <a class="media-content m-3" style="background-image:url(../assets/img/a8.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Nothings’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Donec</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="list-item block text-center">
+          <div class="media circle">
+              <a class="media-content m-3" style="background-image:url(../assets/img/a9.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Rose king’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Nisi</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="list-item block text-center">
+          <div class="media circle">
+              <a class="media-content m-3" style="background-image:url(../assets/img/a10.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Newfolk
+                  </a>
+                  <a class="d-block text-muted">Ultricies</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="list-item block text-center">
+          <div class="media circle">
+              <a class="media-content m-3" style="background-image:url(../assets/img/a11.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Oise’ Emotions
+                  </a>
+                  <a class="d-block text-muted">Donec</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-md">
+    <div class="col-md-3">
+      <div class="block">
+        <nav class="sidenav nav-stacked nav-active-dark pb-2" data-nav>
+          <ul class="nav">
+              <li class="nav-header hidden-folded">
+                <span>Discover</span>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-music"><i></i></i>
+                  </span>
+                  <span class="nav-text">What's new</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-circle"><i></i></i>
+                  </span>
+                  <span class="nav-text">Genre</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-radio"><i></i></i>
+                  </span>
+                  <span class="nav-text">Radio</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-video"><i></i></i>
+                  </span>
+                  <span class="nav-text">Video</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-history"><i></i></i>
+                  </span>
+                  <span class="nav-text">History</span>
+                </a>
+              </li>
+              <li class="nav-header hidden-folded">
+                <span>Playlist</span>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-playlist"><i><i></i></i></i>
+                  </span>
+                  <span class="nav-text">Party</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-playlist"><i><i></i></i></i>
+                  </span>
+                  <span class="nav-text">Impress</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-playlist"><i><i></i></i></i>
+                  </span>
+                  <span class="nav-text">Dance</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-playlist"><i><i></i></i></i>
+                  </span>
+                  <span class="nav-text">Light</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="i-con-h-a">
+                  <span class="nav-icon">
+                    <i class="i-con i-con-playlist"><i><i></i></i></i>
+                  </span>
+                  <span class="nav-text">Nature</span>
+                </a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="list-item block list-overlay text-center">
+          <div class="media media-3x1">
+              <a class="media-content " style="background-image:url(../assets/img/c1.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body p-4">
+                  <a href="#" class="list-title font-weight-bold text-md">
+                          Music Festival
+                  </a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="list-item block list-overlay text-center">
+          <div class="media ">
+              <a class="media-content " style="background-image:url(../assets/img/c2.jpg)">
+              </a>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body p-4">
+                  <a href="#" class="list-title text-lg font-weight-bold l-s-n-2x">
+                          TOP 20
+                  </a>
+                  <a class="list-subtitle d-block text-muted mt-2 ">User picked top 20 Pop music</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="list list-grid list-bordered list-grid-padding list-index block">
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c4.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Id dictumst
+                      </a>
+                      <a class="d-block text-muted">Blandit</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">05:45</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c5.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Non mi odio
+                      </a>
+                      <a class="d-block text-muted">In</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">04:38</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c6.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Sit tortor, sed id
+                      </a>
+                      <a class="d-block text-muted">Dignissim</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">05:42</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c7.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Tellus pellentesque
+                      </a>
+                      <a class="d-block text-muted">Tortor</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">04:43</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c8.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Et tortor
+                      </a>
+                      <a class="d-block text-muted">Praesent</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">03:20</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c9.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Adipiscing mauris amet
+                      </a>
+                      <a class="d-block text-muted">Sed</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">02:27</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c10.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Purus viverra
+                      </a>
+                      <a class="d-block text-muted">Consequat</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">05:42</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c11.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Vulputate velit
+                      </a>
+                      <a class="d-block text-muted">Nibh</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">02:49</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c12.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Elit sed non
+                      </a>
+                      <a class="d-block text-muted">Nec</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">04:40</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+          <div class="list-item align-items-center r">
+              <div class="media w-48">
+                  <a class="media-content " style="background-image:url(../assets/img/c13.jpg)">
+                  </a>
+                  <div class="media-action ">
+                          <button class="btn btn-raised btn-icon btn-rounded bg--white i-con-h-a" data-toggle-class>
+                              <i class="i-con i-con-play"></i>
+                          </button>
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title h-1x">
+                              Lorem suspendisse
+                      </a>
+                      <a class="d-block text-muted">Dictum</a>
+                  </div>
+              </div>
+              <div class="list-action  d-flex align-items-center">
+                  <div class="px-3 text-sm d-none d-md-block">03:45</div>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a" data-toggle-class>
+                      <i class="i-con i-con-like active-solid active-danger"><i></i></i>
+                  </button>
+                  <button class="btn btn-icon no-bg no-shadow i-con-h-a">
+                      <i class="i-con i-con-menu"><i></i></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4">
+    <h3 class="text-md m-0">Video</h3>
+  </div>
+  <div class="block">
+    <div class="plyrist plyrist_video" id="plyrist_video">
+      <div class="row no-gutters">
+        <div class="col-md-8 r-l">
+          <video controls hidden></video>
+        </div>
+        <div class="col-md-4">
+          <div class="h-100">
+            <div class="d-flex flex-column">
+              <div class="p-3"><strong>Top 5 videos</strong></div>
+              <ul class="plyr-list flex scrollable hover">
+                <li class="plyr-item" data-type="video" data-source="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" data-poster="../assets/img/c8.jpg">
+                  <span class="plyr-item-poster" style="background-image:url(../assets/img/c8.jpg)"></span>
+                  <span class="plyr-item-title h-2x">View From A Blue Moon - John Florence</span>
+                </li>
+                <li class="plyr-item" data-type="video" data-source="https://youtube.com/watch?v=bTqVqk7FSmY" data-provider="youtube" data-poster="../assets/img/c9.jpg">
+                  <span class="plyr-item-poster" style="background-image:url(../assets/img/c9.jpg)"></span>
+                  <span class="plyr-item-title h-2x">View From A Blue Moon - Youtube</span>
+                </li>
+                <li class="plyr-item" data-type="video" data-source="https://vimeo.com/76979871" data-provider="vimeo" data-poster="../assets/img/c10.jpg">
+                  <span class="plyr-item-poster" style="background-image:url(../assets/img/c10.jpg)"></span>
+                  <span class="plyr-item-title h-2x">The New Vimeo Player (You Know, For Videos)</span>
+                </li>
+                <li class="plyr-item" data-type="video" data-source="https://www.youtube.com/watch?v=uJETuRcG79w" data-provider="youtube" data-poster="../assets/img/c11.jpg">
+                  <span class="plyr-item-poster" style="background-image:url(../assets/img/c11.jpg)"></span>
+                  <span class="plyr-item-title h-2x">Hurley Presents "Twelve": A New Series From John John Florence</span>
+                </li>
+                <li class="plyr-item" data-type="video" data-source="https://www.youtube.com/watch?v=UPq4215QKI8" data-provider="youtube" data-poster="../assets/img/c12.jpg">
+                  <span class="plyr-item-poster" style="background-image:url(../assets/img/c12.jpg)"></span>
+                  <span class="plyr-item-title h-2x">World's Best Surfing 2017-2018 (HD)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-md list-grouped">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/c8.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">25:20</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          For my love
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 3, 3:42 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/c9.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">20:30</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Around the world
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 12, 9:24 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/c10.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">05:20</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Compton’ Emotions
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 21, 2:26 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/c11.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">25:30</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Long liv cap’ Emotions
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 3, 12:34 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/c12.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">10:50</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Where we started’ Emotions
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 1, 4:37 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/c13.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">25:30</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          The Tallest Unclimbed Mountains In The World
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 1, 5:43 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/c14.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">25:00</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          What Not To Wear: The Hats, Scarves In History
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 28, 10:18 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/b12.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">15:30</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          How AI Helps Recruiters Track Jobseekers’ Emotions
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 20, 9:44 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/b13.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">30:30</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          Is This The Most Crowded Island In The World?’ Emotions
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 21, 3:20 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2-4">
+      <div class="list-item block">
+          <div class="media media-16x9">
+              <a class="media-content " style="background-image:url(../assets/img/b14.jpg)">
+              </a>
+              <div class="media-overlay overlay-top">
+                  <a href="#"><span class="badge badge-md text-uppercase bg-dark-overlay">20:10</span></a>
+              </div>
+              <div class="media-action ">
+              </div>
+          </div>
+          <div class="list-content ">
+              <div class="list-body ">
+                  <a href="#" class="list-title h-1x">
+                          How AI Helps Recruiters Track Jobseekers’ Emotions
+                  </a>
+              </div>
+              <div class="list-footer ">
+                  <div class="text-muted text-sm">Feb 27, 10:27 am</div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-md">
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-header d-flex">
+          <h6 class="m-0">Top authors</h6>
+          <span class="flex"></span>
+          <a href="#" class="i-con-h-a"><i class="i-con i-con-more-h"><i></i></i></a>
+        </div>
+        <div class="card-body">
+          <div class="list list-row row">
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="5">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-warning-lt" >
+                          <img src="../assets/img/a5.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Scott Ortega</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Sun
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="14">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-warning-lt" >
+                          L
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Lori Kelley</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Luckman corp
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="15">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-success-lt" >
+                          G
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Gary Woods</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Google
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="13">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-primary-lt" >
+                          J
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Joe Ortiz</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        JoeJoe company
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="7">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-primary-lt" >
+                          <img src="../assets/img/a7.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Louis Little</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Lostcorp
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="1">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-primary-lt" >
+                          <img src="../assets/img/a1.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Steven Owens</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Samsum Inc.
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="6">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-danger-lt" >
+                          <img src="../assets/img/a6.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Brittany Ryan</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        BlackUI
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="12">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-info-lt" >
+                          D
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">David McCoy</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Drafty
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="11">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-info-lt" >
+                          K
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Kenneth Pierce</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        KissKiss
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="10">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-warning-lt" >
+                          <img src="../assets/img/a10.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Gerald Hansen</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Goldage
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-info-lt" >
+                          <img src="../assets/img/a3.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">William McCoy</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Wealth corp
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="8">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-success-lt" >
+                          <img src="../assets/img/a8.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">John Keller</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Jet
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-info-lt" >
+                          <img src="../assets/img/a9.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Howard Morgan</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        HHH inc
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="2">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-primary-lt" >
+                          <img src="../assets/img/a2.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Mike</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        Microsoft
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+                <div class="list-item col-12 col-sm-6 col-md-4 no-border" data-id="4">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  <div>
+                  <a href="#">
+                    <span class="w-40 avatar circle bg-success-lt" >
+                          <img src="../assets/img/a4.jpg" alt=".">
+                    </span>
+                  </a>
+                  </div>
+            
+                  <div class="flex">
+                        <a href="#" class="item-author text-color">Gorge Garcia</a>
+                    
+            
+            
+                      <a href="#" class="item-company text-muted h-1x">
+                        GE
+                      </a>
+            
+                  </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="comment-">
+      
+      	<div class="card-header">
+      		<strong>3 Comments</strong>
+      	</div>
+      
+      	<div class="card-body d-flex b-b">
+      		<a href="#"><img src="../assets/img/a4.jpg" class="avatar w-40"></a>
+      		<div class="mx-3 flex">
+      			<div class="mb-3">
+      				<a href="#">Garrett Winters</a>
+      				<div class="text-muted text-sm">2:00 pm</div>
+      			</div>
+      	
+      			<div>
+      				<p>Tincidunt porttitor molestie pulvinar eu mi adipiscing eu arcu cursus diam at quisque malesuada faucibus at vitae vitae</p>
+      				<button class="btn btn-sm btn-white">
+      					Reply
+      				</button>
+      			</div>
+      	
+      		</div>
+      	</div>
+      
+      
+      	<div class="card-body d-flex b-b">
+      		<a href="#"><img src="../assets/img/a3.jpg" class="avatar w-40"></a>
+      		<div class="mx-3 flex">
+      			<div class="mb-3">
+      				<a href="#">Garrett Winters</a>
+      				<div class="text-muted text-sm">3:30 pm</div>
+      			</div>
+      	
+      			<div>
+      				<p>Mauris massa elementum malesuada eleifend ac egestas elit dignissim pellentesque sollicitudin enim porttitor porta et, elementum maecenas vitae in</p>
+      				<button class="btn btn-sm btn-white">
+      					Reply
+      				</button>
+      			</div>
+      	
+      		</div>
+      	</div>
+      
+      	<div class="p-4" id="feed-form-">
+      		<form>
+      			<textarea class="form-control" rows="3"></textarea>
+      			<div class="d-flex justify-content-end mt-3">
+      				<button class="btn btn-primary">Submit</button>
+      			</div>
+      		</form>
+      	</div>
+      
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header d-flex">
+          <h6 class="m-0">Popular</h6>
+          <a href="#" class="ml-auto i-con-h-a"><i class="i-con i-con-more-h"><i></i></i></a>
+        </div>
+        <div class="list list-bordered">
+          <div class="list-item list-overlay-content">
+              <div class="media media-2x1">
+                  <a class="media-content " style="background-image:url(../assets/img/c6.jpg)">
+                  </a>
+                  <div class="media-action ">
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title ">
+                              Newly discovered videos of teen allegedly held captive
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="list-item list-overlay-content">
+              <div class="media media-2x1">
+                  <a class="media-content " style="background-image:url(../assets/img/a11.jpg)">
+                  </a>
+                  <div class="media-action ">
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title ">
+                              The 20 Most Terrifying Stories On The Internet
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="list-item list-overlay-content">
+              <div class="media media-2x1">
+                  <a class="media-content " style="background-image:url(../assets/img/c5.jpg)">
+                  </a>
+                  <div class="media-action ">
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title ">
+                              Newly discovered videos of teen allegedly held captive
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="list-item list-overlay-content">
+              <div class="media media-2x1">
+                  <a class="media-content " style="background-image:url(../assets/img/a15.jpg)">
+                  </a>
+                  <div class="media-action ">
+                  </div>
+              </div>
+              <div class="list-content ">
+                  <div class="list-body ">
+                      <a href="#" class="list-title ">
+                              Everything you need to know before buying a smartphone
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="card-footer text-center py-2">
+          <a href="#" class="text-sm text-muted">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>
+		<!-- ############ Footer START-->
+		<footer id="footer" class="page-footer bg-black">
+			<div class="page-container">
+				<div class="padding ">
+					<div class="py-5 text-inherit text-hover-primary">
+						<div class="row">
+							<div class="col-6 col-md-4">
+								<div class="mb-5">
+									<!-- brand -->
+									<a href="index.html" class="navbar-brand">
+										<svg fill="#a9a9a9" width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										    <path class="fill" d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/>
+										    <path d="M0 0h24v24H0z" fill="none"/>
+										</svg>
+										<!-- <img src="../assets/img/logo.png" alt="..."> -->
+										<span class="hidden-folded d-inline l-s-n-1x ">Agile</span>
+									</a>
+									<!-- / brand -->
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<h5 class="mb-3 text-muted">UI kit</h5>
+								<ul class="list-unstyled l-h-2x">
+									<li><a href="../html/card.admin.html">Admin</a></li>
+									<li><a href="../html/card.news.html">News</a></li>
+									<li><a href="../html/card.music.html">Music &amp; Video</a></li>
+									<li><a href="../html/card.social.html">Social</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3">
+								<h5 class="mb-3 text-muted">Apps</h5>
+								<ul class="list-unstyled l-h-2x">
+									<li><a href="../html/app.calendar.html">Calendar</a></li>
+									<li><a href="../html/app.mail.html">Email</a></li>
+									<li><a href="../html/app.message.html">Message</a></li>
+									<li><a href="../html/app.user.html">User management</a></li>
+									<li><a href="../html/page.invoice.html">Invoice</a></li>
+									<li><a href="../html/page.search.html">Search</a></li>
+									<li><a href="../html/page.faq.html">FAQ</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-2">
+								<h5 class="mb-3 text-muted">Help</h5>
+								<ul class="list-unstyled l-h-2x">
+									<li><a href="../docs">Documentation</a></li>
+									<li><a href="../docs/changelog.html">Changelog</a></li>
+									<li><a href="../docs/changelog.html">Update</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text-center py-5 text-md">
+							<div class="text-muted mb-3">Follow us</div>
+							<div>
+								<a href="https://gumroad.com/blackui" class="mx-2">
+									<span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 180 190">
+					<path fill="currentColor" d="M25,27.4h123.6c2.7,5.2,8.2,8.8,14.5,8.8c9,0,16.3-7.3,16.3-16.3S172.1,3.6,163,3.6
+							c-6.8,0-12.7,4.2-15.1,10.2H25c-11.9,0-21.3,9.1-21.3,20.6V166c0,11.7,9.8,21.7,21.3,21.7h131.5c11.6,0,21-9.7,21-21.7v-78
+							c0-11.7-9.4-21.3-21-21.3h-78c-11.9,0-22,9.8-22,21.3v24.5c0,11.4,9.9,20.6,22,20.6h27.2c2.4,6,8.3,10.2,15.1,10.2
+							c9,0,16.3-7.3,16.3-16.3c0-9-7.3-16.3-16.3-16.3c-6.3,0-11.8,3.6-14.5,8.8H78.5c-4,0-8.3-2.7-8.3-7V87.9c0-4,4-7.7,8.3-7.7h78
+							c4.1,0,7.4,3.4,7.4,7.7v78c0,4.3-3.4,8-7.4,8H25c-4.1,0-7.7-3.8-7.7-8V34.4C17.3,30.5,20.6,27.4,25,27.4z M163,12.1
+							c4.3,0,7.8,3.5,7.8,7.8c0,4.3-3.5,7.8-7.8,7.8c-4.3,0-7.8-3.5-7.8-7.8C155.2,15.6,158.7,12.1,163,12.1z M120.9,119.2
+							c4.3,0,7.8,3.5,7.8,7.8c0,4.3-3.5,7.8-7.8,7.8c-4.3,0-7.8-3.5-7.8-7.8C113.1,122.6,116.6,119.2,120.9,119.2z" class=""></path>
+				</svg>
+				</span> 
+									gumroad.com/blackui
+								</a>
+								<a href="https://dribbble.com/blackui" class="mx-2">
+									<span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
+					<path fill="currentColor" d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z" class=""></path>
+				</svg>
+				</span> 
+									Blackui
+								</a>
+							</div>
+						</div>
+						<div class="text-center py-3">
+							<span class="text-muted text-sm">&copy; Copyright. Agile - Bootstrap 4 Web Application 2018, All rights reserved.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- ############ Footer END-->
+	</div>
+<!-- ############ Content END-->
+</div>
+
+
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/theme.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
